@@ -141,3 +141,6 @@ dmypy.json
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# OS files
+.DS_Store
