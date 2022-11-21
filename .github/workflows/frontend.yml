@@ -13,6 +13,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./frontend
 
     strategy:
       matrix:
@@ -27,11 +31,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install npm packages
-      working-directory: ./frontend
       run: npm ci
     - name: Build app
-      working-directory: ./frontend
       run: npm run build --if-present
     - name: Run tests
-      working-directory: ./frontend
       run: npm test
