@@ -24,7 +24,7 @@ const TaskTimer = () => {
   if (page === 5) {
     return (
       <>
-        <Button size="lg" variant="outline-primary" disabled={true}>
+        <Button variant="outline-primary" disabled={true}>
           Time left: {minutes} minutes {seconds} seconds
         </Button>
         {!isRunning && <ModalEndTask />}

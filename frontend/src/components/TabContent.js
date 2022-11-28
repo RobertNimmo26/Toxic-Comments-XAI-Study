@@ -1,5 +1,6 @@
 // import components
 import TaskTimer from "./TaskTimer";
+import BarChart from "./BarChart";
 
 // import bootstrap components
 import Container from "react-bootstrap/Container";
@@ -9,6 +10,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Stack from "react-bootstrap/Stack";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 // import rc-slider components
 import Slider from "rc-slider";
@@ -19,8 +21,8 @@ const TabContent = ({ comment }) => {
     <>
       <Container>
         <Row>
-          <Col md={7}>
-            <h3>Comment:</h3>
+          <Col md={6}>
+            <h5>Comment:</h5>
             <p>
               <strong>{comment.comment}</strong>
             </p>
@@ -32,19 +34,39 @@ const TabContent = ({ comment }) => {
                 Toxic.
               </i>
             </p>
+            <h6>Important words:</h6>
+            <BarChart important_words={comment.important_words} />
+            <Row style={{ textAlign: "center", marginTop: "50px" }}>
+              <Col>
+                <Button variant="primary" size="lg">
+                  Reset
+                </Button>
+              </Col>
+              <Col>
+                <Button variant="primary" size="lg">
+                  Checked
+                </Button>
+              </Col>
+            </Row>
           </Col>
-          <Col md={5}>
+          <Col md={6}>
             <Stack gap={3}>
-              <TaskTimer />
+              <Row style={{ marginLeft: "55px", marginRight: "55px" }}>
+                <TaskTimer />
+              </Row>
 
-              <Card>
+              <Card style={{ marginLeft: "55px", marginRight: "55px" }}>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>
-                    <h5>
+                  <ListGroup.Item
+                    style={{ marginTop: "1px", marginBottom: "1px" }}
+                  >
+                    <h6>
                       We predict this comment is Toxic with an 80% confidence
-                    </h5>
+                    </h6>
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item
+                    style={{ marginTop: "1px", marginBottom: "1px" }}
+                  >
                     <p style={{ textAlign: "center" }}>
                       <b>Do you agree with the prediction?</b>
                     </p>
@@ -69,7 +91,57 @@ const TabContent = ({ comment }) => {
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
-              <Slider />
+              <Row>
+                <Col style={{ textAlign: "center" }} md={3}>
+                  <strong>Important word</strong>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={3}>
+                  <strong>Label</strong>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={6}>
+                  <strong>Word importance</strong>{" "}
+                </Col>
+              </Row>
+              {comment.important_words.map((x, i) => (
+                <>
+                  <Row>
+                    <Col style={{ textAlign: "center" }} md={3}>
+                      <p>{x.word}</p>
+                    </Col>
+                    <Col style={{ textAlign: "center" }} md={3}>
+                      {x.weight > 0 ? (
+                        <Form.Select
+                          style={{ fontSize: "small" }}
+                          id={x.word.concat("IWLabelDropdown")}
+                        >
+                          <option selected>Toxic</option>
+                          <option>Non-toxic</option>
+                        </Form.Select>
+                      ) : (
+                        <Form.Select
+                          style={{ fontSize: "small" }}
+                          id={x.word.concat("IWLabelDropdown")}
+                        >
+                          <option>Toxic</option>
+                          <option selected>Non-toxic</option>
+                        </Form.Select>
+                      )}
+                    </Col>
+
+                    <Col style={{ textAlign: "center" }} md={6}>
+                      {x.weight > 0 ? (
+                        <Slider
+                          defaultValue={(100 * x.weight) / comment.max_value}
+                        />
+                      ) : (
+                        <Slider
+                          defaultValue={(100 * -x.weight) / comment.max_value}
+                        />
+                      )}
+                    </Col>
+                  </Row>
+                </>
+              ))}
             </Stack>
           </Col>
         </Row>

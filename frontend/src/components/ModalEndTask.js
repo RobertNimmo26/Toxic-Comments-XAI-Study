@@ -20,7 +20,7 @@ const ModelEndTask = () => {
         <Modal.Body>
           The task time limit has been reached. Modifications made from comments
           that haven't been checked has not been saved. You will now be taken to
-          the Post-task questionnaire.
+          the Post-task Questionnaire.
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={() => setPage(6)}>

@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 const SideBar = ({ comments }) => {
   return (
     <>
-      <ListGroup variant="flush" style={{ height: "75vh", overflowY: "auto" }}>
+      <ListGroup variant="flush" style={{ height: "90%", overflowY: "auto" }}>
         {comments.map((x, i) => (
           <ListGroup.Item action eventKey={x.id}>
             <div class="d-flex w-100 align-items-center justify-content-between">

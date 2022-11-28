@@ -18,7 +18,7 @@ const TabGroup = ({ comments }) => {
         <Row>
           <Col md={3}>
             <div class="align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-              <span class="fs-5 fw-semibold">Comments to review</span>
+              <h5 class="fs-5 ">Comments to review</h5>
             </div>
             <SideBar comments={comments} />
           </Col>
