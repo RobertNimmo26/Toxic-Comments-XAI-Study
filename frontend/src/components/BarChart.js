@@ -52,8 +52,6 @@ const barchartdata = (important_words) => {
   let labels = [];
 
   for (let i = 0; i < important_words.length; i++) {
-    console.log(important_words[i].weight > 0);
-
     labels.push(important_words[i].word);
     if (important_words[i].weight > 0) {
       toxic_data.push(important_words[i].weight);
@@ -79,7 +77,6 @@ const barchartdata = (important_words) => {
       },
     ],
   };
-  console.log(data);
   return data;
 };
 
