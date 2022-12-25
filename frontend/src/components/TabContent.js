@@ -61,7 +61,7 @@ const TabContent = ({ comment }) => {
                     style={{ marginTop: "1px", marginBottom: "1px" }}
                   >
                     <h6>
-                      We predict this comment is Toxic with an 80% confidence
+                      We predict this comment is Toxic with an 80% confidence.
                     </h6>
                   </ListGroup.Item>
                   <ListGroup.Item
