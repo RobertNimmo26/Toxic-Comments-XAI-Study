@@ -12,6 +12,7 @@
     "react-bootstrap": "^2.6.0",
     "react-chartjs-2": "^5.0.1",
     "react-dom": "^18.2.0",
+    "react-likert-scale": "^4.1.2",
     "react-scripts": "5.0.1",
     "react-timer-hook": "^3.0.5",
     "web-vitals": "^2.1.4"
