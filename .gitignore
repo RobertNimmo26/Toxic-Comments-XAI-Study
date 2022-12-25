@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 # Visual Studios Code
+*/.vscode/*
 .vscode/*
 
 # Local History for Visual Studio Code
