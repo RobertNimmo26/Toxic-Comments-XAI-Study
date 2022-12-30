@@ -8,7 +8,7 @@ import Modal from "react-bootstrap/Modal";
 // import context
 import PageContext from "../context/PageContext";
 
-const ModelEndTask = () => {
+const ModelTaskTimerEndTask = () => {
   const { page, setPage } = useContext(PageContext);
 
   return (
@@ -19,8 +19,8 @@ const ModelEndTask = () => {
         </Modal.Header>
         <Modal.Body>
           The task time limit has been reached. Modifications made from comments
-          that haven't been checked has not been saved. You will now be taken to
-          the Post-task Questionnaire.
+          that haven't been checked have not been saved. You will now be taken
+          to the Post-task Questionnaire.
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={() => setPage(6)}>
@@ -32,4 +32,4 @@ const ModelEndTask = () => {
   );
 };
 
-export default ModelEndTask;
+export default ModelTaskTimerEndTask;

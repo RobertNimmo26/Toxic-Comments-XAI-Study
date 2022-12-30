@@ -8,9 +8,6 @@ import TitleNav from "../components/TitleNav";
 // import bootstrap components
 import Button from "react-bootstrap/Button";
 
-// import comments
-import comments from "../config/tempPracticeData";
-
 // import context
 import PageContext from "../context/PageContext";
 
@@ -20,7 +17,7 @@ const PracticeTask = () => {
   return (
     <>
       <TitleNav pageTitle={"Practice Task"} />
-      <TabGroup comments={comments} />
+      <TabGroup />
       <Button
         variant="primary"
         size="lg"

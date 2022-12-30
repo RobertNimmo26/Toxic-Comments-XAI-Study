@@ -13,12 +13,41 @@ import ScreenSize from "./pages/ScreenSmall";
 // import context
 import PageContext from "./context/PageContext";
 import PreTaskQuestionnaireContext from "./context/PreTaskQuestionnaireContext";
+import ExplanationDataContext from "./context/ExplanationDataContext";
 
-import ExplanationData from "./config/ExplanationData";
-alert("Number of comments" + Object.keys(ExplanationData).length);
+// import data
+import MainTaskExplanationData from "./config/MainTaskExplanationData";
+import PracticeTaskExplanationData from "./config/PracticeExplanationData";
+
+// import react-router-dom
+// import { useSearchParams, useLocation, Router } from "react-router-dom";
 
 const App = () => {
-  const [page, setPage] = useState(1);
+  const queryParameters = new URLSearchParams(window.location.search);
+  const studyID = queryParameters.get("STUDY_ID");
+  const prolificID = queryParameters.get("PROLIFIC_PID");
+  const sessionID = queryParameters.get("SESSION_ID");
+
+  console.log(studyID, prolificID, sessionID);
+
+  // Explanation data state
+  const [mainTaskExplanationData, setMainTaskExplanationData] = useState({
+    user: structuredClone(MainTaskExplanationData),
+    reset: structuredClone(MainTaskExplanationData),
+  });
+
+  // Practice explanation data state
+  const [practiceTaskExplanationData, setPracticeTaskExplanationData] =
+    useState({
+      user: structuredClone(PracticeTaskExplanationData),
+      reset: structuredClone(PracticeTaskExplanationData),
+    });
+
+  // Page state
+  const [page, setPage] = useState(3);
+
+  // Pre task questionnaire questions state
+  // => set all questions to -1 (unanswered) initially
   const [preTaskForm, setPreTaskForm] = useState({
     tipi1: -1,
     tipi2: -1,
@@ -32,6 +61,17 @@ const App = () => {
     tipi10: -1,
     prevExperience: -1,
   });
+
+  // Setup contexts values
+  const mainTaskExplanationDataValue = {
+    explanationData: mainTaskExplanationData,
+    setExplanationData: setMainTaskExplanationData,
+  };
+
+  const practiceTaskExplanationDataValue = {
+    explanationData: practiceTaskExplanationData,
+    setExplanationData: setPracticeTaskExplanationData,
+  };
 
   const pageValue = { page, setPage };
   const preTaskFormValue = { preTaskForm, setPreTaskForm };
@@ -64,14 +104,20 @@ const App = () => {
       window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
-          <PracticeTask />
+          <ExplanationDataContext.Provider
+            value={practiceTaskExplanationDataValue}
+          >
+            <PracticeTask />
+          </ExplanationDataContext.Provider>
         </PageContext.Provider>
       );
     case 5:
       window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
-          <Task />
+          <ExplanationDataContext.Provider value={mainTaskExplanationDataValue}>
+            <Task />
+          </ExplanationDataContext.Provider>
         </PageContext.Provider>
       );
     case 6:

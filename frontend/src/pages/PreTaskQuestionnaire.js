@@ -29,7 +29,7 @@ const PreTaskQuestionnaire = () => {
     const unansweredResult = Object.values(preTaskForm).includes(-1);
 
     setUnanswered(unansweredResult);
-    if (unansweredResult == true) {
+    if (unansweredResult === true) {
       window.scrollTo(0, 0);
     } else {
       setPage(3);
@@ -41,7 +41,7 @@ const PreTaskQuestionnaire = () => {
       <Container>
         <TitleNav pageTitle={"Pre-task Questionnaire"} />
 
-        {unanswered == true && (
+        {unanswered === true && (
           <Alert key="danger" variant="danger">
             Please answer all questions.
           </Alert>

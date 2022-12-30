@@ -140,6 +140,3 @@ dmypy.json
 
 # OS files
 .DS_Store
-
-# Prettier formmater config
-*/.prettierrc
