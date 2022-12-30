@@ -1,0 +1,4 @@
+name = "tc-xai-study-worker"
+main = "index.js"
+compatibility_date = "2022-12-30"
+workers_dev = true
