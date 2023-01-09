@@ -1,5 +1,5 @@
 // import react components
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 // import components
 import TaskTimer from "./TaskTimer";
@@ -24,35 +24,49 @@ import Highlighter from "react-highlight-words";
 // import context
 import ExplanationDataContext from "../context/ExplanationDataContext";
 
-const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
+const TabContent = ({ explanationDataIndex }) => {
   const { explanationData, setExplanationData } = useContext(
     ExplanationDataContext
   );
 
-  const importantWordsKV = explanationDataComment.important_words.reduce(
-    (map, obj) => {
-      map[obj.word] = obj.weight;
-      return map;
-    },
-    {}
-  );
+  // Create a key/value object for important key words in comment explanation
+  const getImportantWordsKV = (type) => {
+    let explanationDataImportantWords;
 
-  const Highlight = ({ children }) => {
-    if (importantWordsKV[children] > 0) {
-      return <span style={{ color: "rgb(255, 99, 132)" }}>{children}</span>;
+    if (type === "user") {
+      explanationDataImportantWords =
+        explanationData.user[explanationDataIndex].important_words;
     } else {
-      return <span style={{ color: "rgb(75, 192, 192)" }}>{children}</span>;
+      explanationDataImportantWords =
+        explanationData.reset[explanationDataIndex].important_words;
     }
+
+    return explanationDataImportantWords.reduce((map, obj) => {
+      map[obj.word] = { weight: obj.weight, label: obj.label };
+      return map;
+    }, {});
   };
 
-  const onSliderChange = ({ value, toxic, word }) => {
-    let finalValue =
-      (value * Math.max(...Object.values(importantWordsKV).map(Math.abs))) /
-      100;
+  const [importantWordsKVReset] = useState(getImportantWordsKV("reset"));
 
-    if (toxic === false) {
-      finalValue = -finalValue;
-    }
+  const [importantWordsKVUser, setImportantWordsKVUser] = useState(
+    getImportantWordsKV("user")
+  );
+
+  // If explanationData changes then update importantWordsKVUser value using getImportantWordsKV function
+  useEffect(() => {
+    setImportantWordsKVUser(getImportantWordsKV("user"));
+  }, [explanationData]);
+
+  const onSliderChange = ({ value, word }) => {
+    let finalValue =
+      (value *
+        Math.max(
+          ...explanationData.reset[explanationDataIndex].important_words.map(
+            (t) => t.weight
+          )
+        )) /
+      100;
 
     setExplanationData((prevExplanationData) => {
       const foundIndex = prevExplanationData.user[
@@ -61,12 +75,10 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
 
       prevExplanationData.user[explanationDataIndex].important_words[
         foundIndex
-      ].weight = finalValue;
+      ].weight = structuredClone(finalValue);
 
       return { ...prevExplanationData };
     });
-
-    console.log(finalValue);
   };
 
   const onImportantWordLabelChange = ({ value, word }) => {
@@ -75,31 +87,23 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
         explanationDataIndex
       ].important_words.findIndex((item) => item.word === word);
 
-      let wordWeight = Math.abs(
+      if (value.target.value === "Toxic") {
         prevExplanationData.user[explanationDataIndex].important_words[
           foundIndex
-        ].weight
-      );
-
-      if (value.target.value === "Non-toxic") {
-        wordWeight *= -1;
+        ].label = "Toxic";
+      } else {
+        prevExplanationData.user[explanationDataIndex].important_words[
+          foundIndex
+        ].label = "Non-toxic";
       }
-
-      prevExplanationData.user[explanationDataIndex].important_words[
-        foundIndex
-      ].weight = wordWeight;
-
       return { ...prevExplanationData };
     });
-
-    console.log(value.target.value, word);
   };
 
   const onLabelChange = ({ value }) => {
-    console.log(value.target.value);
     setExplanationData((prevExplanationData) => {
       prevExplanationData.user[explanationDataIndex].prediction_label =
-        value.target.value;
+        structuredClone(value.target.value);
 
       return { ...prevExplanationData };
     });
@@ -114,10 +118,62 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
   };
 
   const onResetButtonClick = () => {
-    // setExplanationData((prevExplanationData) => {
-    //   prevExplanationData.user[0].checked = true;
-    //   return { ...prevExplanationData };
-    // });
+    setExplanationData((prevExplanationData) => {
+      prevExplanationData.user[explanationDataIndex] = structuredClone(
+        prevExplanationData.reset[explanationDataIndex]
+      );
+
+      return { ...prevExplanationData };
+    });
+  };
+
+  // Highlighting text functions
+  const Highlight = ({ children }) => {
+    try {
+      if (importantWordsKVReset[children].label === "Toxic") {
+        // if word is labelled toxic set highlight color to red
+        return <span style={{ color: "rgb(237, 109, 133)" }}>{children}</span>;
+      } else {
+        // if word is labelled non-toxic set highlight color to green
+        return <span style={{ color: "rgb(77, 83, 185)" }}>{children}</span>;
+      }
+    } catch {
+      // if word is not found (to catch any bugs) set highlight colour to light-grey
+      return <span style={{ color: "rgb(192, 192, 192)" }}>{children}</span>;
+    }
+  };
+
+  const findChunksMultipleMatches = ({ searchWords, textToHighlight }) => {
+    // Regex expression to find words to be highlighted
+    const regexHighlight = new RegExp(
+      searchWords
+        .map((value) => {
+          return `((\\s|^|\\(|\\{|\\[|\\"|\\<)${value}(?=\\s|$|\\.|\\,|\\"|\\>|\\)|\\}|\\]|\\;|\\!))`;
+        })
+        .join("|"),
+      "g"
+    );
+
+    let regexMatches;
+    let matchPositions = [];
+    while ((regexMatches = regexHighlight.exec(textToHighlight)) !== null) {
+      let startIndex;
+      if (
+        // because safari browser doesn't support positive lookbehind expression, move starting index by one
+        regexMatches[0].match(new RegExp(`\\s|\\(|\\{|\\[|\\"|\\<`), "") ===
+        null
+      ) {
+        startIndex = regexMatches.index;
+      } else {
+        startIndex = regexMatches.index + 1;
+      }
+      matchPositions.push({
+        start: startIndex,
+        end: regexHighlight.lastIndex,
+      });
+    }
+
+    return matchPositions;
   };
 
   return (
@@ -128,26 +184,31 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
             <h5>Comment:</h5>
             <p>
               <Highlighter
-                searchWords={Object.keys(importantWordsKV)}
+                searchWords={Object.keys(importantWordsKVReset)}
                 highlightTag={Highlight}
+                findChunks={findChunksMultipleMatches}
                 style={{ fontWeight: "620" }}
-                textToHighlight={explanationDataComment.comment}
+                textToHighlight={
+                  explanationData.reset[explanationDataIndex].comment
+                }
               />
               <strong>{}</strong>
             </p>
             <p style={{ textAlign: "center" }}>
               <i>
                 Words which are highlighted in{" "}
-                <span style={{ color: "rgb(75, 192, 192)" }}>blue</span> have a
+                <span style={{ color: "rgb(77, 83, 185)" }}>blue</span> have a
                 higher correlation to labeling the comment as Non-toxic. Words
                 which are highlighted in{" "}
-                <span style={{ color: "rgb(255, 99, 132)" }}>red</span> have a
+                <span style={{ color: "rgb(237, 109, 133)" }}>red</span> have a
                 higher correlation to labeling the comment as Toxic.
               </i>
             </p>
             <h6>Important words:</h6>
             <BarChart
-              important_words={explanationDataComment.important_words}
+              important_words={
+                explanationData.reset[explanationDataIndex].important_words
+              }
             />
             <Row style={{ textAlign: "center", marginTop: "50px" }}>
               <Col>
@@ -187,8 +248,16 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
                   >
                     <h6>
                       We predict this comment is{" "}
-                      {explanationDataComment.prediction_label} with an{" "}
-                      {explanationDataComment.prediction_proba}% confidence.
+                      {
+                        explanationData.reset[explanationDataIndex]
+                          .prediction_label
+                      }{" "}
+                      with an{" "}
+                      {
+                        explanationData.reset[explanationDataIndex]
+                          .prediction_proba
+                      }
+                      % confidence.
                     </h6>
                   </ListGroup.Item>
                   <ListGroup.Item
@@ -208,42 +277,29 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
                           </Form.Label>
                         </Col>
                         <Col md={8}>
-                          {explanationDataComment.prediction_label ===
-                          "Toxic" ? (
-                            <Form.Select
-                              id="commentLabelDropdown"
-                              onChange={(value) => {
-                                onLabelChange({
-                                  value: value,
-                                });
-                              }}
-                            >
-                              <option selected value="Toxic">
-                                Toxic
-                              </option>
-                              <option value="Non-toxic">Non-toxic</option>
-                            </Form.Select>
-                          ) : (
-                            <Form.Select
-                              id="commentLabelDropdown"
-                              onChange={(value) => {
-                                onLabelChange({
-                                  value: value,
-                                });
-                              }}
-                            >
-                              <option value="Toxic">Toxic</option>
-                              <option selected value="Non-toxic">
-                                Non-toxic
-                              </option>
-                            </Form.Select>
-                          )}
+                          <Form.Select
+                            id="commentLabelDropdown"
+                            value={
+                              explanationData.user[explanationDataIndex]
+                                .prediction_label
+                            }
+                            onChange={(value) => {
+                              onLabelChange({
+                                value: value,
+                              });
+                            }}
+                          >
+                            <option value="Toxic">Toxic</option>
+                            <option value="Non-toxic">Non-toxic</option>
+                          </Form.Select>
                         </Col>
                       </Row>
                     </Form.Group>
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
+
+              {/* Headings */}
               <Row>
                 <Col style={{ textAlign: "center" }} md={3}>
                   <strong>Important word</strong>
@@ -255,86 +311,59 @@ const TabContent = ({ explanationDataComment, explanationDataIndex }) => {
                   <strong>Word importance</strong>{" "}
                 </Col>
               </Row>
-              {explanationDataComment.important_words.map((x, i) => (
-                <>
-                  <Row>
-                    <Col style={{ textAlign: "center" }} md={3}>
-                      <p>{x.word}</p>
-                    </Col>
-                    <Col style={{ textAlign: "center" }} md={3}>
-                      {x.weight > 0 ? (
+
+              {/* Components */}
+              {Object.entries(importantWordsKVUser).map((x) => {
+                const iwWord = x[0];
+                const iwWordWeight = x[1].weight;
+                const iwWordLabel = x[1].label;
+                return (
+                  <>
+                    <Row>
+                      <Col style={{ textAlign: "center" }} md={3}>
+                        {/* Important word */}
+                        <p>{iwWord}</p>
+                      </Col>
+                      <Col style={{ textAlign: "center" }} md={3}>
+                        {/* Label dropdown */}
                         <Form.Select
                           style={{ fontSize: "small" }}
-                          id={x.word.concat("IWLabelDropdown")}
+                          value={iwWordLabel}
+                          id={iwWord.concat("IWLabelDropdown")}
                           onChange={(value) => {
                             onImportantWordLabelChange({
                               value: value,
-                              word: x.word,
-                            });
-                          }}
-                        >
-                          <option value="Toxic" selected>
-                            Toxic
-                          </option>
-                          <option value="Non-toxic">Non-toxic</option>
-                        </Form.Select>
-                      ) : (
-                        <Form.Select
-                          style={{ fontSize: "small" }}
-                          id={x.word.concat("IWLabelDropdown")}
-                          onChange={(value) => {
-                            onImportantWordLabelChange({
-                              value: value,
-                              word: x.word,
+                              word: iwWord,
                             });
                           }}
                         >
                           <option value="Toxic">Toxic</option>
-                          <option value="Non-toxic" selected>
-                            Non-toxic
-                          </option>
+                          <option value="Non-toxic">Non-toxic</option>
                         </Form.Select>
-                      )}
-                    </Col>
-
-                    <Col style={{ textAlign: "center" }} md={6}>
-                      {x.weight > 0 ? (
+                      </Col>
+                      <Col style={{ textAlign: "center" }} md={6}>
+                        {/* Word importance slider */}
                         <Slider
-                          defaultValue={
-                            (100 * x.weight) /
+                          value={
+                            (100 * iwWordWeight) /
                             Math.max(
-                              ...Object.values(importantWordsKV).map(Math.abs)
+                              ...explanationData.reset[
+                                explanationDataIndex
+                              ].important_words.map((t) => t.weight)
                             )
                           }
                           onChange={(value) => {
                             onSliderChange({
                               value: value,
-                              toxic: true,
-                              word: x.word,
+                              word: iwWord,
                             });
                           }}
                         />
-                      ) : (
-                        <Slider
-                          defaultValue={
-                            (100 * -x.weight) /
-                            Math.max(
-                              ...Object.values(importantWordsKV).map(Math.abs)
-                            )
-                          }
-                          onChange={(value) => {
-                            onSliderChange({
-                              value: value,
-                              toxic: false,
-                              word: x.word,
-                            });
-                          }}
-                        />
-                      )}
-                    </Col>
-                  </Row>
-                </>
-              ))}
+                      </Col>
+                    </Row>
+                  </>
+                );
+              })}
             </Stack>
           </Col>
         </Row>

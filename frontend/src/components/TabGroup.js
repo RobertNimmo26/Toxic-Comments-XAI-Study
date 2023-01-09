@@ -15,9 +15,7 @@ import Tab from "react-bootstrap/Tab";
 import ExplanationDataContext from "../context/ExplanationDataContext";
 
 const TabGroup = () => {
-  const { explanationData, setExplanationData } = useContext(
-    ExplanationDataContext
-  );
+  const { explanationData } = useContext(ExplanationDataContext);
 
   return (
     <>
@@ -33,8 +31,8 @@ const TabGroup = () => {
       >
         <Row>
           <Col md={3}>
-            <div class="align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-              <h5 class="fs-5 ">Comments to review</h5>
+            <div className="align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+              <h5 className="fs-5 ">Comments to review</h5>
             </div>
             <SideBar />
           </Col>
@@ -42,14 +40,11 @@ const TabGroup = () => {
           <Col md={9}>
             <ModalCheckedEndTask />
             <Tab.Content>
-              {explanationData.reset.map((x, i) => {
+              {explanationData.reset.map((_x, i) => {
                 return (
                   <>
                     <Tab.Pane eventKey={i + 1}>
-                      <TabContent
-                        explanationDataComment={x}
-                        explanationDataIndex={i}
-                      />
+                      <TabContent explanationDataIndex={i} />
                     </Tab.Pane>
                   </>
                 );

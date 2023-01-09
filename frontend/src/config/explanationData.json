@@ -1,283 +1,20 @@
 [
   {
-    "id": "b0755be14ec2bd26",
-    "comment": "This account has been blocked as a reincarnation of the pelican shit vandal.-",
-    "prediction_proba": 82.94,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "shit", "weight": 0.8051 },
-      { "word": "reincarnation", "weight": -0.0247 },
-      { "word": "pelican", "weight": -0.0216 },
-      { "word": "been", "weight": -0.0184 },
-      { "word": "blocked", "weight": 0.0174 },
-      { "word": "account", "weight": -0.0103 },
-      { "word": "This", "weight": -0.0099 },
-      { "word": "has", "weight": -0.0088 },
-      { "word": "of", "weight": 0.0073 },
-      { "word": "the", "weight": -0.0009 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "e209de92b1e57d49",
-    "comment": "\" \n :::The only documentation I can find about Feedback Protection e.t.c is Wikipedia:Article_Feedback/Feedback_response_guidelines#Feedback_disabling. This mentions a blacklist opposed to Protection which would allow the page to remain only semi protected instead of fully protected. ''''''  \"",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "the", "weight": -0.0009 },
-      { "word": "of", "weight": -0.0008 },
-      { "word": "documentation", "weight": -0.0007 },
-      { "word": "a", "weight": 0.0007 },
-      { "word": "Protection", "weight": -0.0007 },
-      { "word": "about", "weight": -0.0006 },
-      { "word": "t", "weight": 0.0006 },
-      { "word": "opposed", "weight": 0.0006 },
-      { "word": "This", "weight": 0.0005 },
-      { "word": "only", "weight": 0.0 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "9e7152969e06c589",
-    "comment": "== April Fools == \n\n Thanks for approving the hook. But I still don't understand the April Fools comment, or even if it is an insult. Am I stupid?",
-    "prediction_proba": 82.49,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "stupid", "weight": 0.6569 },
-      { "word": "Am", "weight": -0.0982 },
-      { "word": "April", "weight": -0.0879 },
-      { "word": "Fools", "weight": 0.079 },
-      { "word": "an", "weight": 0.0777 },
-      { "word": "insult", "weight": 0.077 },
-      { "word": "approving", "weight": -0.063 },
-      { "word": "don", "weight": -0.0448 },
-      { "word": "understand", "weight": -0.0124 },
-      { "word": "it", "weight": -0.0097 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "9f2ca163dbc98c1c",
-    "comment": "== my talk page == \n\n please do not alter the comments people have made on my talk page, even if they are idiots. thank you.",
-    "prediction_proba": 86.62,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "idiots", "weight": 0.8211 },
-      { "word": "if", "weight": -0.0373 },
-      { "word": "thank", "weight": -0.026 },
-      { "word": "you", "weight": 0.0258 },
-      { "word": "please", "weight": -0.0254 },
-      { "word": "do", "weight": 0.0225 },
-      { "word": "they", "weight": -0.0136 },
-      { "word": "comments", "weight": -0.0077 },
-      { "word": "people", "weight": -0.0025 },
-      { "word": "made", "weight": 0.0007 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "d7bc67586414048a",
-    "comment": ":Well, it doesn't suck any more. \n :",
-    "prediction_proba": 38.51,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "suck", "weight": 0.6095 },
-      { "word": "t", "weight": -0.0633 },
-      { "word": "doesn", "weight": -0.0371 },
-      { "word": "Well", "weight": -0.0324 },
-      { "word": "any", "weight": -0.0271 },
-      { "word": "it", "weight": -0.0266 },
-      { "word": "more", "weight": -0.0111 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "2a066d8284d19604",
-    "comment": "Hey I am becky im a loud and abnocious girl that likes to molest people also I want to be gay with jessie j",
-    "prediction_proba": 91.34,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "gay", "weight": 0.4176 },
-      { "word": "molest", "weight": 0.1204 },
-      { "word": "girl", "weight": 0.083 },
-      { "word": "loud", "weight": 0.0711 },
-      { "word": "with", "weight": -0.0611 },
-      { "word": "abnocious", "weight": 0.0602 },
-      { "word": "want", "weight": 0.055 },
-      { "word": "to", "weight": -0.0427 },
-      { "word": "I", "weight": -0.0293 },
-      { "word": "Hey", "weight": 0.0277 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "61da3a1fccac50fa",
-    "comment": "== Swedish ballads  - visa? == \n\n This article on a Swedish topic has no iw-link to Swedish Wikipedia. The topic of this article seems to fairly well match sv:visa, although that article does not exclude related traditions in neighbouring countries.",
-    "prediction_proba": 99.95,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "traditions", "weight": -0.0007 },
-      { "word": "Wikipedia", "weight": 0.0006 },
-      { "word": "on", "weight": -0.0006 },
-      { "word": "ballads", "weight": 0.0006 },
-      { "word": "This", "weight": 0.0006 },
-      { "word": "to", "weight": -0.0006 },
-      { "word": "article", "weight": -0.0005 },
-      { "word": "seems", "weight": -0.0005 },
-      { "word": "topic", "weight": -0.0005 },
-      { "word": "a", "weight": 0.0003 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "f55eb6a447b2119b",
-    "comment": ", as they get kicked to death by the enraged ostrich",
-    "prediction_proba": 91.54,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "death", "weight": 0.1819 },
-      { "word": "enraged", "weight": -0.159 },
-      { "word": "as", "weight": -0.0632 },
-      { "word": "they", "weight": -0.0545 },
-      { "word": "get", "weight": 0.0487 },
-      { "word": "ostrich", "weight": -0.0294 },
-      { "word": "by", "weight": -0.0196 },
-      { "word": "to", "weight": 0.0184 },
-      { "word": "the", "weight": -0.0139 },
-      { "word": "kicked", "weight": 0.0055 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "fff4109e837f7acc",
-    "comment": "SO many things wrong with that viewpoint - from the humane treatment of German POW's to international treaties about the use of POW's for labor.",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "treatment", "weight": -0.0011 },
-      { "word": "treaties", "weight": -0.0011 },
-      { "word": "to", "weight": -0.0011 },
-      { "word": "viewpoint", "weight": -0.001 },
-      { "word": "wrong", "weight": 0.0009 },
-      { "word": "of", "weight": -0.0008 },
-      { "word": "humane", "weight": 0.0007 },
-      { "word": "POW", "weight": 0.0006 },
-      { "word": "s", "weight": 0.0004 },
-      { "word": "for", "weight": 0.0003 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "38d832229e289223",
-    "comment": "Ach!  Ya got me.  Yep, LDOs can be Staff officers, as well.  We'll call it a Snipe-centric viewpoint and move on.   Izuko  \n *",
-    "prediction_proba": 94.92,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "Snipe", "weight": 0.0739 },
-      { "word": "viewpoint", "weight": -0.0651 },
-      { "word": "centric", "weight": -0.0324 },
-      { "word": "move", "weight": -0.0304 },
-      { "word": "can", "weight": -0.0238 },
-      { "word": "Izuko", "weight": 0.02 },
-      { "word": "ll", "weight": 0.0188 },
-      { "word": "me", "weight": 0.0151 },
-      { "word": "well", "weight": 0.0112 },
-      { "word": "Ach", "weight": 0.0101 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "11d9098eaf4ed71d",
-    "comment": "I dont think we should include any kind of fan media, games or otherwise. If we did this then whats stopping people from including stuff like Yugioh Virtual Desktop and Duel Network to the Yugioh pages?",
-    "prediction_proba": 99.93,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "think", "weight": -0.0008 },
-      { "word": "include", "weight": -0.0006 },
-      { "word": "Network", "weight": -0.0006 },
-      { "word": "I", "weight": -0.0006 },
-      { "word": "whats", "weight": 0.0005 },
-      { "word": "of", "weight": 0.0005 },
-      { "word": "games", "weight": -0.0004 },
-      { "word": "fan", "weight": 0.0003 },
-      { "word": "media", "weight": -0.0003 },
-      { "word": "then", "weight": -0.0003 }
-    ],
-    "checked": false
-  },
-  {
     "id": "adf507d243613888",
     "comment": "~This guy is deff. the hottest guy around and i would bang him any day OW OW!!!!!!!!!!!!!!~",
     "prediction_proba": 76.17,
     "prediction_label": "Toxic",
     "important_words": [
-      { "word": "bang", "weight": 0.3368 },
-      { "word": "him", "weight": 0.1148 },
-      { "word": "guy", "weight": 0.1148 },
-      { "word": "deff", "weight": 0.0996 },
-      { "word": "OW", "weight": 0.0927 },
-      { "word": "i", "weight": 0.0729 },
-      { "word": "day", "weight": -0.0702 },
-      { "word": "any", "weight": 0.0681 },
-      { "word": "would", "weight": 0.066 },
-      { "word": "and", "weight": 0.049 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "9a309fc47b83d870",
-    "comment": "While you might think that you are funny by editing Reggie Bush, I can assure you that you are not. Please stop adding nonsense to Wikipedia. It is considered vandalism. If you would like to experiment, use the sandbox. Thank you.",
-    "prediction_proba": 98.2,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "Thank", "weight": -0.0874 },
-      { "word": "adding", "weight": -0.0613 },
-      { "word": "by", "weight": -0.0572 },
-      { "word": "nonsense", "weight": 0.0517 },
-      { "word": "can", "weight": 0.0471 },
-      { "word": "you", "weight": 0.042 },
-      { "word": "are", "weight": 0.0359 },
-      { "word": "Please", "weight": -0.0324 },
-      { "word": "vandalism", "weight": 0.017 },
-      { "word": "While", "weight": -0.0143 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "9156d35b539e7529",
-    "comment": ". \n\n This article sucks very bad. Nothing is mentioned of the role of s.aureus as skin flora and reeks of someone's OCD induced regurgitation",
-    "prediction_proba": 86.06,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "sucks", "weight": 0.6824 },
-      { "word": "role", "weight": -0.0916 },
-      { "word": "Nothing", "weight": 0.0742 },
-      { "word": "s", "weight": 0.0648 },
-      { "word": "induced", "weight": -0.0555 },
-      { "word": "is", "weight": -0.0518 },
-      { "word": "aureus", "weight": 0.036 },
-      { "word": "regurgitation", "weight": 0.0337 },
-      { "word": "reeks", "weight": 0.0306 },
-      { "word": "flora", "weight": -0.0158 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "bae7e500f6b54fed",
-    "comment": "\" \n ****Who are the \"\"some\"\" that you refer to? Obviously they are not representing a consensus here. I do not believe that anyone has explained why this is not a campaign or pointy.   \"",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "here", "weight": -0.003 },
-      { "word": "refer", "weight": -0.0028 },
-      { "word": "you", "weight": 0.0025 },
-      { "word": "consensus", "weight": -0.0024 },
-      { "word": "why", "weight": -0.0022 },
-      { "word": "is", "weight": -0.0018 },
-      { "word": "some", "weight": -0.0013 },
-      { "word": "anyone", "weight": -0.0009 },
-      { "word": "are", "weight": 0.0008 },
-      { "word": "Obviously", "weight": 0.0007 }
+      { "word": "bang", "weight": 0.3883, "label": "Toxic" },
+      { "word": "OW", "weight": 0.1605, "label": "Toxic" },
+      { "word": "deff", "weight": 0.1424, "label": "Toxic" },
+      { "word": "him", "weight": 0.1037, "label": "Toxic" },
+      { "word": "hottest", "weight": 0.0956, "label": "Non-toxic" },
+      { "word": "guy", "weight": 0.084, "label": "Toxic" },
+      { "word": "i", "weight": 0.0711, "label": "Toxic" },
+      { "word": "day", "weight": 0.0563, "label": "Non-toxic" },
+      { "word": "would", "weight": 0.0505, "label": "Toxic" },
+      { "word": "any", "weight": 0.0296, "label": "Non-toxic" }
     ],
     "checked": false
   },
@@ -287,88 +24,54 @@
     "prediction_proba": 91.26,
     "prediction_label": "Toxic",
     "important_words": [
-      { "word": "Bastard", "weight": 0.8178 },
-      { "word": "the", "weight": -0.0421 },
-      { "word": "a", "weight": 0.0313 },
-      { "word": "used", "weight": 0.0186 },
-      { "word": "you", "weight": 0.0171 },
-      { "word": "word", "weight": 0.0076 },
-      { "word": "Where", "weight": -0.0075 },
-      { "word": "suppose", "weight": 0.0033 },
-      { "word": "perfectly", "weight": 0.0023 },
-      { "word": "political", "weight": 0.0022 }
+      { "word": "Bastard", "weight": 0.8485, "label": "Toxic" },
+      { "word": "will", "weight": 0.0361, "label": "Toxic" },
+      { "word": "do", "weight": 0.0289, "label": "Non-toxic" },
+      { "word": "Ah", "weight": 0.0179, "label": "Non-toxic" },
+      { "word": "Where", "weight": 0.012, "label": "Toxic" },
+      { "word": "good", "weight": 0.0082, "label": "Toxic" },
+      { "word": "political", "weight": 0.0054, "label": "Non-toxic" },
+      { "word": "wonders", "weight": 0.0042, "label": "Non-toxic" },
+      { "word": "suppose", "weight": 0.0004, "label": "Toxic" },
+      { "word": "to", "weight": 0.0, "label": "Toxic" }
     ],
     "checked": false
   },
   {
-    "id": "eecdb1c3df168d0f",
-    "comment": "You guys are lame, go support 50 and buy the cd 9/11!!volumesoxxs",
-    "prediction_proba": 81.74,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "lame", "weight": 0.5756 },
-      { "word": "You", "weight": 0.1849 },
-      { "word": "support", "weight": -0.1096 },
-      { "word": "guys", "weight": 0.0876 },
-      { "word": "are", "weight": 0.0735 },
-      { "word": "buy", "weight": -0.06 },
-      { "word": "50", "weight": 0.0486 },
-      { "word": "9", "weight": 0.0471 },
-      { "word": "go", "weight": 0.0371 },
-      { "word": "volumesoxxs", "weight": -0.0363 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "24eb620f846b4716",
-    "comment": "== veitnam  == \n\n very gay place humpers everywhere",
-    "prediction_proba": 92.62,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "gay", "weight": 0.5896 },
-      { "word": "humpers", "weight": 0.27 },
-      { "word": "place", "weight": -0.0928 },
-      { "word": "veitnam", "weight": -0.0744 },
-      { "word": "very", "weight": 0.0349 },
-      { "word": "everywhere", "weight": 0.002 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "f19d5263b02292b7",
-    "comment": "ja on his MYPSACE if you got guts. dumb cowards",
-    "prediction_proba": 97.87,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "cowards", "weight": 0.2301 },
-      { "word": "dumb", "weight": 0.2292 },
-      { "word": "if", "weight": -0.0821 },
-      { "word": "you", "weight": 0.0674 },
-      { "word": "guts", "weight": 0.0516 },
-      { "word": "his", "weight": 0.0354 },
-      { "word": "ja", "weight": 0.0162 },
-      { "word": "on", "weight": 0.0154 },
-      { "word": "got", "weight": 0.0014 },
-      { "word": "MYPSACE", "weight": 0.001 }
-    ],
-    "checked": false
-  },
-  {
-    "id": "763b33f426822c84",
-    "comment": "Can we get this tripe removed and the page protected? I see this is a serial offender.",
-    "prediction_proba": 92.83,
+    "id": "9a309fc47b83d870",
+    "comment": "While you might think that you are funny by editing Reggie Bush, I can assure you that you are not. Please stop adding nonsense to Wikipedia. It is considered vandalism. If you would like to experiment, use the sandbox. Thank you.",
+    "prediction_proba": 98.2,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "offender", "weight": 0.0718 },
-      { "word": "removed", "weight": -0.0379 },
-      { "word": "tripe", "weight": 0.0365 },
-      { "word": "see", "weight": -0.0299 },
-      { "word": "is", "weight": -0.0243 },
-      { "word": "protected", "weight": -0.0217 },
-      { "word": "the", "weight": -0.0195 },
-      { "word": "a", "weight": 0.014 },
-      { "word": "get", "weight": 0.0135 },
-      { "word": "we", "weight": -0.0089 }
+      { "word": "Thank", "weight": 0.0686, "label": "Non-toxic" },
+      { "word": "adding", "weight": 0.057, "label": "Non-toxic" },
+      { "word": "would", "weight": 0.0554, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.049, "label": "Toxic" },
+      { "word": "nonsense", "weight": 0.0441, "label": "Toxic" },
+      { "word": "to", "weight": 0.0397, "label": "Non-toxic" },
+      { "word": "vandalism", "weight": 0.0275, "label": "Toxic" },
+      { "word": "Bush", "weight": 0.0188, "label": "Toxic" },
+      { "word": "Reggie", "weight": 0.0179, "label": "Toxic" },
+      { "word": "If", "weight": 0.0068, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "61da3a1fccac50fa",
+    "comment": "== Swedish ballads  - visa? == \n\n This article on a Swedish topic has no iw-link to Swedish Wikipedia. The topic of this article seems to fairly well match sv:visa, although that article does not exclude related traditions in neighbouring countries.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "on", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "link", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "has", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "Swedish", "weight": 0.0006, "label": "Toxic" },
+      { "word": "visa", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0004, "label": "Toxic" },
+      { "word": "iw", "weight": 0.0004, "label": "Toxic" },
+      { "word": "a", "weight": 0.0002, "label": "Toxic" },
+      { "word": "The", "weight": 0.0002, "label": "Toxic" },
+      { "word": "match", "weight": 0.0001, "label": "Toxic" }
     ],
     "checked": false
   }

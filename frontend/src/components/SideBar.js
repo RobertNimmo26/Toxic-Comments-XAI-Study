@@ -8,23 +8,21 @@ import ListGroup from "react-bootstrap/ListGroup";
 import ExplanationDataContext from "../context/ExplanationDataContext";
 
 const SideBar = () => {
-  const { explanationData, setExplanationData } = useContext(
-    ExplanationDataContext
-  );
+  const { explanationData } = useContext(ExplanationDataContext);
   return (
     <>
       <ListGroup variant="flush" style={{ height: "100vh", overflowY: "auto" }}>
         {explanationData.user.map((x, i) => (
-          <ListGroup.Item action eventKey={i + 1}>
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">Comment {i + 1}</strong>
+          <ListGroup.Item action eventKey={i + 1} key={i + 1}>
+            <div className="d-flex w-100 align-items-center justify-content-between">
+              <strong className="mb-1">Comment {i + 1}</strong>
               {explanationData.user[i].checked ? (
                 <small>Checked</small>
               ) : (
                 <small>Unchecked</small>
               )}
             </div>
-            <div class="col-10 mb-1 small">
+            <div className="col-10 mb-1 small">
               {x.comment.split(" ").slice(0, 5).join(" ")}
             </div>
           </ListGroup.Item>

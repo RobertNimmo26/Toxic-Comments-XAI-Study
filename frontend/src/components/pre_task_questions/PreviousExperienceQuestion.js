@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // import context
-import PreTaskQuestionnaireContext from "../context/PreTaskQuestionnaireContext";
+import PreTaskQuestionnaireContext from "../../context/PreTaskQuestionnaireContext";
 
 // import bootstrap components
 import Table from "react-bootstrap/Table";

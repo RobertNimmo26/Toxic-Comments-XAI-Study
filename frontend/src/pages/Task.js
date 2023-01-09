@@ -10,7 +10,7 @@ import ExpiryTimestampContext from "../context/ExpiryTimestampContext";
 
 const Task = () => {
   const timeTemp = new Date();
-  timeTemp.setSeconds(timeTemp.getSeconds() + 9000); // 10 minutes timer
+  timeTemp.setSeconds(timeTemp.getSeconds() + 60); // timer
   const [time, setTime] = useState(timeTemp);
 
   return (
