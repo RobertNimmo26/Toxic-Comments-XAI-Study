@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TC-XAI",
+  "name": "Toxic Comment XAI Study",
   "icons": [
     {
       "src": "favicon.ico",
