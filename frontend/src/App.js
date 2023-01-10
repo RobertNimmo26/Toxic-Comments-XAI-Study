@@ -1,5 +1,5 @@
 // import react components
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // import pages
 import Task from "./pages/Task";
@@ -20,18 +20,17 @@ import ExplanationDataContext from "./context/ExplanationDataContext";
 import MainTaskExplanationData from "./config/MainTaskExplanationData";
 import PracticeTaskExplanationData from "./config/PracticeExplanationData";
 
-// import
-import Container from "react-bootstrap/Container";
-
 const App = () => {
-  useEffect(() => {
-    const queryParameters = new URLSearchParams(window.location.search);
-    const studyID = queryParameters.get("STUDY_ID");
-    const prolificID = queryParameters.get("PROLIFIC_PID");
-    const sessionID = queryParameters.get("SESSION_ID");
+  const queryParameters = new URLSearchParams(window.location.search);
+  const studyID = queryParameters.get("STUDY_ID");
+  const prolificID = queryParameters.get("PROLIFIC_PID");
+  const sessionID = queryParameters.get("SESSION_ID");
 
-    console.log(studyID, prolificID, sessionID);
-  }, []);
+  const [prolificInfo] = useState({
+    studyID: studyID,
+    prolificID: prolificID,
+    sessionID: sessionID,
+  });
 
   // Explanation data state
   const [mainTaskExplanationData, setMainTaskExplanationData] = useState({
@@ -47,7 +46,7 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(3);
+  const [page, setPage] = useState(7);
 
   // Pre task questionnaire questions state
   // => set all questions to null (unanswered) initially
@@ -153,16 +152,21 @@ const App = () => {
         </PageContext.Provider>
       );
     case 7:
-      console.log(practiceTaskExplanationData);
-      console.log(mainTaskExplanationData);
-      console.log(preTaskForm);
-      console.log(postTaskForm);
+      const combined_data = {
+        checked: false,
+        prolificInfo: {
+          studyID: prolificInfo.studyID,
+          prolificID: prolificInfo.prolificID,
+          sessionID: prolificInfo.sessionID,
+        },
+        questionnaire: { preTask: preTaskForm, postTask: postTaskForm },
+        taskData: {
+          practice: practiceTaskExplanationData,
+          main: mainTaskExplanationData,
+        },
+      };
 
-      // setTimeout(() => {
-      //   window.location.replace("https://google.com");
-      // }, 5000);
-
-      return <Redirect />;
+      return <Redirect content={combined_data} />;
     default:
       window.scrollTo(0, 0);
       return (
