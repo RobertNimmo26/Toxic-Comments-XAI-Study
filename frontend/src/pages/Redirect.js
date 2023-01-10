@@ -7,6 +7,27 @@ import axios from "axios";
 // import bootstrap components
 import Container from "react-bootstrap/Container";
 
+const exportToJson = (content) => {
+  let filename = "xai_study_results.json";
+  let contentType = "application/json;charset=utf-8;";
+  if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+    var blob = new Blob(
+      [decodeURIComponent(encodeURI(JSON.stringify(content)))],
+      { type: contentType }
+    );
+    navigator.msSaveOrOpenBlob(blob, filename);
+  } else {
+    var a = document.createElement("a");
+    a.download = filename;
+    a.href =
+      "data:" + contentType + "," + encodeURIComponent(JSON.stringify(content));
+    a.target = "_blank";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+};
+
 const Redirect = ({ content }) => {
   useEffect(() => {
     const config = {
@@ -23,13 +44,24 @@ const Redirect = ({ content }) => {
       .then((response) => {
         console.log(response);
         setTimeout(() => {
-          window.location.replace("https://google.com");
+          if (process.env.REACT_APP_MONGODB_DATABASE == "Production") {
+            // During production redirect to Prolific
+            window.location.replace(
+              "https://app.prolific.co/submissions/complete?cc=C156XLP8"
+            );
+          } else {
+            // During testing/development download results to client and redirect to Google
+            exportToJson(content);
+            window.location.replace("https://google.com");
+          }
         }, 5000);
       })
       .catch((error) => {
         console.log(error);
+        exportToJson(content);
+
         alert(
-          "There has been an issue saving your results. Please contact robert.nimmo@glasgow.ac.uk for advice."
+          "There has been an issue saving your results. Please contact robert.nimmo@glasgow.ac.uk for advice and keep downloaded file (xai_study_results.json) saved."
         );
       });
   }, []);

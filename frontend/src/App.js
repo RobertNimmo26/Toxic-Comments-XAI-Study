@@ -15,10 +15,17 @@ import PageContext from "./context/PageContext";
 import PreTaskQuestionnaireContext from "./context/PreTaskQuestionnaireContext";
 import PostTaskQuestionnaireContext from "./context/PostTaskQuestionnaireContext";
 import ExplanationDataContext from "./context/ExplanationDataContext";
+import UserLogContext from "./context/UserLogContext";
 
 // import data
 import MainTaskExplanationData from "./config/MainTaskExplanationData";
 import PracticeTaskExplanationData from "./config/PracticeExplanationData";
+
+// import bootstrap components
+import Container from "react-bootstrap/Container";
+
+// import react-device-detect
+import { isDesktop, isIE } from "react-device-detect";
 
 const App = () => {
   const queryParameters = new URLSearchParams(window.location.search);
@@ -31,6 +38,9 @@ const App = () => {
     prolificID: prolificID,
     sessionID: sessionID,
   });
+
+  // User log state
+  const [userLog, setUserLog] = useState([]);
 
   // Explanation data state
   const [mainTaskExplanationData, setMainTaskExplanationData] = useState({
@@ -84,6 +94,8 @@ const App = () => {
   });
 
   // Setup contexts values
+  const userLogValue = { userLog, setUserLog };
+
   const mainTaskExplanationDataValue = {
     explanationData: mainTaskExplanationData,
     setExplanationData: setMainTaskExplanationData,
@@ -98,6 +110,29 @@ const App = () => {
 
   const preTaskFormValue = { preTaskForm, setPreTaskForm };
   const postTaskFormValue = { postTaskForm, setPostTaskForm };
+
+  if (!isDesktop) {
+    return (
+      <Container>
+        <h3>
+          You are using an unsupported device. Please complete study on
+          laptop/desktop computer or return the submission on Prolific if you
+          are unable to complete the study.
+        </h3>
+      </Container>
+    );
+  }
+
+  if (isIE) {
+    return (
+      <Container>
+        <h3>
+          You are using an unsupported browser. Please complete study on an up
+          to date modern browser such as Chrome, Edge, Safari or Firefox.
+        </h3>
+      </Container>
+    );
+  }
 
   switch (page) {
     case 1:
@@ -130,20 +165,27 @@ const App = () => {
           <ExplanationDataContext.Provider
             value={practiceTaskExplanationDataValue}
           >
-            <PracticeTask />
+            <UserLogContext.Provider value={userLogValue}>
+              <PracticeTask />
+            </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
         </PageContext.Provider>
       );
     case 5:
+      console.log(userLog);
       window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <ExplanationDataContext.Provider value={mainTaskExplanationDataValue}>
-            <Task />
+            <UserLogContext.Provider value={userLogValue}>
+              <Task />
+            </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
         </PageContext.Provider>
       );
     case 6:
+      console.log(userLog);
+
       return (
         <PageContext.Provider value={pageValue}>
           <PostTaskQuestionnaireContext.Provider value={postTaskFormValue}>
@@ -160,10 +202,15 @@ const App = () => {
           sessionID: prolificInfo.sessionID,
         },
         questionnaire: { preTask: preTaskForm, postTask: postTaskForm },
-        taskData: {
-          practice: practiceTaskExplanationData,
-          main: mainTaskExplanationData,
+        taskDataUser: {
+          practice: practiceTaskExplanationData.user,
+          main: mainTaskExplanationData.user,
         },
+        taskDataReset: {
+          practice: practiceTaskExplanationData.reset,
+          main: mainTaskExplanationData.reset,
+        },
+        userLog: userLog,
       };
 
       return <Redirect content={combined_data} />;

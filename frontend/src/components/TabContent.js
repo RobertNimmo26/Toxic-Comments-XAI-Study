@@ -23,8 +23,11 @@ import Highlighter from "react-highlight-words";
 
 // import context
 import ExplanationDataContext from "../context/ExplanationDataContext";
+import UserLogContext from "../context/UserLogContext";
 
 const TabContent = ({ explanationDataIndex }) => {
+  const { userLog, setUserLog } = useContext(UserLogContext);
+
   const { explanationData, setExplanationData } = useContext(
     ExplanationDataContext
   );
@@ -69,6 +72,10 @@ const TabContent = ({ explanationDataIndex }) => {
       100;
 
     setExplanationData((prevExplanationData) => {
+      const logResult = `Changed "${word}" slider to ${finalValue} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
       const foundIndex = prevExplanationData.user[
         explanationDataIndex
       ].important_words.findIndex((item) => item.word === word);
@@ -83,6 +90,10 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onImportantWordLabelChange = ({ value, word }) => {
     setExplanationData((prevExplanationData) => {
+      const logResult = `Changed "${word}" label to ${value.target.value} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
       const foundIndex = prevExplanationData.user[
         explanationDataIndex
       ].important_words.findIndex((item) => item.word === word);
@@ -102,6 +113,10 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onLabelChange = ({ value }) => {
     setExplanationData((prevExplanationData) => {
+      const logResult = `Changed comment label to ${value.target.value} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
       prevExplanationData.user[explanationDataIndex].prediction_label =
         structuredClone(value.target.value);
 
@@ -111,6 +126,10 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onCheckButtonClick = () => {
     setExplanationData((prevExplanationData) => {
+      const logResult = `Checked comment ${prevExplanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
       prevExplanationData.user[explanationDataIndex].checked = true;
 
       return { ...prevExplanationData };
@@ -119,6 +138,10 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onResetButtonClick = () => {
     setExplanationData((prevExplanationData) => {
+      const logResult = `Reset comment ${prevExplanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
       prevExplanationData.user[explanationDataIndex] = structuredClone(
         prevExplanationData.reset[explanationDataIndex]
       );
@@ -148,7 +171,7 @@ const TabContent = ({ explanationDataIndex }) => {
     const regexHighlight = new RegExp(
       searchWords
         .map((value) => {
-          return `((\\s|^|\\(|\\{|\\[|\\"|\\<)${value}(?=\\s|$|\\.|\\,|\\"|\\>|\\)|\\}|\\]|\\;|\\!))`;
+          return `((\\s|^|\\(|\\{|\\[|\\"|\\<|\\-|\\:|\\'|\\/)${value}(?=\\s|$|\\.|\\,|\\"|\\>|\\)|\\}|\\]|\\;|\\!|\\?|\\-|\\:|\\'|\\/))`;
         })
         .join("|"),
       "g"
@@ -160,8 +183,10 @@ const TabContent = ({ explanationDataIndex }) => {
       let startIndex;
       if (
         // because safari browser doesn't support positive lookbehind expression, move starting index by one
-        regexMatches[0].match(new RegExp(`\\s|\\(|\\{|\\[|\\"|\\<`), "") ===
-        null
+        regexMatches[0].match(
+          new RegExp(`\\s|\\(|\\{|\\[|\\"|\\<|\\-|\\:|\\'`),
+          ""
+        ) === null
       ) {
         startIndex = regexMatches.index;
       } else {
