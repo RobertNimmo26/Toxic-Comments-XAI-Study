@@ -2,3 +2,13 @@ name = "tc-xai-study-worker"
 main = "index.js"
 compatibility_date = "2022-12-30"
 workers_dev = true
+
+[vars]
+MONGODB_DATABASE = "Production"
+MONGODB_DATASOURCE = "XAIStudy"
+MONGODB_COLLECTION = "Results"
+
+# The necessary secrets are:
+# - MONGODB_APIKEY
+# - MONGODB_APIURL
+# `wrangler secret put <NAME>` for each of these
