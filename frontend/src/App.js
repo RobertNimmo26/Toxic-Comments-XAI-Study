@@ -46,7 +46,7 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(7);
+  const [page, setPage] = useState(1);
 
   // Pre task questionnaire questions state
   // => set all questions to null (unanswered) initially

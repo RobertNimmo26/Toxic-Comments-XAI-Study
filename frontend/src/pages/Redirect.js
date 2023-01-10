@@ -8,7 +8,6 @@ import axios from "axios";
 import Container from "react-bootstrap/Container";
 
 const Redirect = ({ content }) => {
-  console.log(content);
   useEffect(() => {
     const config = {
       headers: {
@@ -19,8 +18,6 @@ const Redirect = ({ content }) => {
 
     const url = process.env.REACT_APP_WORKERS_ENDPOINT;
 
-    console.log(process.env);
-    console.log(url);
     axios
       .post(url, content, config)
       .then((response) => {
