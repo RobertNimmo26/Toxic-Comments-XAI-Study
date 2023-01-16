@@ -1,5 +1,5 @@
 // import react components
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // import pages
 import Task from "./pages/Task";
@@ -56,7 +56,12 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(3);
+
+  // Everytime page changes, reset window view
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   // Pre task questionnaire questions state
   // => set all questions to null (unanswered) initially
@@ -111,6 +116,7 @@ const App = () => {
   const preTaskFormValue = { preTaskForm, setPreTaskForm };
   const postTaskFormValue = { postTaskForm, setPostTaskForm };
 
+  // Check that user is running prototype on a desktop/laptop
   if (!isDesktop) {
     return (
       <Container>
@@ -123,12 +129,13 @@ const App = () => {
     );
   }
 
+  // Check that user is not using internet explorer
   if (isIE) {
     return (
       <Container>
         <h3>
-          You are using an unsupported browser. Please complete study on an up
-          to date modern browser such as Chrome, Edge, Safari or Firefox.
+          You are using an unsupported browser. Please complete study on an
+          up-to-date modern browser such as Chrome, Edge, Safari or Firefox.
         </h3>
       </Container>
     );
@@ -136,7 +143,6 @@ const App = () => {
 
   switch (page) {
     case 1:
-      window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <StudyIntroduction />
@@ -152,14 +158,12 @@ const App = () => {
         </PageContext.Provider>
       );
     case 3:
-      window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <TaskIntroduction />
         </PageContext.Provider>
       );
     case 4:
-      window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <ExplanationDataContext.Provider
@@ -172,8 +176,6 @@ const App = () => {
         </PageContext.Provider>
       );
     case 5:
-      console.log(userLog);
-      window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <ExplanationDataContext.Provider value={mainTaskExplanationDataValue}>
@@ -184,8 +186,6 @@ const App = () => {
         </PageContext.Provider>
       );
     case 6:
-      console.log(userLog);
-
       return (
         <PageContext.Provider value={pageValue}>
           <PostTaskQuestionnaireContext.Provider value={postTaskFormValue}>
@@ -215,7 +215,6 @@ const App = () => {
 
       return <Redirect content={combined_data} />;
     default:
-      window.scrollTo(0, 0);
       return (
         <PageContext.Provider value={pageValue}>
           <StudyIntroduction />
