@@ -47,7 +47,7 @@ const Redirect = ({ content }) => {
           if (process.env.REACT_APP_ENVIRONMENT == "Production") {
             // During production redirect to Prolific
             window.location.replace(
-              "https://app.prolific.co/submissions/complete?cc=C156XLP8"
+              process.env.REACT_APP_PROLIFIC_REDIRECT_COMPLETE
             );
           } else {
             // During testing/development download results to client and redirect to Google
