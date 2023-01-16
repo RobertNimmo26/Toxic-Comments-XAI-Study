@@ -4,6 +4,17 @@ import PostTaskQuestionnaireContext from "../../context/PostTaskQuestionnaireCon
 // import components
 import RadioButtonQuestionare from "../RadioButtonQuestionare";
 
+// import bootstrap components
+import Image from "react-bootstrap/Image";
+
+// import images
+import CommentImage from "../../assets/images/post_task_questionnaire_comment.png";
+import FigureImage from "../../assets/images/post_task_questionnaire_figure.png";
+import Slider0 from "../../assets/images/slider_0.png";
+import Slider25 from "../../assets/images/slider_25.png";
+import Slider75 from "../../assets/images/slider_75.png";
+import Slider100 from "../../assets/images/slider_100.png";
+
 const ActualUnderstanding = () => {
   const actualunderstanding1 = {
     question:
@@ -19,32 +30,32 @@ const ActualUnderstanding = () => {
     question: "11. Which word is the least important? ",
     id: "actualunderstanding2",
     responses: [
-      { value: "a", text: "a.	word1" },
-      { value: "b", text: "b.	word2" },
-      { value: "c", text: "c.	word3" },
-      { value: "d", text: "d.	word4" },
-      { value: "e", text: "e.	word5" },
-      { value: "f", text: "f.	word6" },
-      { value: "g", text: "g.	word7" },
-      { value: "h", text: "h	word8" },
-      { value: "i", text: "i.	word9" },
-      { value: "j", text: "j.	word10" },
+      { value: "a", text: "a.	Moron" },
+      { value: "b", text: "b.	Shut" },
+      { value: "c", text: "c.	better" },
+      { value: "d", text: "d.	up" },
+      { value: "e", text: "e.	AND" },
+      { value: "f", text: "f.	even" },
+      { value: "g", text: "g.	voted" },
+      { value: "h", text: "h	rated" },
+      { value: "i", text: "i.	Halo" },
+      { value: "j", text: "j.	then" },
     ],
   };
 
   const actualunderstanding3 = {
-    question: `12. Which position will the word importance slider for the word "word2" be initially at with no feedback changes?`,
+    question: `12. Which position will the word importance slider for the word "Moron" be initially at with no feedback changes?`,
     id: "actualunderstanding3",
     responses: [
-      { value: "a", text: "a.	(slider 0%)" },
-      { value: "b", text: "b.	(slider 25%)" },
-      { value: "c", text: "c.	(slider 50%)" },
-      { value: "d", text: "d.	(slider 100%)" },
+      { value: "a", text: "a.", image: Slider0 },
+      { value: "b", text: "b.", image: Slider25 },
+      { value: "c", text: "c.", image: Slider75 },
+      { value: "d", text: "d.", image: Slider100 },
     ],
   };
 
   const actualunderstanding4 = {
-    question: `12. Which label will the word "word2" be initially with no feedback changes?`,
+    question: `12. Which label will the word "voted" be initially with no feedback changes?`,
     id: "actualunderstanding4",
     responses: [
       { value: "a", text: "a.	Toxic" },
@@ -53,18 +64,44 @@ const ActualUnderstanding = () => {
   };
 
   const actualunderstanding5 = {
-    question: `13. You believe "word3" which has been marked as too important and you feel it shouldn't be part of the AI systems, what position will you move the slider too?`,
+    question: `13. You believe "AND" has been marked as too important and you feel it shouldn't be part of the AI systems, what position will you move the slider too?`,
     id: "actualunderstanding5",
     responses: [
-      { value: "a", text: "a.	(slider 0%)" },
-      { value: "b", text: "b.	(slider 25%)" },
-      { value: "c", text: "c.	(slider 50%)" },
-      { value: "d", text: "d.	(slider 100%)" },
+      { value: "a", text: "a.", image: Slider0 },
+      { value: "b", text: "b.", image: Slider25 },
+      { value: "c", text: "c.", image: Slider75 },
+      { value: "d", text: "d.", image: Slider100 },
     ],
   };
 
   return (
     <>
+      <h5>
+        For question (10-13), use the details bellow to answer the questions.
+      </h5>
+      <Image
+        src={CommentImage}
+        fluid
+        style={{
+          marginTop: "30px",
+          marginBottom: "30px",
+          width: "45%",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
+      <Image
+        src={FigureImage}
+        fluid
+        style={{
+          marginBottom: "30px",
+          width: "45%",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
       <RadioButtonQuestionare
         questionData={actualunderstanding1}
         questionContext={PostTaskQuestionnaireContext}
@@ -73,7 +110,6 @@ const ActualUnderstanding = () => {
         questionData={actualunderstanding2}
         questionContext={PostTaskQuestionnaireContext}
       />
-      <strong>add images of the slider here</strong>
       <RadioButtonQuestionare
         questionData={actualunderstanding3}
         questionContext={PostTaskQuestionnaireContext}
