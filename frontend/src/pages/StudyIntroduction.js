@@ -22,6 +22,7 @@ const StudyIntroduction = () => {
     confirm1: false,
     confirm2: false,
     confirm3: false,
+    confirm4: false,
   });
 
   const handleChange = (event) => {
@@ -109,9 +110,8 @@ const StudyIntroduction = () => {
           </p>
           <h5>Do I have to take part?</h5>
           <p>
-            Participation in the project is voluntary. You can stop at any stage
-            of the study. However, once you have started the task, you will no
-            longer be able to withdraw your data of what you have completed.
+            Participation in the project is voluntary. You can stop and withdraw
+            your data during any stage of completing the study.
           </p>
           <h5>
             Are there any device requirements to participate in this study?
@@ -130,7 +130,9 @@ const StudyIntroduction = () => {
           <h5>What will happen to the results?</h5>
           <p>
             The results of the study will be included in reports and
-            publications.
+            publications. We are intending to make the data public after the end
+            of our study to help other researchers develop better explanations
+            in AI systems.
           </p>
           <h5>What are the possible disadvantages and risks of taking part?</h5>
           <p>
@@ -219,9 +221,18 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm3">
               <Form.Check
                 type="checkbox"
-                label="I agree to take part in this research study."
+                label="I understand that the data may be made available to other researchers. I waive my copyright to any data collected as part of this project."
                 onChange={handleChange}
                 name="confirm3"
+                style={{ marginTop: "5px" }}
+              />
+            </Form.Group>
+            <Form.Group controlId="confirm4">
+              <Form.Check
+                type="checkbox"
+                label="I agree to take part in this research study."
+                onChange={handleChange}
+                name="confirm4"
                 style={{ marginTop: "5px" }}
               />
             </Form.Group>

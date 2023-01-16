@@ -36,7 +36,7 @@ const ModalPracticeTaskIntroduction = () => {
           slider to 50% for the word "political".
           <br />
           Once you have completed this task press the button "Checked comment".
-          If you are required to reset you changes, press "Reset comment".
+          If you are required to reset your changes, press "Reset comment".
           <br />
           <br />
           If you require to reopen this instructions brief press "I" on your

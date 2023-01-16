@@ -54,14 +54,14 @@ const Redirect = ({ content }) => {
             exportToJson(content);
             window.location.replace("https://google.com");
           }
-        }, 5000);
+        }, 4000);
       })
       .catch((error) => {
         console.log(error);
         exportToJson(content);
 
         alert(
-          "There has been an issue saving your results. Please contact robert.nimmo@glasgow.ac.uk for advice and keep downloaded file (xai_study_results.json) saved."
+          "There has been an issue saving your results. Please contact Robert.Nimmo@glasgow.ac.uk for advice and keep downloaded file (xai_study_results.json) saved."
         );
       });
   }, []);
@@ -89,7 +89,11 @@ const Redirect = ({ content }) => {
         <p style={{ fontSize: "20px" }}>
           Thank you for taking the time to complete the study. You will be
           automatically redirected back to Prolific. If you have had any issues
-          please contact robert.nimmo@glasgow.ac.uk
+          please contact{" "}
+          <a href="mailto:Robert.Nimmo@glasgow.ac.uk">
+            Robert.Nimmo@glasgow.ac.uk
+          </a>
+          .
         </p>
       </Container>
     </>
