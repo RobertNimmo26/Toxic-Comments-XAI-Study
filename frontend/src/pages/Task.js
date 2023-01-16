@@ -5,22 +5,19 @@ import { useState } from "react";
 import TabGroup from "../components/TabGroup";
 import TitleNav from "../components/TitleNav";
 
-// import comments
-import comments from "../config/tempData";
-
 // import context
 import ExpiryTimestampContext from "../context/ExpiryTimestampContext";
 
 const Task = () => {
   const timeTemp = new Date();
-  timeTemp.setSeconds(timeTemp.getSeconds() + 15); // 10 minutes timer
-  const [time, setTime] = useState(timeTemp);
+  timeTemp.setSeconds(timeTemp.getSeconds() + 1200); // timer
+  const [time] = useState(timeTemp);
 
   return (
     <>
       <TitleNav pageTitle={"Task"} />
       <ExpiryTimestampContext.Provider value={time}>
-        <TabGroup comments={comments} />
+        <TabGroup />
       </ExpiryTimestampContext.Provider>
     </>
   );

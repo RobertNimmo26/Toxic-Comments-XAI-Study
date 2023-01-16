@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // import components
-import ModalEndTask from "./ModalEndTask";
+import ModelTaskTimerEndTask from "./ModalTaskTimerEndTask";
 
 // import bootstrap components
 import Button from "react-bootstrap/Button";
@@ -27,7 +27,7 @@ const TaskTimer = () => {
         <Button variant="outline-primary" disabled={true}>
           Time left: {minutes} minutes {seconds} seconds
         </Button>
-        {!isRunning && <ModalEndTask />}
+        {!isRunning && <ModelTaskTimerEndTask />}
       </>
     );
   } else {

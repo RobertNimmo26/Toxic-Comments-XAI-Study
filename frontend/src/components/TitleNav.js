@@ -1,8 +1,6 @@
 // import bootstrap components
 import Container from "react-bootstrap/Container";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 
 const TitleNav = ({ pageTitle }) => {

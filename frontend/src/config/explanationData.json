@@ -1,522 +1,2566 @@
 [
   {
-    "id": "0b75a576bac7e620",
-    "comment": "\"\n\n I hate you. \n\nI hate you.\nI hate you!  \u2014 Preceding unsigned comment added by 219.125.25.195   \"",
-    "prediction_proba": 95.8,
+    "id": "0eff0e3ba57a7417",
+    "comment": "==Delete this article== \n Not notable, nobody cares about this sexually confused moron.  By keeping this article up, you are only feeding its attention whore disease.",
+    "prediction_proba": 89.2,
     "prediction_label": "Toxic",
     "important_words": [
-      { "word": "hate", "weight": 0.5437 },
-      { "word": "you", "weight": 0.4144 },
-      { "word": "added", "weight": -0.0406 },
-      { "word": "I", "weight": -0.0352 },
-      { "word": "125", "weight": -0.0333 },
-      { "word": "219", "weight": -0.0283 },
-      { "word": "comment", "weight": -0.0222 },
-      { "word": "25", "weight": -0.0177 },
-      { "word": "195", "weight": 0.0158 },
-      { "word": "Preceding", "weight": -0.0093 }
-    ]
+      { "word": "moron", "weight": 0.2827, "label": "Toxic" },
+      { "word": "whore", "weight": 0.2304, "label": "Toxic" },
+      { "word": "sexually", "weight": 0.0919, "label": "Toxic" },
+      { "word": "nobody", "weight": 0.0802, "label": "Toxic" },
+      { "word": "only", "weight": 0.0652, "label": "Non-toxic" },
+      { "word": "Not", "weight": 0.0643, "label": "Toxic" },
+      { "word": "attention", "weight": 0.0639, "label": "Non-toxic" },
+      { "word": "cares", "weight": 0.0537, "label": "Toxic" },
+      { "word": "its", "weight": 0.0507, "label": "Non-toxic" },
+      { "word": "feeding", "weight": 0.0436, "label": "Non-toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "4b0645c3d0509d8b",
-    "comment": "\"\n\nLithium\nShouldn't lithium be mentioned? It is used to treat bi-polar disease. Kidney function is strictly monitored because of known \"\"side-affects\"\" which include renal failure. See http://emedicine.medscape.com/article/242772-overview and http://jasn.asnjournals.org/content/11/8/1439.full.   \"",
+    "id": "b3ff0be960e8cd04",
+    "comment": ":, that's fine that's pretty much my feeling as well. I think such cases would have to be conducted on a case by case basis - because there must be some special reason (as Eric Lanlard) why the title is at an English name in the first place. Thanks.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "name", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "special", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "my", "weight": 0.0001, "label": "Toxic" },
+      { "word": "well", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "must", "weight": 0.0001, "label": "Toxic" },
+      { "word": "I", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "there", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "English", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b9f9372c72ec1707",
+    "comment": "== RAMBO == \n\n Hey, I saw you edited the R.A.M.B.O. page quite a bit, they're up for deletion so I thought you might be interested in making sure that doesn't happen! Thanks!",
+    "prediction_proba": 99.37,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Thanks", "weight": 0.025, "label": "Non-toxic" },
+      { "word": "page", "weight": 0.0247, "label": "Non-toxic" },
+      { "word": "edited", "weight": 0.0235, "label": "Non-toxic" },
+      { "word": "doesn", "weight": 0.0225, "label": "Toxic" },
+      { "word": "that", "weight": 0.021, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0188, "label": "Toxic" },
+      { "word": "interested", "weight": 0.0183, "label": "Non-toxic" },
+      { "word": "up", "weight": 0.018, "label": "Toxic" },
+      { "word": "R", "weight": 0.0178, "label": "Toxic" },
+      { "word": "so", "weight": 0.0163, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d279323e46b08469",
+    "comment": "\"::*You assert multiple unknowns as if facts. - This is graffiti by an unknown person with unknown affiliations.     \n \"",
+    "prediction_proba": 96.72,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "graffiti", "weight": 0.0319, "label": "Toxic" },
+      { "word": "You", "weight": 0.0277, "label": "Toxic" },
+      { "word": "assert", "weight": 0.017, "label": "Non-toxic" },
+      { "word": "affiliations", "weight": 0.0155, "label": "Non-toxic" },
+      { "word": "as", "weight": 0.014, "label": "Toxic" },
+      { "word": "facts", "weight": 0.0112, "label": "Toxic" },
+      { "word": "by", "weight": 0.0094, "label": "Non-toxic" },
+      { "word": "unknown", "weight": 0.0057, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0053, "label": "Non-toxic" },
+      { "word": "if", "weight": 0.0039, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b76c051343ecca07",
+    "comment": "Most of AES students go clubbing to shitty clubs every weekends. They like to take picture themselves when they are wasted. (they drink poisoned alcohol like blueberry? bluemoon?) Moreover, they think it's really 'cool' to be wasted. That's why they post the dumb pictures on their blog.",
+    "prediction_proba": 76.83,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "shitty", "weight": 0.3867, "label": "Toxic" },
+      { "word": "dumb", "weight": 0.2129, "label": "Toxic" },
+      { "word": "pictures", "weight": 0.068, "label": "Non-toxic" },
+      { "word": "themselves", "weight": 0.0646, "label": "Non-toxic" },
+      { "word": "take", "weight": 0.0617, "label": "Toxic" },
+      { "word": "why", "weight": 0.0562, "label": "Non-toxic" },
+      { "word": "students", "weight": 0.048, "label": "Non-toxic" },
+      { "word": "bluemoon", "weight": 0.0368, "label": "Toxic" },
+      { "word": "clubbing", "weight": 0.0223, "label": "Non-toxic" },
+      { "word": "on", "weight": 0.0172, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d3933d0de5deb4f2",
+    "comment": ":How dumb do you think the other users are? There's an entire discussion just above this posting making it clear that this is a complete lie.",
+    "prediction_proba": 81.91,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "dumb", "weight": 0.7382, "label": "Toxic" },
+      { "word": "you", "weight": 0.069, "label": "Toxic" },
+      { "word": "that", "weight": 0.0522, "label": "Toxic" },
+      { "word": "think", "weight": 0.0395, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0235, "label": "Toxic" },
+      { "word": "making", "weight": 0.0222, "label": "Toxic" },
+      { "word": "lie", "weight": 0.02, "label": "Toxic" },
+      { "word": "discussion", "weight": 0.0118, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0112, "label": "Non-toxic" },
+      { "word": "users", "weight": 0.0102, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "24eb620f846b4716",
+    "comment": "== veitnam  == \n\n very gay place humpers everywhere",
+    "prediction_proba": 92.62,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "gay", "weight": 0.5679, "label": "Toxic" },
+      { "word": "humpers", "weight": 0.2409, "label": "Toxic" },
+      { "word": "veitnam", "weight": 0.1036, "label": "Non-toxic" },
+      { "word": "place", "weight": 0.0931, "label": "Non-toxic" },
+      { "word": "everywhere", "weight": 0.0324, "label": "Toxic" },
+      { "word": "very", "weight": 0.0318, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "203ad9577f1c87a9",
+    "comment": "s death as Israeli assassination",
+    "prediction_proba": 81.93,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "death", "weight": 0.3916, "label": "Toxic" },
+      { "word": "Israeli", "weight": 0.1983, "label": "Toxic" },
+      { "word": "s", "weight": 0.1373, "label": "Toxic" },
+      { "word": "as", "weight": 0.0451, "label": "Toxic" },
+      { "word": "assassination", "weight": 0.0448, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "90e0576e669bb996",
+    "comment": ":::: And TFZ,k's version doesn't sound any better as it makes it sound like the island of Ireland and Northern Ireland are two different places.",
+    "prediction_proba": 99.58,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "version", "weight": 0.0096, "label": "Non-toxic" },
+      { "word": "And", "weight": 0.0091, "label": "Non-toxic" },
+      { "word": "k", "weight": 0.0088, "label": "Toxic" },
+      { "word": "TFZ", "weight": 0.0087, "label": "Toxic" },
+      { "word": "Northern", "weight": 0.005, "label": "Non-toxic" },
+      { "word": "Ireland", "weight": 0.005, "label": "Non-toxic" },
+      { "word": "sound", "weight": 0.0048, "label": "Non-toxic" },
+      { "word": "any", "weight": 0.0048, "label": "Toxic" },
+      { "word": "t", "weight": 0.0045, "label": "Toxic" },
+      { "word": "better", "weight": 0.0041, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "ab4d56550aa594b3",
+    "comment": ", 5 September 2009 (UTC) \n :::I don't believe it has been at all demonstrated that it is widely used to refer to anything but the Achaemenid dynasty.  It has been demonstrated that it has been occasionally used to refer to other dynasties.   03:15",
     "prediction_proba": 99.94,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "mentioned", "weight": -0.0002 },
-      { "word": "full", "weight": -0.0001 },
-      { "word": "monitored", "weight": -0.0001 },
-      { "word": "renal", "weight": -0.0001 },
-      { "word": "lithium", "weight": -0.0001 },
-      { "word": "side", "weight": 0.0 },
-      { "word": "treat", "weight": 0.0 },
-      { "word": "Kidney", "weight": 0.0 },
-      { "word": "which", "weight": -0.0 },
-      { "word": "org", "weight": -0.0 }
-    ]
+      { "word": "2009", "weight": 0.0056, "label": "Toxic" },
+      { "word": "refer", "weight": 0.0051, "label": "Non-toxic" },
+      { "word": "occasionally", "weight": 0.0047, "label": "Non-toxic" },
+      { "word": "03", "weight": 0.004, "label": "Non-toxic" },
+      { "word": "Achaemenid", "weight": 0.004, "label": "Toxic" },
+      { "word": "dynasty", "weight": 0.0038, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0034, "label": "Toxic" },
+      { "word": "at", "weight": 0.0025, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0021, "label": "Toxic" },
+      { "word": "but", "weight": 0.0016, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "c9dd233bb3522928",
-    "comment": "\" \n :::::\"\"The sources are wrong.\"\" HAH, read WP:OR or get out of Wikipedia.    | contribs) \"",
-    "prediction_proba": 99.78,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "get", "weight": 0.0025 },
-      { "word": "out", "weight": 0.0023 },
-      { "word": "sources", "weight": -0.0018 },
-      { "word": "contribs", "weight": -0.0016 },
-      { "word": "or", "weight": -0.0012 },
-      { "word": "WP", "weight": 0.0007 },
-      { "word": "are", "weight": -0.0007 },
-      { "word": "read", "weight": -0.0006 },
-      { "word": "OR", "weight": -0.0005 },
-      { "word": "Wikipedia", "weight": 0.0003 }
-    ]
-  },
-  {
-    "id": "a807d5e215024c50",
-    "comment": "County seal images \n\nI've noticed that you've managed to find county seal images for the counties of Maryland. I'm curious if your source might also have  these images for other states? Thanks!  00:54, July 21, 2005 (UTC)",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "Thanks", "weight": -0.0001 },
-      { "word": "curious", "weight": -0.0001 },
-      { "word": "seal", "weight": -0.0001 },
-      { "word": "noticed", "weight": -0.0001 },
-      { "word": "also", "weight": -0.0001 },
-      { "word": "source", "weight": -0.0001 },
-      { "word": "your", "weight": 0.0 },
-      { "word": "you", "weight": 0.0 },
-      { "word": "that", "weight": -0.0 },
-      { "word": "have", "weight": 0.0 }
-    ]
-  },
-  {
-    "id": "3325499626cc7db8",
-    "comment": "Subject needs better definition ... include Melosira arctica (algae)? \n\nMelting Arctic may make algae flourish; More sunlight penetrates thinning sea ice, enabling algal growth March 23, 2013; Vol.183 #6 Science News\n108.73.113.98",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "needs", "weight": -0.0 },
-      { "word": "include", "weight": -0.0 },
-      { "word": "growth", "weight": -0.0 },
-      { "word": "may", "weight": -0.0 },
-      { "word": "Vol", "weight": -0.0 },
-      { "word": "thinning", "weight": 0.0 },
-      { "word": "sea", "weight": -0.0 },
-      { "word": "sunlight", "weight": -0.0 },
-      { "word": "News", "weight": -0.0 },
-      { "word": "algal", "weight": 0.0 }
-    ]
-  },
-  {
-    "id": "cec190dccbba14c4",
-    "comment": "La la la, busy little hasbara cocksuckers, busy deleting fully verified facts. You're just a bunch of racists, killers, and thieves.",
-    "prediction_proba": 98.65,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "cocksuckers", "weight": 0.1942 },
-      { "word": "racists", "weight": 0.1785 },
-      { "word": "You", "weight": 0.1403 },
-      { "word": "re", "weight": 0.1144 },
-      { "word": "facts", "weight": -0.0708 },
-      { "word": "thieves", "weight": 0.0695 },
-      { "word": "bunch", "weight": 0.0637 },
-      { "word": "little", "weight": -0.0508 },
-      { "word": "la", "weight": -0.0414 },
-      { "word": "a", "weight": -0.0337 }
-    ]
-  },
-  {
-    "id": "05fea958cf35e6ed",
-    "comment": "==A light bit of vandalism== \n I didn't want to put npov text in the article, so this shall go here: \n :I hate this whore, and everything that she stands for. \n Now back to your regularly scheduled wikipediaing.  |  |",
-    "prediction_proba": 81.38,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "whore", "weight": 0.6545 },
-      { "word": "hate", "weight": 0.1073 },
-      { "word": "your", "weight": 0.0613 },
-      { "word": "article", "weight": -0.0595 },
-      { "word": "that", "weight": 0.0526 },
-      { "word": "vandalism", "weight": -0.0473 },
-      { "word": "light", "weight": -0.0451 },
-      { "word": "this", "weight": 0.0441 },
-      { "word": "the", "weight": -0.0309 },
-      { "word": "go", "weight": 0.0264 }
-    ]
-  },
-  {
-    "id": "45de571d9f74178f",
-    "comment": "All those cites are also quite old now, and I've learned and moved on. I believe everyone can always learn and improve themselves further, and I would do my very best not to disappoint the community. If you have any questions, my talk page doesn't close ) All the best, \u00a0t\u00a0c",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "cites", "weight": -0.0026 },
-      { "word": "you", "weight": 0.0025 },
-      { "word": "best", "weight": -0.0023 },
-      { "word": "now", "weight": -0.002 },
-      { "word": "page", "weight": -0.0015 },
-      { "word": "have", "weight": -0.0012 },
-      { "word": "my", "weight": 0.0012 },
-      { "word": "the", "weight": -0.0008 },
-      { "word": "everyone", "weight": -0.0007 },
-      { "word": "believe", "weight": 0.0007 }
-    ]
-  },
-  {
-    "id": "95393feca1831bc6",
-    "comment": "\"\nDo you really want me to dig through Kubo's statements on movies in order to prove this. Oh, wait, I forgot Tite Kubo does not exist, or is it that he is not a reliable source. Whatever I will just drop this statement off concerning Hell Chapter and the other movies, it was made by that nonexistant/non reliable source man, \"\"The other movies had the feel of the Bleach series. This new movie has the feel of bleach\"\". Not is Bleach, has the feel of. I will get the source of that if you really want but somehow I doubt you will say anything not published by viz is reliable (Pray) \"",
-    "prediction_proba": 99.92999999999999,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "feel", "weight": -0.0074 },
-      { "word": "Oh", "weight": -0.0047 },
-      { "word": "man", "weight": 0.0043 },
-      { "word": "of", "weight": 0.0037 },
-      { "word": "Chapter", "weight": -0.0032 },
-      { "word": "or", "weight": -0.0025 },
-      { "word": "this", "weight": -0.0025 },
-      { "word": "order", "weight": 0.0008 },
-      { "word": "forgot", "weight": 0.0005 },
-      { "word": "had", "weight": 0.0003 }
-    ]
-  },
-  {
-    "id": "62fee43d13b8ea83",
-    "comment": "\"\n\nOh I get it, \"\"finished with\"\" unless your incredibly apparent bias looking back at your contribs is overturned. Wikipedia is at the mercy of cabals led by admins like you and is frankly so much rubbish. What a bloody shower you all are.  \"",
-    "prediction_proba": 93.45,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "bloody", "weight": 0.2858 },
-      { "word": "rubbish", "weight": 0.2194 },
-      { "word": "you", "weight": 0.1808 },
-      { "word": "mercy", "weight": -0.0933 },
-      { "word": "and", "weight": -0.0835 },
-      { "word": "it", "weight": 0.0766 },
-      { "word": "your", "weight": 0.0637 },
-      { "word": "so", "weight": 0.0623 },
-      { "word": "the", "weight": -0.0604 },
-      { "word": "admins", "weight": 0.0493 }
-    ]
-  },
-  {
-    "id": "761b361986546129",
-    "comment": "\"\nDo not remove the content again as you just did now. You were previously reverted. Knowingly reverting again is editwar. For the claim of unsourced content, read WP:DEADLINK and WP:SOURCEACCESS. Source can technically not \"\"work\"\" or \"\"not work\"\", it is the link that is \"\"not working\"\". Source is still there.  (talk) \"",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "remove", "weight": -0.0005 },
-      { "word": "content", "weight": -0.0005 },
-      { "word": "previously", "weight": -0.0004 },
-      { "word": "just", "weight": -0.0004 },
-      { "word": "the", "weight": 0.0004 },
-      { "word": "not", "weight": 0.0003 },
-      { "word": "working", "weight": -0.0003 },
-      { "word": "Knowingly", "weight": 0.0003 },
-      { "word": "reverted", "weight": -0.0003 },
-      { "word": "WP", "weight": 0.0003 }
-    ]
-  },
-  {
-    "id": "fd2f53aafe8eefcc",
-    "comment": "Fat piece of shit \n\nyou obese piece of shit. I thought of you naked last night. | got sick.",
-    "prediction_proba": 99.82,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "shit", "weight": 0.1364 },
-      { "word": "you", "weight": 0.0675 },
-      { "word": "Fat", "weight": 0.0611 },
-      { "word": "sick", "weight": 0.0465 },
-      { "word": "piece", "weight": 0.0402 },
-      { "word": "thought", "weight": -0.0289 },
-      { "word": "got", "weight": 0.0162 },
-      { "word": "obese", "weight": 0.0143 },
-      { "word": "naked", "weight": -0.014 },
-      { "word": "night", "weight": 0.0128 }
-    ]
-  },
-  {
-    "id": "47f06447da579cb8",
-    "comment": "\"\nGo rot in hell you evil liittle bastard. ''''''  \"",
-    "prediction_proba": 99.64,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "bastard", "weight": 0.1635 },
-      { "word": "you", "weight": 0.0754 },
-      { "word": "evil", "weight": 0.0744 },
-      { "word": "hell", "weight": 0.0735 },
-      { "word": "rot", "weight": 0.0705 },
-      { "word": "in", "weight": -0.0182 },
-      { "word": "liittle", "weight": -0.0098 },
-      { "word": "Go", "weight": 0.0039 }
-    ]
-  },
-  {
-    "id": "9fa0210fde41e711",
-    "comment": "Fuck you!216.102.76.214",
-    "prediction_proba": 99.75,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "Fuck", "weight": 0.788 },
-      { "word": "you", "weight": 0.0746 },
-      { "word": "216", "weight": 0.0263 },
-      { "word": "214", "weight": 0.0217 },
-      { "word": "76", "weight": -0.0084 },
-      { "word": "102", "weight": 0.0059 }
-    ]
-  },
-  {
-    "id": "0ba5623db7e67fb6",
-    "comment": "== Hi == \n\n Hi. I've not spoken to you in a while, so I thought I'd pop round and say hi - I also have a question, but that is of course just a coincidence. As you seem to know a lot about policy, I thought you're the person to ask the following: what is the policy on red-links? So hello, and thanks.",
-    "prediction_proba": 99.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "hi", "weight": -0.0002 },
-      { "word": "have", "weight": -0.0001 },
-      { "word": "seem", "weight": -0.0001 },
-      { "word": "person", "weight": 0.0001 },
-      { "word": "you", "weight": 0.0001 },
-      { "word": "pop", "weight": 0.0001 },
-      { "word": "re", "weight": -0.0001 },
-      { "word": "on", "weight": -0.0001 },
-      { "word": "ve", "weight": -0.0 },
-      { "word": "policy", "weight": -0.0 }
-    ]
-  },
-  {
-    "id": "bd211e87669b16e0",
-    "comment": "JfdWolff is a hopeless failure . . . He can't stomach defeat !!! JFDWOLFF IS A TOTAL LOSER !!!",
-    "prediction_proba": 95.7,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "LOSER", "weight": 0.308 },
-      { "word": "failure", "weight": 0.1353 },
-      { "word": "JfdWolff", "weight": 0.0941 },
-      { "word": "JFDWOLFF", "weight": 0.0546 },
-      { "word": "is", "weight": 0.033 },
-      { "word": "a", "weight": 0.0302 },
-      { "word": "t", "weight": 0.0284 },
-      { "word": "stomach", "weight": -0.0274 },
-      { "word": "He", "weight": -0.0187 },
-      { "word": "can", "weight": -0.0082 }
-    ]
-  },
-  {
-    "id": "38563f09d0a4ec60",
-    "comment": "Oh, well Harry finally got his payback on me. I could tell you could not stand that I was right about the Ryanair incident. I also like how you got so upset that your minor incident was not going to be included that went ahead and removed the incidents that the Irish aviation authorities labeled as serious incidents and had been in the article for a few years. Harry do wiki a favor and stay away from aviation articles, you obviously have the same insight into aviation as a two year old has into biology. Do me a favor, since this is two personal attacks in 24hrs, PLEASE permanently block me so I don't waste anymore of my time on this excuse of an encyclopedia. After trying to help this site out, it is obvious that this site is a joke. 76.19.222.40",
-    "prediction_proba": 82.94,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "old", "weight": 0.0586 },
-      { "word": "aviation", "weight": -0.0356 },
-      { "word": "personal", "weight": 0.0236 },
-      { "word": "joke", "weight": 0.0142 },
-      { "word": "got", "weight": 0.014 },
-      { "word": "had", "weight": 0.0109 },
-      { "word": "that", "weight": 0.0093 },
-      { "word": "do", "weight": 0.0055 },
-      { "word": "removed", "weight": -0.0031 },
-      { "word": "few", "weight": -0.0016 }
-    ]
-  },
-  {
-    "id": "eda25e3edcdf74f1",
-    "comment": "YOUR GENITALS WILL OFF!!! POTHEAD",
-    "prediction_proba": 98.24000000000001,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "GENITALS", "weight": 0.4577 },
-      { "word": "YOUR", "weight": 0.0966 },
-      { "word": "POTHEAD", "weight": 0.0848 },
-      { "word": "OFF", "weight": 0.0535 },
-      { "word": "WILL", "weight": -0.037 }
-    ]
-  },
-  {
-    "id": "799638b93f93a0c4",
-    "comment": "::Damn you cocksuckers! FUCK YOU AND YOUR MOM. I HOPE ALL OF YOU DIE AND GO TO HELL. GO LICK PUSSY YOU DIRTY PIECE OF SHIT FUCK YOU NIGGA FUCK YOU ASSSHIT I HOPE YOU DIE YOU DIRTY PIECE OF SHIT . YOU'RE SO ULGY FUCK YOU GET A FUCKING LIFE ASS FUCK FUCK FUCK FUCK FUCK YOU COCKSUCKER YOU FUCKING FAG PUSSY BITCH NIGGA FUCK YOU FUCKING CRACKER",
+    "id": "0d4febb11c018325",
+    "comment": "::::It seems that somebody changed one of the citation templates so that chapter= somewhere is invalid... won't hold up the GA over this, but just FYI. ''''''",
     "prediction_proba": 99.87,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "cocksuckers", "weight": 0.0024 },
-      { "word": "NIGGA", "weight": 0.0022 },
-      { "word": "OF", "weight": -0.0022 },
-      { "word": "FUCK", "weight": 0.002 },
-      { "word": "ALL", "weight": 0.0019 },
-      { "word": "BITCH", "weight": 0.0017 },
-      { "word": "TO", "weight": 0.0016 },
-      { "word": "CRACKER", "weight": 0.0016 },
-      { "word": "RE", "weight": -0.0008 },
-      { "word": "COCKSUCKER", "weight": -0.0005 }
-    ]
-  },
-  {
-    "id": "cfbf03448fce2608",
-    "comment": "Did you see what someone wrote??? Frank Lampard, a fat bastard!!!!!!!!!!!!! How can they do that?!!? I hate some players too but I still respect them!!!",
-    "prediction_proba": 96.17999999999999,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "bastard", "weight": 0.4241 },
-      { "word": "fat", "weight": 0.1636 },
-      { "word": "respect", "weight": -0.0996 },
-      { "word": "Lampard", "weight": -0.0791 },
-      { "word": "they", "weight": 0.0788 },
-      { "word": "a", "weight": 0.0617 },
-      { "word": "that", "weight": 0.0598 },
-      { "word": "I", "weight": -0.0508 },
-      { "word": "someone", "weight": -0.0414 },
-      { "word": "Did", "weight": -0.0302 }
-    ]
-  },
-  {
-    "id": "7ce7ed8f431899eb",
-    "comment": "THIS USER IS A PLANT FROM BRUCE PERENS AND GROKLAW \n\nRevoke his rights and ban him  he's an infiltrator.",
-    "prediction_proba": 88.3,
-    "prediction_label": "Toxic",
-    "important_words": [
-      { "word": "infiltrator", "weight": 0.2418 },
-      { "word": "an", "weight": 0.2277 },
-      { "word": "A", "weight": 0.182 },
-      { "word": "USER", "weight": 0.1808 },
-      { "word": "IS", "weight": 0.163 },
-      { "word": "ban", "weight": 0.1011 },
-      { "word": "rights", "weight": -0.0809 },
-      { "word": "PERENS", "weight": 0.0772 },
-      { "word": "and", "weight": 0.0718 },
-      { "word": "BRUCE", "weight": -0.0658 }
-    ]
-  },
-  {
-    "id": "e8c1e74e3032d7e8",
-    "comment": "\" \n :::::::See my response at Commons.  If he is requesting deletion to \"\"upload a new version of an image\"\", then why does he keep uploading the same one four times?  And why does he keep changing the file names?  And why doesn't he say that he just wants to upload a new version of the image rather than just saying \"\"pointless\"\"?  And why the first time did it take him six weeks to upload \"\"a new version\"\" (meaning the same version)?  Seems highly unlikely but if he uploads a brand new picture, and no one else picks up the same feeling of teenagers snickering at the funny pictures they just uploaded, then I'll file it under \"\"Things I wish I never got involved in\"\" and leave him to y'all.\"",
-    "prediction_proba": 99.63,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "snickering", "weight": 0.0026 },
-      { "word": "under", "weight": -0.0016 },
-      { "word": "teenagers", "weight": 0.0015 },
-      { "word": "uploading", "weight": -0.0008 },
-      { "word": "brand", "weight": 0.0007 },
-      { "word": "weeks", "weight": -0.0007 },
-      { "word": "say", "weight": -0.0003 },
-      { "word": "why", "weight": 0.0001 },
-      { "word": "never", "weight": 0.0001 },
-      { "word": "same", "weight": -0.0001 }
-    ]
+      { "word": "templates", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "FYI", "weight": 0.0013, "label": "Toxic" },
+      { "word": "GA", "weight": 0.001, "label": "Toxic" },
+      { "word": "won", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "hold", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "citation", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "just", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "It", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "seems", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "invalid", "weight": 0.0005, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "4c6719e7385d9e28",
-    "comment": "Who got on my account? \n\nWho got on my account?",
-    "prediction_proba": 97.87,
+    "id": "61da3a1fccac50fa",
+    "comment": "== Swedish ballads  - visa? == \n\n This article on a Swedish topic has no iw-link to Swedish Wikipedia. The topic of this article seems to fairly well match sv:visa, although that article does not exclude related traditions in neighbouring countries.",
+    "prediction_proba": 99.95,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "my", "weight": 0.0102 },
-      { "word": "got", "weight": 0.0092 },
-      { "word": "account", "weight": -0.0058 },
-      { "word": "on", "weight": 0.0037 },
-      { "word": "Who", "weight": 0.0031 }
-    ]
+      { "word": "ballads", "weight": 0.0002, "label": "Toxic" },
+      { "word": "This", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "visa", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "topic", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "traditions", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "countries", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "on", "weight": 0.0, "label": "Toxic" },
+      { "word": "iw", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "1bbec1cbd99ec44f",
-    "comment": "I think Canis makes a good point on the first bullet of the original post in this thread.  We can change the language to indicate that the data was collected in New South Wales, not world-wide, although I don't think that this will change the meaning of the language significantly.  NSW seems to be one of the primary places where the breed is established, so a slight change to current wording should suffice.  The second and third bullets are less clear.  Why does it matter that the data is a few years old, especially since the dates of the studies are clearly listed in the article?  Also, if Canis can support claims that RS references in the article contain mistakes, he/she should post other RS references explaining these errors.  Finally, if Canis believes that I have edited incorrectly, I would ask that he/she posts diffs showing my bad behavior and explaining exactly what I have done wrong.  I have no bias in this matter, unlike editors heavily involved in dog breeding and related fields, and everything I am doing on this I article is being done to preserve the article's integrity and to improve Wikipedia.  Thanks.",
-    "prediction_proba": 99.92999999999999,
-    "prediction_label": "Non-toxic",
-    "important_words": [
-      { "word": "few", "weight": -0.0001 },
-      { "word": "on", "weight": -0.0001 },
-      { "word": "doing", "weight": -0.0001 },
-      { "word": "dog", "weight": 0.0001 },
-      { "word": "Finally", "weight": -0.0001 },
-      { "word": "my", "weight": 0.0001 },
-      { "word": "to", "weight": 0.0 },
-      { "word": "bullets", "weight": -0.0 },
-      { "word": "clear", "weight": -0.0 },
-      { "word": "wrong", "weight": 0.0 }
-    ]
-  },
-  {
-    "id": "d2e621e7324a7394",
-    "comment": "I bet this asshole is far from playing by her own rulesI have arrived just in time",
-    "prediction_proba": 96.43,
+    "id": "be587aa32cbd1147",
+    "comment": "How pathetic are you people?",
+    "prediction_proba": 95.34,
     "prediction_label": "Toxic",
     "important_words": [
-      { "word": "asshole", "weight": 0.8574 },
-      { "word": "bet", "weight": 0.0299 },
-      { "word": "far", "weight": 0.0168 },
-      { "word": "this", "weight": 0.0163 },
-      { "word": "in", "weight": -0.0132 },
-      { "word": "I", "weight": -0.0112 },
-      { "word": "arrived", "weight": 0.01 },
-      { "word": "time", "weight": -0.0092 },
-      { "word": "is", "weight": 0.0049 },
-      { "word": "by", "weight": 0.0011 }
-    ]
+      { "word": "pathetic", "weight": 0.8145, "label": "Toxic" },
+      { "word": "you", "weight": 0.0579, "label": "Toxic" },
+      { "word": "people", "weight": 0.0166, "label": "Toxic" },
+      { "word": "are", "weight": 0.0113, "label": "Toxic" },
+      { "word": "How", "weight": 0.0038, "label": "Non-toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "0c347aed108b7790",
-    "comment": "\" \n :Haha, I'm so stupid... Sorry about that, thanks for the explanation. I changed it to \"\"when grunge acts\"\", which is slightly better for idiots like me...  \"",
-    "prediction_proba": 23.669999999999998,
+    "id": "9521fb8338dc09c9",
+    "comment": "hilter befreinded the jews",
+    "prediction_proba": 95.48,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "idiots", "weight": 0.4915 },
-      { "word": "stupid", "weight": 0.162 },
-      { "word": "like", "weight": 0.0729 },
-      { "word": "it", "weight": -0.0612 },
-      { "word": "I", "weight": -0.0601 },
-      { "word": "Sorry", "weight": -0.0599 },
-      { "word": "slightly", "weight": -0.0484 },
-      { "word": "me", "weight": 0.0414 },
-      { "word": "thanks", "weight": -0.0296 },
-      { "word": "m", "weight": -0.0261 }
-    ]
+      { "word": "hilter", "weight": 0.1763, "label": "Non-toxic" },
+      { "word": "jews", "weight": 0.1389, "label": "Toxic" },
+      { "word": "befreinded", "weight": 0.0478, "label": "Toxic" },
+      { "word": "the", "weight": 0.0145, "label": "Non-toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "af02b19f8598161d",
-    "comment": "Livonia SHS \n\nHi, New grad here trying to fill in the holes this page has\nregarding our illustrious alumni (and some, like Samantha who have\nyet to graduate, but whose star should certainly shine brightly for a\ngeneration.) Not sure why this is such a BIG deal to you. I can provide\nlinks for all of these notable alumni. Or you can just google it yourself.\nLike I said, I WENT to SHS (class of 2012) Did you? 99.185.56.156",
+    "id": "b445b36c623f9338",
+    "comment": "Personallly I liked the Christian baby blood recipe for matza in the Baba Matza ) nazi moron P",
+    "prediction_proba": 83.48,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "moron", "weight": 0.6151, "label": "Toxic" },
+      { "word": "nazi", "weight": 0.0811, "label": "Toxic" },
+      { "word": "recipe", "weight": 0.0794, "label": "Non-toxic" },
+      { "word": "P", "weight": 0.0547, "label": "Toxic" },
+      { "word": "the", "weight": 0.0528, "label": "Non-toxic" },
+      { "word": "Matza", "weight": 0.0517, "label": "Non-toxic" },
+      { "word": "matza", "weight": 0.0316, "label": "Non-toxic" },
+      { "word": "liked", "weight": 0.0261, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0253, "label": "Non-toxic" },
+      { "word": "for", "weight": 0.0156, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "442d3d6da0982dde",
+    "comment": "a spanish teacher there at ravenwood is a whore",
+    "prediction_proba": 90.18,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "whore", "weight": 0.7236, "label": "Toxic" },
+      { "word": "a", "weight": 0.114, "label": "Toxic" },
+      { "word": "there", "weight": 0.0686, "label": "Non-toxic" },
+      { "word": "teacher", "weight": 0.0662, "label": "Non-toxic" },
+      { "word": "ravenwood", "weight": 0.056, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0461, "label": "Toxic" },
+      { "word": "at", "weight": 0.0266, "label": "Non-toxic" },
+      { "word": "spanish", "weight": 0.0166, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "3c5c086d49d46b96",
+    "comment": ":::: Where they signed TVFan?  Merciful heavens, how stupid do they think we are?",
+    "prediction_proba": 89.0,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.7926, "label": "Toxic" },
+      { "word": "Merciful", "weight": 0.0574, "label": "Non-toxic" },
+      { "word": "signed", "weight": 0.0254, "label": "Non-toxic" },
+      { "word": "TVFan", "weight": 0.025, "label": "Toxic" },
+      { "word": "heavens", "weight": 0.0218, "label": "Toxic" },
+      { "word": "are", "weight": 0.0142, "label": "Toxic" },
+      { "word": "Where", "weight": 0.0067, "label": "Toxic" },
+      { "word": "do", "weight": 0.0066, "label": "Non-toxic" },
+      { "word": "think", "weight": 0.0035, "label": "Non-toxic" },
+      { "word": "we", "weight": 0.0017, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "f83e99de91f63458",
+    "comment": "\" \n\n ==Thanks!!!== \n Well folks, thanks to your reviews and comments, the Fightin' Texas Aggie Band is now a featured article on Wikipedia. It should take a day or so to update, but it's a done deal. Thanks for the help, .   \"",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "reviews", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "comments", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "so", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "thanks", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "update", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "It", "weight": 0.0002, "label": "Toxic" },
+      { "word": "it", "weight": 0.0001, "label": "Toxic" },
+      { "word": "to", "weight": 0.0001, "label": "Toxic" },
+      { "word": "but", "weight": 0.0001, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "ffe0c914be0bf904",
+    "comment": "== Norm Charlton == \n\n I erased the silly shit you wrote on Norm Charlton's site. If you have nothing better to do, why don't you make yourself a myspace or something like that and play there. Wikipedia isn't the place for it.",
+    "prediction_proba": 77.33,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "shit", "weight": 0.6697, "label": "Toxic" },
+      { "word": "silly", "weight": 0.1033, "label": "Toxic" },
+      { "word": "wrote", "weight": 0.063, "label": "Non-toxic" },
+      { "word": "Norm", "weight": 0.061, "label": "Non-toxic" },
+      { "word": "Charlton", "weight": 0.039, "label": "Non-toxic" },
+      { "word": "don", "weight": 0.0234, "label": "Non-toxic" },
+      { "word": "make", "weight": 0.0203, "label": "Toxic" },
+      { "word": "If", "weight": 0.0148, "label": "Non-toxic" },
+      { "word": "erased", "weight": 0.0145, "label": "Non-toxic" },
+      { "word": "like", "weight": 0.0126, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "e299cfee9fb5cc9a",
+    "comment": "Clever vandals give regular users and readers a good laugh, and know where to draw the line.  But you my friend, you're simply working with a rock up your ass.  20:57, 2005 Jun 18 (UTC)",
+    "prediction_proba": 83.9,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "ass", "weight": 0.7507, "label": "Toxic" },
+      { "word": "your", "weight": 0.1115, "label": "Toxic" },
+      { "word": "you", "weight": 0.0837, "label": "Toxic" },
+      { "word": "UTC", "weight": 0.0653, "label": "Non-toxic" },
+      { "word": "with", "weight": 0.0623, "label": "Non-toxic" },
+      { "word": "Jun", "weight": 0.046, "label": "Non-toxic" },
+      { "word": "simply", "weight": 0.0432, "label": "Non-toxic" },
+      { "word": "laugh", "weight": 0.0357, "label": "Toxic" },
+      { "word": "rock", "weight": 0.0352, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0252, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "746cd826521c46fb",
+    "comment": "::The point is - a 'locked' article hurts everyone (all editors). Please, bring you objections to the discussion.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "locked", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0011, "label": "Toxic" },
+      { "word": "the", "weight": 0.001, "label": "Non-toxic" },
+      { "word": "objections", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "point", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "all", "weight": 0.0008, "label": "Toxic" },
+      { "word": "a", "weight": 0.0006, "label": "Toxic" },
+      { "word": "hurts", "weight": 0.0006, "label": "Toxic" },
+      { "word": "editors", "weight": 0.0003, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "0dc306f86eca9179",
+    "comment": "I have neural damage and I find that the drink and the natural supplement (in moderation and never both at once) help quite nicely with body posture and communication skills, both spoken and not.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "neural", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "communication", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "supplement", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "drink", "weight": 0.0003, "label": "Toxic" },
+      { "word": "both", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "once", "weight": 0.0003, "label": "Toxic" },
+      { "word": "natural", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "damage", "weight": 0.0001, "label": "Toxic" },
+      { "word": "that", "weight": 0.0001, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "50a4d7be3ae3f915",
+    "comment": "Shit is of what one eats. You've illuminated that fact greatly. \n This is Wikipedia, not a blog, where you can denigrate the values, views or opinions by either personal attacks or profanity. You offer only ONE POV against ANOTHER POV, disregarding NPOV.",
+    "prediction_proba": 82.02,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Shit", "weight": 0.7195, "label": "Toxic" },
+      { "word": "what", "weight": 0.0489, "label": "Non-toxic" },
+      { "word": "can", "weight": 0.0462, "label": "Non-toxic" },
+      { "word": "denigrate", "weight": 0.0349, "label": "Toxic" },
+      { "word": "attacks", "weight": 0.0328, "label": "Toxic" },
+      { "word": "that", "weight": 0.0319, "label": "Toxic" },
+      { "word": "Wikipedia", "weight": 0.0289, "label": "Toxic" },
+      { "word": "values", "weight": 0.0287, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0152, "label": "Non-toxic" },
+      { "word": "offer", "weight": 0.0111, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "4aaeb516a33f3c3c",
+    "comment": "\"Macromedia's own website says, \"\"Flash Player has become the most widely installed Internet video client\"\", which is a lot different and hardly worth the mention here, I think.   \n\n \"",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "own", "weight": 0.0006, "label": "Toxic" },
+      { "word": "mention", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "client", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "video", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "which", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "worth", "weight": 0.0004, "label": "Toxic" },
+      { "word": "different", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "think", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b3f3a4deb70017e8",
+    "comment": "== Merges == \n\n I added mergefrom notices from Criticisms of the Da Vinci Code and Symbology. Neither contain information that deserve to be in an article of their own, especially Symbology.",
+    "prediction_proba": 99.85,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "of", "weight": 0.013, "label": "Non-toxic" },
+      { "word": "Symbology", "weight": 0.0113, "label": "Toxic" },
+      { "word": "information", "weight": 0.0087, "label": "Non-toxic" },
+      { "word": "especially", "weight": 0.0067, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.006, "label": "Toxic" },
+      { "word": "Code", "weight": 0.0054, "label": "Non-toxic" },
+      { "word": "article", "weight": 0.0053, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0045, "label": "Non-toxic" },
+      { "word": "added", "weight": 0.0029, "label": "Toxic" },
+      { "word": "to", "weight": 0.0018, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "2cfb250a712b1530",
+    "comment": "\": Correct.  Aspirated P, long U, unaspirated K (not quite the same as G but close enough), short E, T.  \"\"Fuck it\"\", while unfortunately a common mispronunciation, is completely wrong, and so was the previous advice to pronounce P and H separately.    \n\n \"",
+    "prediction_proba": 79.37,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Fuck", "weight": 0.8193, "label": "Toxic" },
+      { "word": "U", "weight": 0.0329, "label": "Toxic" },
+      { "word": "short", "weight": 0.0238, "label": "Non-toxic" },
+      { "word": "separately", "weight": 0.0216, "label": "Non-toxic" },
+      { "word": "unaspirated", "weight": 0.0198, "label": "Non-toxic" },
+      { "word": "previous", "weight": 0.0173, "label": "Toxic" },
+      { "word": "P", "weight": 0.0142, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0117, "label": "Toxic" },
+      { "word": "H", "weight": 0.008, "label": "Non-toxic" },
+      { "word": "long", "weight": 0.0077, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "46abb9ef63ce958c",
+    "comment": ":This is a stupid argument. It is not your page.   \n Category:Wikiproject Golf articles",
+    "prediction_proba": 75.23,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.7513, "label": "Toxic" },
+      { "word": "argument", "weight": 0.0539, "label": "Non-toxic" },
+      { "word": "your", "weight": 0.0415, "label": "Toxic" },
+      { "word": "not", "weight": 0.0198, "label": "Non-toxic" },
+      { "word": "Wikiproject", "weight": 0.0165, "label": "Non-toxic" },
+      { "word": "Golf", "weight": 0.0139, "label": "Non-toxic" },
+      { "word": "articles", "weight": 0.0116, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0092, "label": "Toxic" },
+      { "word": "is", "weight": 0.0064, "label": "Non-toxic" },
+      { "word": "This", "weight": 0.0032, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "5398f83a38caf1dc",
+    "comment": "Make as many accounts as you can to ruin her life.",
+    "prediction_proba": 87.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "accounts", "weight": 0.0956, "label": "Non-toxic" },
+      { "word": "ruin", "weight": 0.0943, "label": "Toxic" },
+      { "word": "life", "weight": 0.0861, "label": "Toxic" },
+      { "word": "you", "weight": 0.061, "label": "Toxic" },
+      { "word": "can", "weight": 0.0497, "label": "Non-toxic" },
+      { "word": "many", "weight": 0.0432, "label": "Non-toxic" },
+      { "word": "her", "weight": 0.0421, "label": "Toxic" },
+      { "word": "to", "weight": 0.0273, "label": "Non-toxic" },
+      { "word": "as", "weight": 0.0195, "label": "Non-toxic" },
+      { "word": "Make", "weight": 0.014, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9e7603753053abd8",
+    "comment": ":Perhaps you are forgetting this edit?",
+    "prediction_proba": 99.82,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Perhaps", "weight": 0.0044, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0024, "label": "Toxic" },
+      { "word": "edit", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "forgetting", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "this", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "are", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "7f0cd349057927df",
+    "comment": "==Re: Question== \n I think its fine. I only suggest don't rely on it too much. But for the figures, it had to published by some third-party sources especially when it involves big figures that are readily questionable.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "figures", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "Re", "weight": 0.0004, "label": "Toxic" },
+      { "word": "rely", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "suggest", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "on", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "Question", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "too", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "don", "weight": 0.0001, "label": "Toxic" },
+      { "word": "its", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9a309fc47b83d870",
+    "comment": "While you might think that you are funny by editing Reggie Bush, I can assure you that you are not. Please stop adding nonsense to Wikipedia. It is considered vandalism. If you would like to experiment, use the sandbox. Thank you.",
+    "prediction_proba": 98.2,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Thank", "weight": 0.0437, "label": "Non-toxic" },
+      { "word": "nonsense", "weight": 0.0428, "label": "Toxic" },
+      { "word": "you", "weight": 0.0338, "label": "Toxic" },
+      { "word": "to", "weight": 0.0321, "label": "Non-toxic" },
+      { "word": "considered", "weight": 0.0261, "label": "Non-toxic" },
+      { "word": "would", "weight": 0.023, "label": "Non-toxic" },
+      { "word": "editing", "weight": 0.0219, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0189, "label": "Toxic" },
+      { "word": "use", "weight": 0.0128, "label": "Toxic" },
+      { "word": "is", "weight": 0.0124, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "3d90bb233acd84b3",
+    "comment": "i hava huge peepee",
+    "prediction_proba": 95.99,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "hava", "weight": 0.0338, "label": "Non-toxic" },
+      { "word": "huge", "weight": 0.0247, "label": "Toxic" },
+      { "word": "peepee", "weight": 0.016, "label": "Toxic" },
+      { "word": "i", "weight": 0.0019, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6a20d33ac9726037",
+    "comment": ", 20 June 2015 (UTC) \n\n :As an external, unrelated reviewer seems to me that there's enough secondary sources (Sun Sentinel, Outreach Magazine, The Independent, Billy Graham, New Times Broward-Palm Beach) to support it. \n :  23:17",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Sentinel", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "there", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "Outreach", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "reviewer", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "Broward", "weight": 0.0, "label": "Toxic" },
+      { "word": "20", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "support", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.0, "label": "Toxic" },
+      { "word": "As", "weight": 0.0, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "462fc18024df2b67",
+    "comment": "== Critical reception == \n\n This show was shite. That should be mentioned.",
+    "prediction_proba": 80.29,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "shite", "weight": 0.4739, "label": "Toxic" },
+      { "word": "reception", "weight": 0.1144, "label": "Non-toxic" },
+      { "word": "This", "weight": 0.0892, "label": "Toxic" },
+      { "word": "show", "weight": 0.0867, "label": "Non-toxic" },
+      { "word": "mentioned", "weight": 0.0781, "label": "Non-toxic" },
+      { "word": "Critical", "weight": 0.0772, "label": "Non-toxic" },
+      { "word": "was", "weight": 0.052, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0186, "label": "Non-toxic" },
+      { "word": "That", "weight": 0.0081, "label": "Toxic" },
+      { "word": "should", "weight": 0.0063, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "fff4109e837f7acc",
+    "comment": "SO many things wrong with that viewpoint - from the humane treatment of German POW's to international treaties about the use of POW's for labor.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "POW", "weight": 0.0009, "label": "Toxic" },
+      { "word": "treaties", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "treatment", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "viewpoint", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "with", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "international", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0004, "label": "Toxic" },
+      { "word": "for", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "labor", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "from", "weight": 0.0002, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "c4698c02cf5f812d",
+    "comment": "== Hey, you freaking retard == \n\n Don't call people like  Grawp when they are obviously not Grawp.",
+    "prediction_proba": 96.3,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "retard", "weight": 0.3744, "label": "Toxic" },
+      { "word": "freaking", "weight": 0.3184, "label": "Toxic" },
+      { "word": "when", "weight": 0.0486, "label": "Non-toxic" },
+      { "word": "call", "weight": 0.0441, "label": "Toxic" },
+      { "word": "they", "weight": 0.0334, "label": "Non-toxic" },
+      { "word": "Grawp", "weight": 0.027, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.0255, "label": "Toxic" },
+      { "word": "like", "weight": 0.025, "label": "Toxic" },
+      { "word": "not", "weight": 0.0246, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0175, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "3e0f16effef9b86a",
+    "comment": "re the source for her birthdate - I couldn't find it. Where do you think she was registered?",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "source", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "find", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "birthdate", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "couldn", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "for", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0004, "label": "Toxic" },
+      { "word": "I", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "was", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "her", "weight": 0.0003, "label": "Toxic" },
+      { "word": "the", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "2e83ecc9fd01f0a9",
+    "comment": "Kill the girl, she was guilty, felt no remorse, and is obviously a waste of oxygen.",
+    "prediction_proba": 85.13,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Kill", "weight": 0.4189, "label": "Toxic" },
+      { "word": "waste", "weight": 0.2709, "label": "Toxic" },
+      { "word": "oxygen", "weight": 0.0817, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0787, "label": "Toxic" },
+      { "word": "and", "weight": 0.0718, "label": "Toxic" },
+      { "word": "was", "weight": 0.0668, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0645, "label": "Toxic" },
+      { "word": "guilty", "weight": 0.0517, "label": "Toxic" },
+      { "word": "she", "weight": 0.0345, "label": "Toxic" },
+      { "word": "remorse", "weight": 0.0342, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "fc6be6affb99968a",
+    "comment": "== intellectual head? == \n\n Mahler was an intelli, Meinhof, too, but Ensslin? Look at her parents: Gudrun Ensslin was basically a braindead protestant moralizing zombie.",
+    "prediction_proba": 79.12,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "braindead", "weight": 0.4818, "label": "Toxic" },
+      { "word": "zombie", "weight": 0.1693, "label": "Toxic" },
+      { "word": "her", "weight": 0.0526, "label": "Toxic" },
+      { "word": "Look", "weight": 0.0456, "label": "Non-toxic" },
+      { "word": "Gudrun", "weight": 0.0419, "label": "Non-toxic" },
+      { "word": "protestant", "weight": 0.0395, "label": "Toxic" },
+      { "word": "head", "weight": 0.0343, "label": "Toxic" },
+      { "word": "intellectual", "weight": 0.034, "label": "Non-toxic" },
+      { "word": "basically", "weight": 0.0262, "label": "Non-toxic" },
+      { "word": "Meinhof", "weight": 0.0233, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "1328046831f2d4d9",
+    "comment": ", 8 June 2013 (UTC) \n ::::::What exactly are you looking for evidence for, Thargor Orlando?  You can cut the bullshit now, no need to maintain appearances.  I'm well aware of your contribution history.  No amount of evidence will convince you of anything.   23:54",
+    "prediction_proba": 45.8,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "bullshit", "weight": 0.5883, "label": "Toxic" },
+      { "word": "looking", "weight": 0.0395, "label": "Non-toxic" },
+      { "word": "amount", "weight": 0.0317, "label": "Non-toxic" },
+      { "word": "history", "weight": 0.0288, "label": "Toxic" },
+      { "word": "Orlando", "weight": 0.0249, "label": "Non-toxic" },
+      { "word": "now", "weight": 0.0233, "label": "Non-toxic" },
+      { "word": "23", "weight": 0.022, "label": "Non-toxic" },
+      { "word": "maintain", "weight": 0.0213, "label": "Non-toxic" },
+      { "word": "can", "weight": 0.0176, "label": "Non-toxic" },
+      { "word": "need", "weight": 0.005, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "633236b1e828c9d7",
+    "comment": "career academy is one of the worst high schools in chicago. in fact it doesnt accept any smart students, but only stupid idiots.",
+    "prediction_proba": 98.38,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.3941, "label": "Toxic" },
+      { "word": "idiots", "weight": 0.3635, "label": "Toxic" },
+      { "word": "high", "weight": 0.1191, "label": "Non-toxic" },
+      { "word": "in", "weight": 0.113, "label": "Non-toxic" },
+      { "word": "doesnt", "weight": 0.0693, "label": "Toxic" },
+      { "word": "smart", "weight": 0.0548, "label": "Non-toxic" },
+      { "word": "fact", "weight": 0.0244, "label": "Toxic" },
+      { "word": "accept", "weight": 0.0191, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0147, "label": "Non-toxic" },
+      { "word": "one", "weight": 0.0138, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "bae7e500f6b54fed",
+    "comment": "\" \n ****Who are the \"\"some\"\" that you refer to? Obviously they are not representing a consensus here. I do not believe that anyone has explained why this is not a campaign or pointy.   \"",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "refer", "weight": 0.0041, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0039, "label": "Non-toxic" },
+      { "word": "why", "weight": 0.0038, "label": "Non-toxic" },
+      { "word": "anyone", "weight": 0.0036, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0034, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0033, "label": "Toxic" },
+      { "word": "or", "weight": 0.003, "label": "Toxic" },
+      { "word": "believe", "weight": 0.0024, "label": "Non-toxic" },
+      { "word": "not", "weight": 0.0019, "label": "Toxic" },
+      { "word": "are", "weight": 0.0005, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "950aeef576db4549",
+    "comment": "== penis == \n\n they are veItalic textry nice and i love them in my whole",
+    "prediction_proba": 78.31,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "penis", "weight": 0.743, "label": "Toxic" },
+      { "word": "veItalic", "weight": 0.0422, "label": "Non-toxic" },
+      { "word": "love", "weight": 0.0394, "label": "Non-toxic" },
+      { "word": "are", "weight": 0.036, "label": "Toxic" },
+      { "word": "them", "weight": 0.0308, "label": "Toxic" },
+      { "word": "nice", "weight": 0.021, "label": "Toxic" },
+      { "word": "my", "weight": 0.0204, "label": "Toxic" },
+      { "word": "in", "weight": 0.0168, "label": "Non-toxic" },
+      { "word": "whole", "weight": 0.0153, "label": "Non-toxic" },
+      { "word": "textry", "weight": 0.0023, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "8eec4ea27e54832d",
+    "comment": ": He broke it out against Kurt Angle at King of the Ring 2001, although he did miss it.",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Angle", "weight": 0.001, "label": "Non-toxic" },
+      { "word": "against", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "Ring", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "2001", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "broke", "weight": 0.0008, "label": "Toxic" },
+      { "word": "He", "weight": 0.0007, "label": "Toxic" },
+      { "word": "he", "weight": 0.0005, "label": "Toxic" },
+      { "word": "Kurt", "weight": 0.0005, "label": "Toxic" },
+      { "word": "at", "weight": 0.0004, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "83233d33bc1937f4",
+    "comment": "== welcome == \n\n Thanks for the welcome! Please don't create empty pages because of a dislike for redlinks though, redlinks exist for a reason, turning them blue without there actually being any content is misleading.",
     "prediction_proba": 99.92,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "provide", "weight": -0.0044 },
-      { "word": "alumni", "weight": -0.0028 },
-      { "word": "you", "weight": 0.0025 },
-      { "word": "BIG", "weight": 0.0025 },
-      { "word": "Not", "weight": -0.0016 },
-      { "word": "of", "weight": -0.0015 },
-      { "word": "is", "weight": -0.0015 },
-      { "word": "google", "weight": 0.0013 },
-      { "word": "brightly", "weight": 0.0008 },
-      { "word": "and", "weight": -0.0002 }
-    ]
+      { "word": "welcome", "weight": 0.0034, "label": "Non-toxic" },
+      { "word": "Please", "weight": 0.0032, "label": "Non-toxic" },
+      { "word": "redlinks", "weight": 0.0028, "label": "Non-toxic" },
+      { "word": "without", "weight": 0.0023, "label": "Toxic" },
+      { "word": "Thanks", "weight": 0.0021, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.002, "label": "Toxic" },
+      { "word": "of", "weight": 0.0018, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "misleading", "weight": 0.0009, "label": "Toxic" },
+      { "word": "them", "weight": 0.0008, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "46ed38a6b0e43c05",
-    "comment": "What is the source of the 7500?",
-    "prediction_proba": 99.92999999999999,
+    "id": "3f0d54a184edc4dc",
+    "comment": "::a sharp eye! a vandal inserted that-'ll fix it now.",
+    "prediction_proba": 96.49,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "source", "weight": -0.0002 },
-      { "word": "7500", "weight": -0.0002 },
-      { "word": "is", "weight": -0.0001 },
-      { "word": "What", "weight": 0.0001 },
-      { "word": "of", "weight": -0.0001 },
-      { "word": "the", "weight": 0.0001 }
-    ]
+      { "word": "vandal", "weight": 0.0291, "label": "Toxic" },
+      { "word": "inserted", "weight": 0.0183, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0143, "label": "Toxic" },
+      { "word": "fix", "weight": 0.0136, "label": "Non-toxic" },
+      { "word": "sharp", "weight": 0.0119, "label": "Toxic" },
+      { "word": "now", "weight": 0.0077, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0052, "label": "Non-toxic" },
+      { "word": "ll", "weight": 0.0047, "label": "Toxic" },
+      { "word": "that", "weight": 0.0021, "label": "Non-toxic" },
+      { "word": "eye", "weight": 0.0004, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "5442e3a44a8f8351",
-    "comment": ":actually, nevermind, there is still one there that confirms Iranian on-the-ground involvement: \n :Syrian army being aided by Iranian forces - guardian.co.uk \n :This defines them as a combatant rather than just a supporter.",
-    "prediction_proba": 99.92999999999999,
+    "id": "368cbbf0e17b7ba8",
+    "comment": ", 4 September 2014 (UTC) \n ::::::::::::I agree that raw tabulated data and/or plots from another source would completely clear up the issue. However, I believe the WHO material is copyrighted..unlike the CDC. I'd like to find out otherwsie..however.   23:31",
+    "prediction_proba": 99.94,
     "prediction_label": "Non-toxic",
     "important_words": [
-      { "word": "defines", "weight": -0.0004 },
-      { "word": "army", "weight": -0.0003 },
-      { "word": "guardian", "weight": -0.0003 },
-      { "word": "than", "weight": -0.0003 },
-      { "word": "Iranian", "weight": 0.0002 },
-      { "word": "that", "weight": 0.0002 },
-      { "word": "being", "weight": 0.0002 },
-      { "word": "nevermind", "weight": 0.0002 },
-      { "word": "as", "weight": -0.0002 },
-      { "word": "supporter", "weight": 0.0001 }
-    ]
+      { "word": "to", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "from", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "31", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "unlike", "weight": 0.0, "label": "Toxic" },
+      { "word": "tabulated", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "believe", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "issue", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0, "label": "Toxic" },
+      { "word": "is", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
   },
   {
-    "id": "835dcb88ad2b9095",
-    "comment": "yeah? while you're at it, could be so kind as to suck my dick too?",
-    "prediction_proba": 99.65,
+    "id": "71b9a3a418b92cbd",
+    "comment": ":: Agreed. He's a major figure and deserves better coverage. Links to those of his works that are available for free, online, as e-books, would help too. I'll see if I can do that.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "a", "weight": 0.0003, "label": "Toxic" },
+      { "word": "coverage", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "Agreed", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "ll", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "those", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "can", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "for", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "e", "weight": 0.0002, "label": "Toxic" },
+      { "word": "He", "weight": 0.0001, "label": "Toxic" },
+      { "word": "I", "weight": 0.0001, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "763b33f426822c84",
+    "comment": "Can we get this tripe removed and the page protected? I see this is a serial offender.",
+    "prediction_proba": 92.83,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "offender", "weight": 0.0612, "label": "Toxic" },
+      { "word": "tripe", "weight": 0.0439, "label": "Toxic" },
+      { "word": "see", "weight": 0.0421, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0342, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0292, "label": "Toxic" },
+      { "word": "removed", "weight": 0.0275, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.016, "label": "Non-toxic" },
+      { "word": "serial", "weight": 0.0144, "label": "Toxic" },
+      { "word": "protected", "weight": 0.0131, "label": "Non-toxic" },
+      { "word": "get", "weight": 0.0131, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "631b49114cf09f21",
+    "comment": "\" \n\n == User page... == \n\n Quick question: You've been here for a decent amount of time, why have you never really expanded your user page? Is there some principle behind it, or are you just too lazy? Just curious...   \"",
+    "prediction_proba": 81.53,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "lazy", "weight": 0.3045, "label": "Toxic" },
+      { "word": "you", "weight": 0.2697, "label": "Toxic" },
+      { "word": "it", "weight": 0.0909, "label": "Non-toxic" },
+      { "word": "principle", "weight": 0.0867, "label": "Non-toxic" },
+      { "word": "really", "weight": 0.0832, "label": "Toxic" },
+      { "word": "never", "weight": 0.0739, "label": "Toxic" },
+      { "word": "amount", "weight": 0.0704, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0586, "label": "Non-toxic" },
+      { "word": "curious", "weight": 0.0489, "label": "Non-toxic" },
+      { "word": "user", "weight": 0.0262, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "f55eb6a447b2119b",
+    "comment": ", as they get kicked to death by the enraged ostrich",
+    "prediction_proba": 91.54,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "death", "weight": 0.198, "label": "Toxic" },
+      { "word": "enraged", "weight": 0.1645, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.114, "label": "Non-toxic" },
+      { "word": "kicked", "weight": 0.0741, "label": "Toxic" },
+      { "word": "as", "weight": 0.0655, "label": "Non-toxic" },
+      { "word": "they", "weight": 0.0493, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0267, "label": "Toxic" },
+      { "word": "get", "weight": 0.0239, "label": "Toxic" },
+      { "word": "by", "weight": 0.0159, "label": "Non-toxic" },
+      { "word": "ostrich", "weight": 0.0068, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "387b52be9c747692",
+    "comment": ":I've gone over all the remaining links, formatting those used as reference, removing the rest as promotional.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "reference", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "remaining", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "used", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "formatting", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "rest", "weight": 0.0003, "label": "Toxic" },
+      { "word": "promotional", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "as", "weight": 0.0003, "label": "Toxic" },
+      { "word": "links", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "all", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9709222de5abe65f",
+    "comment": "Alan Rufus was a smeg head and a big fart",
+    "prediction_proba": 88.19,
     "prediction_label": "Toxic",
     "important_words": [
-      { "word": "dick", "weight": 0.4026 },
-      { "word": "suck", "weight": 0.2445 },
-      { "word": "at", "weight": 0.113 },
-      { "word": "my", "weight": 0.0922 },
-      { "word": "so", "weight": -0.0863 },
-      { "word": "you", "weight": 0.0798 },
-      { "word": "be", "weight": -0.0746 },
-      { "word": "yeah", "weight": -0.0538 },
-      { "word": "re", "weight": -0.0364 },
-      { "word": "could", "weight": -0.0244 }
-    ]
+      { "word": "fart", "weight": 0.4343, "label": "Toxic" },
+      { "word": "a", "weight": 0.3031, "label": "Toxic" },
+      { "word": "head", "weight": 0.0835, "label": "Toxic" },
+      { "word": "Alan", "weight": 0.074, "label": "Toxic" },
+      { "word": "big", "weight": 0.0654, "label": "Toxic" },
+      { "word": "was", "weight": 0.0584, "label": "Toxic" },
+      { "word": "and", "weight": 0.0411, "label": "Non-toxic" },
+      { "word": "smeg", "weight": 0.0234, "label": "Non-toxic" },
+      { "word": "Rufus", "weight": 0.0023, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "4b132e963def82ba",
+    "comment": "====Oh the irony=== \n\n It just goes to show how stupid some Americans really are, a scumbag mob lawyer mayor of Las Vegas. You couldn't make it up!!!!",
+    "prediction_proba": 98.38,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.4291, "label": "Toxic" },
+      { "word": "scumbag", "weight": 0.2955, "label": "Toxic" },
+      { "word": "lawyer", "weight": 0.0961, "label": "Toxic" },
+      { "word": "Americans", "weight": 0.067, "label": "Toxic" },
+      { "word": "some", "weight": 0.064, "label": "Non-toxic" },
+      { "word": "really", "weight": 0.0622, "label": "Non-toxic" },
+      { "word": "up", "weight": 0.0616, "label": "Toxic" },
+      { "word": "a", "weight": 0.0582, "label": "Non-toxic" },
+      { "word": "couldn", "weight": 0.0488, "label": "Non-toxic" },
+      { "word": "goes", "weight": 0.0381, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b81800931d1e139a",
+    "comment": "I didn't use any references; the solution is quite straightforward.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "references", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "solution", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.0002, "label": "Toxic" },
+      { "word": "I", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "quite", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "didn", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "use", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "straightforward", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "7fdc280a34f2cbbd",
+    "comment": "\"==\"\"Tone of Article\"\" flag== \n This article, while informative, does not employ the formal tone associated with an encyclopedia entry and reads like a friendly chat with a mechanic.   \"",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "employ", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "not", "weight": 0.0008, "label": "Toxic" },
+      { "word": "reads", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "friendly", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "article", "weight": 0.0005, "label": "Toxic" },
+      { "word": "Tone", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "mechanic", "weight": 0.0004, "label": "Toxic" },
+      { "word": "a", "weight": 0.0004, "label": "Toxic" },
+      { "word": "with", "weight": 0.0004, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6a48379dfef93368",
+    "comment": ":Certainly.  Your edits did not improve this article.  Your edits injected partisan, off-topic sources into this topic.  Further, your account appears to have been created solely for this purpose.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Your", "weight": 0.001, "label": "Toxic" },
+      { "word": "edits", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "created", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "this", "weight": 0.0007, "label": "Toxic" },
+      { "word": "purpose", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "solely", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "improve", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "sources", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "topic", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "Further", "weight": 0.0003, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "aff431e38dbf47e1",
+    "comment": "\" \n *I agree to redirect it at Croatia#Federal_Yugoslavia_and_independence also, because I think that RoC (90-91) has more common things with present RoC then SRC (if we are talking about country's leadership, even flag, democratic election etc.)  \"",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Croatia", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "democratic", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "etc", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "leadership", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "91", "weight": 0.0, "label": "Non-toxic" },
+      {
+        "word": "Federal_Yugoslavia_and_independence",
+        "weight": 0.0,
+        "label": "Non-toxic"
+      },
+      { "word": "also", "weight": 0.0, "label": "Toxic" },
+      { "word": "think", "weight": 0.0, "label": "Toxic" },
+      { "word": "that", "weight": 0.0, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9ba302ed602a15d3",
+    "comment": "::Oh that's right, snitch to your HORRID negro friend. What a little runt you are.",
+    "prediction_proba": 96.61,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "negro", "weight": 0.3605, "label": "Toxic" },
+      { "word": "snitch", "weight": 0.1719, "label": "Toxic" },
+      { "word": "HORRID", "weight": 0.1463, "label": "Toxic" },
+      { "word": "your", "weight": 0.1078, "label": "Toxic" },
+      { "word": "you", "weight": 0.0673, "label": "Toxic" },
+      { "word": "little", "weight": 0.0638, "label": "Toxic" },
+      { "word": "friend", "weight": 0.054, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0534, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0468, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0371, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "bb30f5a3390139b8",
+    "comment": "Sean Belanger enjoys rubbig sticks, therefore making him a mondo fag. also",
+    "prediction_proba": 91.89,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "fag", "weight": 0.7197, "label": "Toxic" },
+      { "word": "a", "weight": 0.0771, "label": "Toxic" },
+      { "word": "mondo", "weight": 0.041, "label": "Toxic" },
+      { "word": "rubbig", "weight": 0.0339, "label": "Toxic" },
+      { "word": "him", "weight": 0.0269, "label": "Toxic" },
+      { "word": "sticks", "weight": 0.0233, "label": "Non-toxic" },
+      { "word": "making", "weight": 0.0088, "label": "Non-toxic" },
+      { "word": "also", "weight": 0.0047, "label": "Toxic" },
+      { "word": "therefore", "weight": 0.003, "label": "Non-toxic" },
+      { "word": "enjoys", "weight": 0.0023, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "e1b37acbdb732029",
+    "comment": "Regarding your edit to Emo(slang) \n Stop adding shizzle to pages. FWIW, It makes you suck.A Friendly Citizen Passing By",
+    "prediction_proba": 83.33,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "suck", "weight": 0.7016, "label": "Toxic" },
+      { "word": "you", "weight": 0.0882, "label": "Toxic" },
+      { "word": "FWIW", "weight": 0.086, "label": "Toxic" },
+      { "word": "makes", "weight": 0.0531, "label": "Non-toxic" },
+      { "word": "By", "weight": 0.0401, "label": "Non-toxic" },
+      { "word": "It", "weight": 0.0397, "label": "Non-toxic" },
+      { "word": "Emo", "weight": 0.0323, "label": "Toxic" },
+      { "word": "Friendly", "weight": 0.0277, "label": "Non-toxic" },
+      { "word": "slang", "weight": 0.0266, "label": "Toxic" },
+      { "word": "Passing", "weight": 0.0192, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "00525672cc446424",
+    "comment": "\" \n\n == Shameless Canvass == \n\n Hello, Diannaa! Thanks for blocking that horrible puke again. When I \"\"translate\"\"  on your page I get mad. He is just a total piece of garbage. Thanks again!   \"",
+    "prediction_proba": 83.85,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "garbage", "weight": 0.2115, "label": "Toxic" },
+      { "word": "your", "weight": 0.0929, "label": "Toxic" },
+      { "word": "Shameless", "weight": 0.0866, "label": "Toxic" },
+      { "word": "puke", "weight": 0.079, "label": "Toxic" },
+      { "word": "horrible", "weight": 0.0722, "label": "Toxic" },
+      { "word": "Thanks", "weight": 0.0634, "label": "Non-toxic" },
+      { "word": "piece", "weight": 0.0595, "label": "Toxic" },
+      { "word": "mad", "weight": 0.059, "label": "Toxic" },
+      { "word": "for", "weight": 0.0556, "label": "Non-toxic" },
+      { "word": "just", "weight": 0.04, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "c512b22124ba3ba3",
+    "comment": "::Just that it's incredibly random nonsense (and I'm not American, I'm Canadian).    Sperm",
+    "prediction_proba": 95.08,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "nonsense", "weight": 0.04, "label": "Toxic" },
+      { "word": "Sperm", "weight": 0.0246, "label": "Toxic" },
+      { "word": "Just", "weight": 0.0199, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0153, "label": "Non-toxic" },
+      { "word": "incredibly", "weight": 0.0077, "label": "Toxic" },
+      { "word": "s", "weight": 0.0062, "label": "Toxic" },
+      { "word": "American", "weight": 0.0054, "label": "Toxic" },
+      { "word": "random", "weight": 0.0036, "label": "Non-toxic" },
+      { "word": "m", "weight": 0.0016, "label": "Non-toxic" },
+      { "word": "not", "weight": 0.0003, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "aa66331b3e213a4f",
+    "comment": ":Every slippery dick needs protection...sorry, I couldn't help myself >_>",
+    "prediction_proba": 88.31,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "dick", "weight": 0.7206, "label": "Toxic" },
+      { "word": "slippery", "weight": 0.1501, "label": "Toxic" },
+      { "word": "Every", "weight": 0.074, "label": "Toxic" },
+      { "word": "protection", "weight": 0.0594, "label": "Non-toxic" },
+      { "word": "needs", "weight": 0.0435, "label": "Toxic" },
+      { "word": "sorry", "weight": 0.0331, "label": "Non-toxic" },
+      { "word": "help", "weight": 0.0299, "label": "Non-toxic" },
+      { "word": "couldn", "weight": 0.018, "label": "Non-toxic" },
+      { "word": "myself", "weight": 0.0132, "label": "Toxic" },
+      { "word": "t", "weight": 0.0006, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9e7152969e06c589",
+    "comment": "== April Fools == \n\n Thanks for approving the hook. But I still don't understand the April Fools comment, or even if it is an insult. Am I stupid?",
+    "prediction_proba": 82.49,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.6633, "label": "Toxic" },
+      { "word": "Fools", "weight": 0.2011, "label": "Toxic" },
+      { "word": "April", "weight": 0.1019, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0796, "label": "Non-toxic" },
+      { "word": "insult", "weight": 0.07, "label": "Toxic" },
+      { "word": "comment", "weight": 0.061, "label": "Non-toxic" },
+      { "word": "understand", "weight": 0.0414, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.04, "label": "Non-toxic" },
+      { "word": "Thanks", "weight": 0.0373, "label": "Non-toxic" },
+      { "word": "approving", "weight": 0.0197, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "4c2723228279afaf",
+    "comment": "::Responses like that one will ensure that nobody takes your complaints seriously. You're free to call people idiots and homos until you're blue in the face, but if you ever want your case considered you're going to have to learn to play nice. Thanks.",
+    "prediction_proba": 75.05,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "idiots", "weight": 0.591, "label": "Toxic" },
+      { "word": "homos", "weight": 0.2311, "label": "Toxic" },
+      { "word": "case", "weight": 0.1301, "label": "Non-toxic" },
+      { "word": "call", "weight": 0.1295, "label": "Non-toxic" },
+      { "word": "but", "weight": 0.0767, "label": "Non-toxic" },
+      { "word": "nice", "weight": 0.0745, "label": "Non-toxic" },
+      { "word": "face", "weight": 0.0637, "label": "Toxic" },
+      { "word": "learn", "weight": 0.0588, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0376, "label": "Non-toxic" },
+      { "word": "re", "weight": 0.0236, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d97261ac2da4f495",
+    "comment": ":Thanks, that was very helpful! 3",
+    "prediction_proba": 99.89,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Thanks", "weight": 0.0016, "label": "Non-toxic" },
+      { "word": "3", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "helpful", "weight": 0.001, "label": "Non-toxic" },
+      { "word": "was", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "very", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "32708d543a73dce1",
+    "comment": ":If the guy is a jackass, its not POV, its fact.",
+    "prediction_proba": 75.32,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "jackass", "weight": 0.7195, "label": "Toxic" },
+      { "word": "If", "weight": 0.0666, "label": "Non-toxic" },
+      { "word": "POV", "weight": 0.0497, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0333, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0225, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0202, "label": "Toxic" },
+      { "word": "guy", "weight": 0.0085, "label": "Toxic" },
+      { "word": "its", "weight": 0.008, "label": "Non-toxic" },
+      { "word": "fact", "weight": 0.0058, "label": "Non-toxic" },
+      { "word": "not", "weight": 0.0051, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "497fd534e1f0b27e",
+    "comment": "alot of big stupid mistakes",
+    "prediction_proba": 92.58,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.8083, "label": "Toxic" },
+      { "word": "mistakes", "weight": 0.0252, "label": "Non-toxic" },
+      { "word": "big", "weight": 0.0184, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0099, "label": "Toxic" },
+      { "word": "alot", "weight": 0.0096, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6fc8ff5bbe104a33",
+    "comment": "==An informative article== \n The present article is an informative article how people of one place moved to other place. It is an historical evidence of the ancient India.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "informative", "weight": 0.0029, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.0027, "label": "Toxic" },
+      { "word": "evidence", "weight": 0.0021, "label": "Non-toxic" },
+      { "word": "present", "weight": 0.002, "label": "Non-toxic" },
+      { "word": "The", "weight": 0.0016, "label": "Toxic" },
+      { "word": "historical", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "article", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "of", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "place", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0008, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9156d35b539e7529",
+    "comment": ". \n\n This article sucks very bad. Nothing is mentioned of the role of s.aureus as skin flora and reeks of someone's OCD induced regurgitation",
+    "prediction_proba": 86.06,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "sucks", "weight": 0.7046, "label": "Toxic" },
+      { "word": "role", "weight": 0.0641, "label": "Non-toxic" },
+      { "word": "Nothing", "weight": 0.0612, "label": "Toxic" },
+      { "word": "reeks", "weight": 0.0551, "label": "Toxic" },
+      { "word": "mentioned", "weight": 0.045, "label": "Non-toxic" },
+      { "word": "induced", "weight": 0.0393, "label": "Non-toxic" },
+      { "word": "aureus", "weight": 0.0331, "label": "Toxic" },
+      { "word": "the", "weight": 0.025, "label": "Non-toxic" },
+      { "word": "This", "weight": 0.022, "label": "Non-toxic" },
+      { "word": "flora", "weight": 0.0045, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "78a71765ee9d9cd9",
+    "comment": "Stop being puerile and illiterate, and personalizing everything. Let's ignore each other.",
+    "prediction_proba": 80.53,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "puerile", "weight": 0.3728, "label": "Toxic" },
+      { "word": "illiterate", "weight": 0.2997, "label": "Toxic" },
+      { "word": "Stop", "weight": 0.0612, "label": "Toxic" },
+      { "word": "each", "weight": 0.0472, "label": "Non-toxic" },
+      { "word": "other", "weight": 0.0467, "label": "Toxic" },
+      { "word": "Let", "weight": 0.0412, "label": "Toxic" },
+      { "word": "personalizing", "weight": 0.031, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0254, "label": "Toxic" },
+      { "word": "and", "weight": 0.0137, "label": "Non-toxic" },
+      { "word": "being", "weight": 0.0134, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "e86ffca4bb98c44c",
+    "comment": "== Detroit Suck == \n\n Who agree with me that they suck so bad that they should be out of the league",
+    "prediction_proba": 88.6,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Suck", "weight": 0.3041, "label": "Toxic" },
+      { "word": "suck", "weight": 0.2774, "label": "Toxic" },
+      { "word": "Detroit", "weight": 0.0822, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0614, "label": "Toxic" },
+      { "word": "the", "weight": 0.0546, "label": "Non-toxic" },
+      { "word": "me", "weight": 0.0537, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0464, "label": "Toxic" },
+      { "word": "bad", "weight": 0.046, "label": "Non-toxic" },
+      { "word": "out", "weight": 0.0448, "label": "Toxic" },
+      { "word": "agree", "weight": 0.0337, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "f233e27bd9f4bbe8",
+    "comment": "I shall beat u to death with a pointed stick.",
+    "prediction_proba": 95.12,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "death", "weight": 0.4336, "label": "Toxic" },
+      { "word": "u", "weight": 0.1899, "label": "Toxic" },
+      { "word": "beat", "weight": 0.1685, "label": "Toxic" },
+      { "word": "stick", "weight": 0.1476, "label": "Toxic" },
+      { "word": "I", "weight": 0.1162, "label": "Toxic" },
+      { "word": "pointed", "weight": 0.0769, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0765, "label": "Toxic" },
+      { "word": "shall", "weight": 0.0623, "label": "Toxic" },
+      { "word": "to", "weight": 0.035, "label": "Non-toxic" },
+      { "word": "with", "weight": 0.0299, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "8a463e6789ab727e",
+    "comment": "Mark twain did not know what the hell he was talking about he is a post modernest writer who wrote all \n crap",
+    "prediction_proba": 81.95,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "crap", "weight": 0.5069, "label": "Toxic" },
+      { "word": "hell", "weight": 0.178, "label": "Toxic" },
+      { "word": "modernest", "weight": 0.0881, "label": "Toxic" },
+      { "word": "twain", "weight": 0.0596, "label": "Non-toxic" },
+      { "word": "writer", "weight": 0.0584, "label": "Non-toxic" },
+      { "word": "Mark", "weight": 0.0564, "label": "Toxic" },
+      { "word": "post", "weight": 0.0298, "label": "Non-toxic" },
+      { "word": "talking", "weight": 0.0217, "label": "Toxic" },
+      { "word": "wrote", "weight": 0.0202, "label": "Non-toxic" },
+      { "word": "he", "weight": 0.0172, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "168d20306b696238",
+    "comment": "::The videos are important IMHO and should be in",
+    "prediction_proba": 99.91,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "important", "weight": 0.0093, "label": "Non-toxic" },
+      { "word": "IMHO", "weight": 0.004, "label": "Toxic" },
+      { "word": "should", "weight": 0.0021, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0018, "label": "Toxic" },
+      { "word": "are", "weight": 0.0017, "label": "Toxic" },
+      { "word": "videos", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "The", "weight": 0.0001, "label": "Toxic" },
+      { "word": "in", "weight": 0.0001, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "11d9098eaf4ed71d",
+    "comment": "I dont think we should include any kind of fan media, games or otherwise. If we did this then whats stopping people from including stuff like Yugioh Virtual Desktop and Duel Network to the Yugioh pages?",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "dont", "weight": 0.0005, "label": "Toxic" },
+      { "word": "Network", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "games", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "include", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "should", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "think", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "Yugioh", "weight": 0.0002, "label": "Toxic" },
+      { "word": "of", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "whats", "weight": 0.0, "label": "Toxic" },
+      { "word": "we", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "decaf3dabf466c0b",
+    "comment": "(It'd be kinda useful to have, as I'm creating the stub for that mangaka as I type.)",
+    "prediction_proba": 99.89,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "useful", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "that", "weight": 0.0008, "label": "Toxic" },
+      { "word": "the", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "kinda", "weight": 0.0007, "label": "Toxic" },
+      { "word": "type", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "mangaka", "weight": 0.0005, "label": "Toxic" },
+      { "word": "stub", "weight": 0.0005, "label": "Toxic" },
+      { "word": "for", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "d", "weight": 0.0005, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "bb59d23656ccff76",
+    "comment": "\"What a mother f-ing Joke!! Now a computer program gives us history, I will not bother making anymore edits because wiki jumped the shark.  Typical act like the little guy to get power and then become the man\"\" Obama=wiki  \n \"",
+    "prediction_proba": 79.89,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "f", "weight": 0.3192, "label": "Toxic" },
+      { "word": "mother", "weight": 0.1594, "label": "Toxic" },
+      { "word": "shark", "weight": 0.1573, "label": "Toxic" },
+      { "word": "a", "weight": 0.1157, "label": "Toxic" },
+      { "word": "Joke", "weight": 0.0758, "label": "Toxic" },
+      { "word": "What", "weight": 0.0703, "label": "Toxic" },
+      { "word": "ing", "weight": 0.0461, "label": "Non-toxic" },
+      { "word": "Now", "weight": 0.0451, "label": "Non-toxic" },
+      { "word": "guy", "weight": 0.0361, "label": "Toxic" },
+      { "word": "because", "weight": 0.0194, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "f279841d198d6679",
+    "comment": ":   For me, it doesn't look so. I believe it was true when you posted your comment, but since July 2013 the article has been rewritten entirely, with many independent edits. Hence the COI tag is no longer appropriate. I think it's time to remove it.",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "you", "weight": 0.0002, "label": "Toxic" },
+      { "word": "time", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "posted", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "been", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "believe", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "many", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "entirely", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "tag", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "July", "weight": 0.0001, "label": "Toxic" },
+      { "word": "no", "weight": 0.0, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9f2ca163dbc98c1c",
+    "comment": "== my talk page == \n\n please do not alter the comments people have made on my talk page, even if they are idiots. thank you.",
+    "prediction_proba": 86.62,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "idiots", "weight": 0.7955, "label": "Toxic" },
+      { "word": "you", "weight": 0.0441, "label": "Toxic" },
+      { "word": "thank", "weight": 0.0389, "label": "Non-toxic" },
+      { "word": "do", "weight": 0.0263, "label": "Non-toxic" },
+      { "word": "on", "weight": 0.0241, "label": "Toxic" },
+      { "word": "comments", "weight": 0.0231, "label": "Non-toxic" },
+      { "word": "have", "weight": 0.0222, "label": "Toxic" },
+      { "word": "please", "weight": 0.0089, "label": "Toxic" },
+      { "word": "if", "weight": 0.0033, "label": "Non-toxic" },
+      { "word": "made", "weight": 0.0007, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "a410f8da25b0e978",
+    "comment": "He is a nazi and from the Opus Dei. I mean, aren't catholics ashamed of their religion?",
+    "prediction_proba": 85.39,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "nazi", "weight": 0.5323, "label": "Toxic" },
+      { "word": "He", "weight": 0.187, "label": "Toxic" },
+      { "word": "a", "weight": 0.0905, "label": "Toxic" },
+      { "word": "is", "weight": 0.0764, "label": "Toxic" },
+      { "word": "ashamed", "weight": 0.0752, "label": "Toxic" },
+      { "word": "Opus", "weight": 0.0584, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0506, "label": "Non-toxic" },
+      { "word": "aren", "weight": 0.0367, "label": "Toxic" },
+      { "word": "the", "weight": 0.0338, "label": "Toxic" },
+      { "word": "mean", "weight": 0.0263, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d65a70b383e8d06a",
+    "comment": "basketball is a game where 2 gay guys throw a ball into a orange hoop and gigle.",
+    "prediction_proba": 83.02,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "gay", "weight": 0.6645, "label": "Toxic" },
+      { "word": "gigle", "weight": 0.0693, "label": "Toxic" },
+      { "word": "throw", "weight": 0.0516, "label": "Toxic" },
+      { "word": "a", "weight": 0.046, "label": "Toxic" },
+      { "word": "where", "weight": 0.0393, "label": "Non-toxic" },
+      { "word": "hoop", "weight": 0.0355, "label": "Non-toxic" },
+      { "word": "guys", "weight": 0.0266, "label": "Toxic" },
+      { "word": "game", "weight": 0.0201, "label": "Non-toxic" },
+      { "word": "2", "weight": 0.0184, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0026, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "efcee17a189c67c8",
+    "comment": "(I've attempted to only use publicly acknowledged details if any of this is WP:OUTING please remove but I hope I covered all my bases. If he had a doubt, he should have made his request via email!)",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "hope", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "please", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "details", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "had", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "acknowledged", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "my", "weight": 0.0002, "label": "Toxic" },
+      { "word": "a", "weight": 0.0002, "label": "Toxic" },
+      { "word": "his", "weight": 0.0002, "label": "Toxic" },
+      { "word": "made", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "ve", "weight": 0.0001, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6f0dc339596ae2e3",
+    "comment": "REDIRECT Talk:Musketeers (synchronized skating team)",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "skating", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "Talk", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "synchronized", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "REDIRECT", "weight": 0.0003, "label": "Non-toxic" },
+      { "word": "team", "weight": 0.0002, "label": "Non-toxic" },
+      { "word": "Musketeers", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "58d16f8d2e5410e8",
+    "comment": "all this is stupid if yew dont know anything then dont post",
+    "prediction_proba": 87.87,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.8247, "label": "Toxic" },
+      { "word": "this", "weight": 0.0499, "label": "Non-toxic" },
+      { "word": "yew", "weight": 0.0308, "label": "Toxic" },
+      { "word": "is", "weight": 0.0214, "label": "Non-toxic" },
+      { "word": "dont", "weight": 0.019, "label": "Toxic" },
+      { "word": "anything", "weight": 0.0186, "label": "Toxic" },
+      { "word": "then", "weight": 0.0123, "label": "Non-toxic" },
+      { "word": "post", "weight": 0.0093, "label": "Toxic" },
+      { "word": "all", "weight": 0.0087, "label": "Non-toxic" },
+      { "word": "know", "weight": 0.0018, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "aa33a8d6b7190f45",
+    "comment": "they is crazy genocider terrorist russian putin man tell me on tv must be true tv no lie state no lie",
+    "prediction_proba": 88.91,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "crazy", "weight": 0.4957, "label": "Toxic" },
+      { "word": "terrorist", "weight": 0.1861, "label": "Toxic" },
+      { "word": "russian", "weight": 0.1097, "label": "Toxic" },
+      { "word": "they", "weight": 0.1072, "label": "Toxic" },
+      { "word": "lie", "weight": 0.0943, "label": "Toxic" },
+      { "word": "on", "weight": 0.0426, "label": "Toxic" },
+      { "word": "be", "weight": 0.0315, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0269, "label": "Toxic" },
+      { "word": "state", "weight": 0.0269, "label": "Non-toxic" },
+      { "word": "genocider", "weight": 0.0266, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "68fde45415ff1dae",
+    "comment": "== Birth Name == \n\n In the body it states he was born Desmond Bernard O'Connor yet in the sidebar it states Bernard Desmond O'Connor - can anyone who knows which it is update the other please",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Desmond", "weight": 0.0027, "label": "Non-toxic" },
+      { "word": "he", "weight": 0.0018, "label": "Toxic" },
+      { "word": "in", "weight": 0.0015, "label": "Non-toxic" },
+      { "word": "Connor", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "Bernard", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0012, "label": "Toxic" },
+      { "word": "knows", "weight": 0.001, "label": "Non-toxic" },
+      { "word": "which", "weight": 0.0008, "label": "Toxic" },
+      { "word": "In", "weight": 0.0004, "label": "Toxic" },
+      { "word": "sidebar", "weight": 0.0004, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6225fa154f39e2c7",
+    "comment": "== CEN == \n\n I suggest include information about CEN (really, the standards are CEN-CENELEC).",
+    "prediction_proba": 99.86,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "CEN", "weight": 0.0076, "label": "Toxic" },
+      { "word": "CENELEC", "weight": 0.0042, "label": "Non-toxic" },
+      { "word": "information", "weight": 0.0035, "label": "Non-toxic" },
+      { "word": "suggest", "weight": 0.0035, "label": "Non-toxic" },
+      { "word": "are", "weight": 0.0026, "label": "Toxic" },
+      { "word": "about", "weight": 0.002, "label": "Non-toxic" },
+      { "word": "standards", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "include", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "really", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "1e6cb33dabba95e7",
+    "comment": "Bold text MASTURBATE!",
+    "prediction_proba": 82.54,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "MASTURBATE", "weight": 0.6899, "label": "Toxic" },
+      { "word": "text", "weight": 0.0672, "label": "Non-toxic" },
+      { "word": "Bold", "weight": 0.0436, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "e279911a793a0e9a",
+    "comment": "::: I've been called an Islamo-fascist bitch, a Bengali, and a Zionist enforcer, and now I'm a corrupter of the truth. Cool!",
+    "prediction_proba": 96.02,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "bitch", "weight": 0.7792, "label": "Toxic" },
+      { "word": "fascist", "weight": 0.0491, "label": "Toxic" },
+      { "word": "Cool", "weight": 0.0435, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.0376, "label": "Toxic" },
+      { "word": "corrupter", "weight": 0.0317, "label": "Toxic" },
+      { "word": "truth", "weight": 0.0279, "label": "Non-toxic" },
+      { "word": "called", "weight": 0.0275, "label": "Non-toxic" },
+      { "word": "Islamo", "weight": 0.0262, "label": "Non-toxic" },
+      { "word": "been", "weight": 0.0125, "label": "Non-toxic" },
+      { "word": "ve", "weight": 0.0116, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b0755be14ec2bd26",
+    "comment": "This account has been blocked as a reincarnation of the pelican shit vandal.-",
+    "prediction_proba": 82.94,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "shit", "weight": 0.7992, "label": "Toxic" },
+      { "word": "of", "weight": 0.027, "label": "Non-toxic" },
+      { "word": "pelican", "weight": 0.0234, "label": "Non-toxic" },
+      { "word": "This", "weight": 0.0128, "label": "Non-toxic" },
+      { "word": "blocked", "weight": 0.0069, "label": "Non-toxic" },
+      { "word": "reincarnation", "weight": 0.0067, "label": "Toxic" },
+      { "word": "a", "weight": 0.0065, "label": "Toxic" },
+      { "word": "the", "weight": 0.0025, "label": "Toxic" },
+      { "word": "been", "weight": 0.0019, "label": "Non-toxic" },
+      { "word": "has", "weight": 0.0001, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d37223f6a90d7060",
+    "comment": "Whoever owns this IP address is gonna be SOOOO mad! \n\n Oh wait. \n\n Who gives a shit about them?  Or you!! \n\n Princess Claire eats dick on cam, I have proof!",
+    "prediction_proba": 95.88,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "shit", "weight": 0.3306, "label": "Toxic" },
+      { "word": "dick", "weight": 0.2041, "label": "Toxic" },
+      { "word": "Or", "weight": 0.0812, "label": "Non-toxic" },
+      { "word": "address", "weight": 0.0794, "label": "Non-toxic" },
+      { "word": "mad", "weight": 0.0751, "label": "Toxic" },
+      { "word": "eats", "weight": 0.0609, "label": "Toxic" },
+      { "word": "cam", "weight": 0.0541, "label": "Toxic" },
+      { "word": "on", "weight": 0.0425, "label": "Non-toxic" },
+      { "word": "Princess", "weight": 0.0374, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0373, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9079aa0ee5bb3a36",
+    "comment": "If the band themselves handled their own article you can be sure it wouldn't include alot of the bullshit on the front page.",
+    "prediction_proba": 79.89,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "bullshit", "weight": 0.7364, "label": "Toxic" },
+      { "word": "of", "weight": 0.035, "label": "Toxic" },
+      { "word": "front", "weight": 0.027, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0248, "label": "Non-toxic" },
+      { "word": "alot", "weight": 0.0142, "label": "Non-toxic" },
+      { "word": "band", "weight": 0.0123, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.012, "label": "Non-toxic" },
+      { "word": "on", "weight": 0.0095, "label": "Toxic" },
+      { "word": "their", "weight": 0.0078, "label": "Toxic" },
+      { "word": "the", "weight": 0.0077, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "68cb71c79406151c",
+    "comment": ":And there's no assurance that my editing with a registered account will result in a coherent discussion.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "editing", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "coherent", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "my", "weight": 0.001, "label": "Toxic" },
+      { "word": "account", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "assurance", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "result", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "registered", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "And", "weight": 0.0007, "label": "Toxic" },
+      { "word": "with", "weight": 0.0006, "label": "Toxic" },
+      { "word": "a", "weight": 0.0005, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "153c7e75e575e69b",
+    "comment": "Shut up,robot.I'm not in the mood for your whining.",
+    "prediction_proba": 89.85,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Shut", "weight": 0.3631, "label": "Toxic" },
+      { "word": "whining", "weight": 0.2818, "label": "Toxic" },
+      { "word": "your", "weight": 0.1298, "label": "Toxic" },
+      { "word": "up", "weight": 0.0661, "label": "Toxic" },
+      { "word": "m", "weight": 0.0578, "label": "Toxic" },
+      { "word": "not", "weight": 0.0347, "label": "Non-toxic" },
+      { "word": "for", "weight": 0.0343, "label": "Toxic" },
+      { "word": "mood", "weight": 0.0293, "label": "Non-toxic" },
+      { "word": "robot", "weight": 0.0285, "label": "Toxic" },
+      { "word": "I", "weight": 0.0209, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "c640097ba9086adb",
+    "comment": "<A thousand-pound female prostitute. That's just great. Hey BMK, I was reading Canaanite religion. Man that is interesting.",
+    "prediction_proba": 89.86,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "prostitute", "weight": 0.7799, "label": "Toxic" },
+      { "word": "BMK", "weight": 0.0582, "label": "Toxic" },
+      { "word": "female", "weight": 0.0533, "label": "Toxic" },
+      { "word": "thousand", "weight": 0.0471, "label": "Toxic" },
+      { "word": "interesting", "weight": 0.0326, "label": "Non-toxic" },
+      { "word": "Man", "weight": 0.025, "label": "Non-toxic" },
+      { "word": "Canaanite", "weight": 0.0221, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.022, "label": "Toxic" },
+      { "word": "pound", "weight": 0.0176, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0018, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "475504dcd66733f9",
+    "comment": ":Get stuffed! How dare you suggest that you {Insert swear word starting with w or f} Maybe you should consider getting a life you pathetic person you. I'm not going to give up editing for toad weeds like you...",
+    "prediction_proba": 87.36,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "pathetic", "weight": 0.2835, "label": "Toxic" },
+      { "word": "you", "weight": 0.1737, "label": "Toxic" },
+      { "word": "weeds", "weight": 0.1276, "label": "Toxic" },
+      { "word": "Maybe", "weight": 0.0973, "label": "Non-toxic" },
+      { "word": "like", "weight": 0.0774, "label": "Toxic" },
+      { "word": "suggest", "weight": 0.0748, "label": "Non-toxic" },
+      { "word": "dare", "weight": 0.0619, "label": "Toxic" },
+      { "word": "give", "weight": 0.0607, "label": "Toxic" },
+      { "word": "starting", "weight": 0.0425, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0046, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "24a7eb39e66e2adf",
+    "comment": "Day two of editing here and it's already clear that this place is run by morons.",
+    "prediction_proba": 92.84,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "morons", "weight": 0.835, "label": "Toxic" },
+      { "word": "by", "weight": 0.0212, "label": "Toxic" },
+      { "word": "of", "weight": 0.0168, "label": "Toxic" },
+      { "word": "here", "weight": 0.0154, "label": "Non-toxic" },
+      { "word": "this", "weight": 0.0126, "label": "Toxic" },
+      { "word": "that", "weight": 0.0107, "label": "Toxic" },
+      { "word": "it", "weight": 0.0106, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0035, "label": "Toxic" },
+      { "word": "run", "weight": 0.0034, "label": "Non-toxic" },
+      { "word": "place", "weight": 0.0007, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "e2a21037d798a0c5",
+    "comment": "*Please do not refer to my comment as moronic and retarded , that is a personal attack",
+    "prediction_proba": 80.23,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "retarded", "weight": 0.4149, "label": "Toxic" },
+      { "word": "moronic", "weight": 0.2728, "label": "Toxic" },
+      { "word": "refer", "weight": 0.0782, "label": "Non-toxic" },
+      { "word": "as", "weight": 0.0718, "label": "Toxic" },
+      { "word": "that", "weight": 0.0528, "label": "Non-toxic" },
+      { "word": "attack", "weight": 0.0432, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0408, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.039, "label": "Toxic" },
+      { "word": "is", "weight": 0.0386, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0294, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "98492a4df410bc4a",
+    "comment": "What is corruption?   >corruption is fashion",
+    "prediction_proba": 98.68,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "corruption", "weight": 0.0083, "label": "Toxic" },
+      { "word": "fashion", "weight": 0.0072, "label": "Non-toxic" },
+      { "word": "What", "weight": 0.0034, "label": "Toxic" },
+      { "word": "is", "weight": 0.003, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "7339dc0345a22f44",
+    "comment": ", even if it is in commons area and supposedly has passed copyright clearance, Clarence",
+    "prediction_proba": 99.95,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "passed", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "supposedly", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "even", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "in", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "commons", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "clearance", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "if", "weight": 0.0, "label": "Toxic" },
+      { "word": "has", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "347f9cbb2e100431",
+    "comment": "Please die in a house fire. That is all.",
+    "prediction_proba": 82.88,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "die", "weight": 0.6922, "label": "Toxic" },
+      { "word": "fire", "weight": 0.1241, "label": "Toxic" },
+      { "word": "all", "weight": 0.0659, "label": "Toxic" },
+      { "word": "a", "weight": 0.0555, "label": "Toxic" },
+      { "word": "is", "weight": 0.0544, "label": "Non-toxic" },
+      { "word": "house", "weight": 0.0378, "label": "Non-toxic" },
+      { "word": "Please", "weight": 0.029, "label": "Non-toxic" },
+      { "word": "in", "weight": 0.0058, "label": "Toxic" },
+      { "word": "That", "weight": 0.0024, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "077f2ec4b2400709",
+    "comment": "::You were a liar last year and you are still a liar now, but that's all I say because I don't want to be blocked.  Have no fear, I will be going RTV and will not be bothering you anymore.",
+    "prediction_proba": 78.87,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "liar", "weight": 0.5129, "label": "Toxic" },
+      { "word": "You", "weight": 0.2472, "label": "Toxic" },
+      { "word": "you", "weight": 0.0883, "label": "Toxic" },
+      { "word": "were", "weight": 0.0757, "label": "Non-toxic" },
+      { "word": "Have", "weight": 0.0638, "label": "Toxic" },
+      { "word": "RTV", "weight": 0.0596, "label": "Non-toxic" },
+      { "word": "year", "weight": 0.0472, "label": "Non-toxic" },
+      { "word": "will", "weight": 0.0467, "label": "Toxic" },
+      { "word": "fear", "weight": 0.0341, "label": "Non-toxic" },
+      { "word": "anymore", "weight": 0.0316, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "2b4e321e75a44268",
+    "comment": "insulting garbage...",
+    "prediction_proba": 87.21,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "garbage", "weight": 0.3886, "label": "Toxic" },
+      { "word": "insulting", "weight": 0.0755, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "caa4f5d73ec60ece",
+    "comment": "Please stop. If you continue to vandalize Wikipedia, as you did to Slavery in antiquity, you will be blocked from editing.  /",
+    "prediction_proba": 99.36,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "you", "weight": 0.022, "label": "Toxic" },
+      { "word": "antiquity", "weight": 0.0163, "label": "Non-toxic" },
+      { "word": "did", "weight": 0.013, "label": "Non-toxic" },
+      { "word": "Slavery", "weight": 0.01, "label": "Toxic" },
+      { "word": "If", "weight": 0.0097, "label": "Non-toxic" },
+      { "word": "stop", "weight": 0.0088, "label": "Toxic" },
+      { "word": "as", "weight": 0.0085, "label": "Non-toxic" },
+      { "word": "editing", "weight": 0.0064, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0062, "label": "Non-toxic" },
+      { "word": "Please", "weight": 0.0062, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "807057f01a51ccf7",
+    "comment": "I'm a little poop head",
+    "prediction_proba": 75.96,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "poop", "weight": 0.4639, "label": "Toxic" },
+      { "word": "head", "weight": 0.2205, "label": "Toxic" },
+      { "word": "a", "weight": 0.0885, "label": "Toxic" },
+      { "word": "m", "weight": 0.0667, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0535, "label": "Non-toxic" },
+      { "word": "little", "weight": 0.041, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "6072c679719c0a76",
+    "comment": "what I know from \n the novel.",
+    "prediction_proba": 99.92,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "novel", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "know", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "from", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "what", "weight": 0.0004, "label": "Toxic" },
+      { "word": "I", "weight": 0.0002, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "29e9ab822efbab11",
+    "comment": "::Nope. That one crap photo is as good as it gets. It's either tolmiei or elegans .",
+    "prediction_proba": 76.82,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "crap", "weight": 0.7185, "label": "Toxic" },
+      { "word": "is", "weight": 0.0339, "label": "Toxic" },
+      { "word": "good", "weight": 0.0244, "label": "Non-toxic" },
+      { "word": "photo", "weight": 0.0215, "label": "Non-toxic" },
+      { "word": "gets", "weight": 0.0207, "label": "Toxic" },
+      { "word": "either", "weight": 0.0199, "label": "Non-toxic" },
+      { "word": "Nope", "weight": 0.0162, "label": "Non-toxic" },
+      { "word": "one", "weight": 0.0126, "label": "Non-toxic" },
+      { "word": "it", "weight": 0.0126, "label": "Toxic" },
+      { "word": "as", "weight": 0.0002, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "fbdc758a0a221950",
+    "comment": "\"**** Oh, how right you were Nightspore. I've heard nothing at all - not a peep, not the flutter of an apology, nothing. Dear Kelly is obviously rude as well as ignorant.   \n\n \"",
+    "prediction_proba": 25.68,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "ignorant", "weight": 0.3263, "label": "Toxic" },
+      { "word": "rude", "weight": 0.1083, "label": "Toxic" },
+      { "word": "peep", "weight": 0.0885, "label": "Toxic" },
+      { "word": "apology", "weight": 0.0767, "label": "Non-toxic" },
+      { "word": "Nightspore", "weight": 0.0578, "label": "Non-toxic" },
+      { "word": "flutter", "weight": 0.0519, "label": "Non-toxic" },
+      { "word": "at", "weight": 0.0465, "label": "Non-toxic" },
+      { "word": "nothing", "weight": 0.039, "label": "Toxic" },
+      { "word": "you", "weight": 0.0354, "label": "Toxic" },
+      { "word": "an", "weight": 0.0013, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "4c930c7d6a968231",
+    "comment": "== Who the hell is editing this article? == \n\n I'm pretty sure someone is abusing this article, but it doesn't matter, because it sucked before it.",
+    "prediction_proba": 76.15,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "sucked", "weight": 0.3034, "label": "Toxic" },
+      { "word": "hell", "weight": 0.279, "label": "Toxic" },
+      { "word": "before", "weight": 0.0985, "label": "Non-toxic" },
+      { "word": "sure", "weight": 0.0668, "label": "Toxic" },
+      { "word": "Who", "weight": 0.0603, "label": "Toxic" },
+      { "word": "editing", "weight": 0.0483, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.0378, "label": "Non-toxic" },
+      { "word": "article", "weight": 0.0327, "label": "Toxic" },
+      { "word": "is", "weight": 0.0258, "label": "Toxic" },
+      { "word": "m", "weight": 0.0254, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "c4a1f8f3cddcfa2a",
+    "comment": ", but sometimes called big penis",
+    "prediction_proba": 75.31,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "penis", "weight": 0.6458, "label": "Toxic" },
+      { "word": "big", "weight": 0.1112, "label": "Toxic" },
+      { "word": "but", "weight": 0.0739, "label": "Non-toxic" },
+      { "word": "called", "weight": 0.0527, "label": "Non-toxic" },
+      { "word": "sometimes", "weight": 0.0411, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "63441f1a56be62a8",
+    "comment": "\" \n\n ::It is going fine. I'm working on a Tag title list at the moment, plus other things. Before you know it, you'll see a shit load of edits by me. That is if you have alot of TNA articles on your watch list.-Joe's gonna kill you!!!) \"",
+    "prediction_proba": 83.49,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "kill", "weight": 0.3105, "label": "Toxic" },
+      { "word": "shit", "weight": 0.3104, "label": "Toxic" },
+      { "word": "you", "weight": 0.1326, "label": "Toxic" },
+      { "word": "of", "weight": 0.1132, "label": "Non-toxic" },
+      { "word": "at", "weight": 0.0701, "label": "Non-toxic" },
+      { "word": "TNA", "weight": 0.0631, "label": "Toxic" },
+      { "word": "other", "weight": 0.0437, "label": "Non-toxic" },
+      { "word": "by", "weight": 0.0417, "label": "Toxic" },
+      { "word": "know", "weight": 0.0409, "label": "Toxic" },
+      { "word": "Tag", "weight": 0.0057, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "81c9503b10ee26f6",
+    "comment": "I don't believe that Law of Return and this article are the same. One is a law, one is a concept. Each has its own separate ontological life.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "concept", "weight": 0.0046, "label": "Non-toxic" },
+      { "word": "Each", "weight": 0.0041, "label": "Non-toxic" },
+      { "word": "Return", "weight": 0.0039, "label": "Non-toxic" },
+      { "word": "a", "weight": 0.0033, "label": "Toxic" },
+      { "word": "law", "weight": 0.0029, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.0028, "label": "Toxic" },
+      { "word": "believe", "weight": 0.0026, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0026, "label": "Non-toxic" },
+      { "word": "one", "weight": 0.0023, "label": "Non-toxic" },
+      { "word": "life", "weight": 0.0023, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "1d90791200101cb8",
+    "comment": "and i think antonio adam begay should be dead",
+    "prediction_proba": 88.06,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "begay", "weight": 0.5674, "label": "Toxic" },
+      { "word": "dead", "weight": 0.3057, "label": "Toxic" },
+      { "word": "adam", "weight": 0.1292, "label": "Non-toxic" },
+      { "word": "think", "weight": 0.071, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0677, "label": "Toxic" },
+      { "word": "antonio", "weight": 0.0466, "label": "Toxic" },
+      { "word": "should", "weight": 0.0389, "label": "Toxic" },
+      { "word": "i", "weight": 0.029, "label": "Non-toxic" },
+      { "word": "and", "weight": 0.0123, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "4d7bd94e1b1b5f41",
+    "comment": "Dmacks is a fool though.",
+    "prediction_proba": 87.61,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "fool", "weight": 0.7523, "label": "Toxic" },
+      { "word": "a", "weight": 0.0709, "label": "Toxic" },
+      { "word": "Dmacks", "weight": 0.0591, "label": "Toxic" },
+      { "word": "though", "weight": 0.0487, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0104, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b4cde67f44858128",
+    "comment": "I love Martin Lawrence and I hate that girl Tisha Campbell \n She's such a bitch. Why did she have to make the show end??? \n Martin is sooooo sexy..i would love to meet him one day.",
+    "prediction_proba": 89.95,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "bitch", "weight": 0.5154, "label": "Toxic" },
+      { "word": "hate", "weight": 0.1485, "label": "Toxic" },
+      { "word": "day", "weight": 0.0928, "label": "Toxic" },
+      { "word": "Martin", "weight": 0.0844, "label": "Non-toxic" },
+      { "word": "love", "weight": 0.0803, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0648, "label": "Toxic" },
+      { "word": "sexy", "weight": 0.0635, "label": "Toxic" },
+      { "word": "him", "weight": 0.0606, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0328, "label": "Toxic" },
+      { "word": "have", "weight": 0.0276, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d736d843be9208f0",
+    "comment": "\" \n ==CHANGE or ADD NAME to \"\" Members Cult of God International\"\" \n  - this cult is not considered as a religion. Its a business franchise owned by a homosexual prick and will be inherited by a psychotic, gun slinging bible-bearing ex-tv host. \n\n \"",
+    "prediction_proba": 53.3,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "homosexual", "weight": 0.2882, "label": "Toxic" },
+      { "word": "psychotic", "weight": 0.1792, "label": "Toxic" },
+      { "word": "CHANGE", "weight": 0.1308, "label": "Non-toxic" },
+      { "word": "prick", "weight": 0.1291, "label": "Toxic" },
+      { "word": "a", "weight": 0.0947, "label": "Toxic" },
+      { "word": "franchise", "weight": 0.082, "label": "Non-toxic" },
+      { "word": "will", "weight": 0.0647, "label": "Toxic" },
+      { "word": "God", "weight": 0.0636, "label": "Non-toxic" },
+      { "word": "not", "weight": 0.0577, "label": "Non-toxic" },
+      { "word": "tv", "weight": 0.0424, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "1a3300b8e758f268",
+    "comment": "==Talkback== \n\n I had to re-delete the article again, as it was, again, a mere collection of sentences copy / pasted without permission. See my talk page for more information.   (')'",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "information", "weight": 0.001, "label": "Non-toxic" },
+      { "word": "See", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "for", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "permission", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "copy", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "sentences", "weight": 0.0005, "label": "Toxic" },
+      { "word": "mere", "weight": 0.0005, "label": "Toxic" },
+      { "word": "a", "weight": 0.0005, "label": "Toxic" },
+      { "word": "was", "weight": 0.0004, "label": "Non-toxic" },
+      { "word": "my", "weight": 0.0004, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "3a5c4e6518948f89",
+    "comment": "No need for Mackensen to apologize. Ghost believes that there are no petty questions...only petty answers. Therefore, if Mackensen would re-ask his question, Ghost will gladly try and provide him with such an answer:)",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "will", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "would", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "petty", "weight": 0.0007, "label": "Toxic" },
+      { "word": "to", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "no", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "only", "weight": 0.0006, "label": "Toxic" },
+      { "word": "Ghost", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "No", "weight": 0.0004, "label": "Toxic" },
+      { "word": "apologize", "weight": 0.0004, "label": "Toxic" },
+      { "word": "that", "weight": 0.0003, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "394855c528d7c0d1",
+    "comment": "== Dude == \n\n We should form a rock band. Don't let these pricks get to you. Most of them are pissed they never kissed someone of the opposite sex.",
+    "prediction_proba": 82.11,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "pissed", "weight": 0.2516, "label": "Toxic" },
+      { "word": "sex", "weight": 0.2186, "label": "Toxic" },
+      { "word": "pricks", "weight": 0.1453, "label": "Toxic" },
+      { "word": "let", "weight": 0.0774, "label": "Non-toxic" },
+      { "word": "them", "weight": 0.0637, "label": "Non-toxic" },
+      { "word": "never", "weight": 0.0541, "label": "Non-toxic" },
+      { "word": "Dude", "weight": 0.0465, "label": "Toxic" },
+      { "word": "you", "weight": 0.0398, "label": "Toxic" },
+      { "word": "to", "weight": 0.0283, "label": "Non-toxic" },
+      { "word": "kissed", "weight": 0.0249, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "c8f4d09bf42d76a2",
+    "comment": ":::Don't listen to them, they're an unashamed hypocrite",
+    "prediction_proba": 89.34,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "hypocrite", "weight": 0.4645, "label": "Toxic" },
+      { "word": "unashamed", "weight": 0.1387, "label": "Toxic" },
+      { "word": "re", "weight": 0.1162, "label": "Toxic" },
+      { "word": "an", "weight": 0.1121, "label": "Toxic" },
+      { "word": "listen", "weight": 0.0392, "label": "Toxic" },
+      { "word": "Don", "weight": 0.0288, "label": "Toxic" },
+      { "word": "they", "weight": 0.0225, "label": "Non-toxic" },
+      { "word": "to", "weight": 0.0211, "label": "Toxic" },
+      { "word": "t", "weight": 0.0145, "label": "Toxic" },
+      { "word": "them", "weight": 0.0144, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "1fcdeea618158d4c",
+    "comment": ":Yes, one is aware of the procedure with those PROD tags old boy. However, it would have been jolly good form if you had marked it for merging. Very good!    -",
+    "prediction_proba": 99.92,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "procedure", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "tags", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "you", "weight": 0.0013, "label": "Toxic" },
+      { "word": "one", "weight": 0.0012, "label": "Non-toxic" },
+      { "word": "if", "weight": 0.0012, "label": "Non-toxic" },
+      { "word": "boy", "weight": 0.0011, "label": "Toxic" },
+      { "word": "those", "weight": 0.0011, "label": "Toxic" },
+      { "word": "the", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "with", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "jolly", "weight": 0.0007, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "2f808943d5fe7718",
+    "comment": "talBecause napoleon sucks big balls \n and is an amazing person at it.  \n if ur reading  this uv just been punked  \n biatchLink title =]k",
+    "prediction_proba": 84.81,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "sucks", "weight": 0.5258, "label": "Toxic" },
+      { "word": "balls", "weight": 0.1619, "label": "Toxic" },
+      { "word": "been", "weight": 0.0889, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.0721, "label": "Toxic" },
+      { "word": "it", "weight": 0.0664, "label": "Non-toxic" },
+      { "word": "k", "weight": 0.0616, "label": "Toxic" },
+      { "word": "punked", "weight": 0.0591, "label": "Toxic" },
+      { "word": "at", "weight": 0.0449, "label": "Non-toxic" },
+      { "word": "this", "weight": 0.0386, "label": "Toxic" },
+      { "word": "big", "weight": 0.0365, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "b6ea11758495d5e7",
+    "comment": "\" \n ::As Divine Principle is essentially the main article on UC theology currently, and as TF is meant to be a theological concept (when shorn of lists, family ups and downs, etc), this seems reasonable. ''''(P) \"",
+    "prediction_proba": 99.77,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "TF", "weight": 0.0123, "label": "Toxic" },
+      { "word": "theological", "weight": 0.0083, "label": "Non-toxic" },
+      { "word": "family", "weight": 0.0065, "label": "Non-toxic" },
+      { "word": "lists", "weight": 0.0056, "label": "Non-toxic" },
+      { "word": "theology", "weight": 0.0041, "label": "Non-toxic" },
+      { "word": "as", "weight": 0.0041, "label": "Toxic" },
+      { "word": "on", "weight": 0.0037, "label": "Non-toxic" },
+      { "word": "concept", "weight": 0.0032, "label": "Non-toxic" },
+      { "word": "downs", "weight": 0.0031, "label": "Toxic" },
+      { "word": "ups", "weight": 0.0017, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "33aaefcc1ae2eba3",
+    "comment": ":That is a narrow-minded and not very neutral point of view. Slavery is wrong no matter what colour if skin, and no matter which country. People should be aware that people of all nationalitys have been slaves. There is nothing wrong with the truth.",
+    "prediction_proba": 98.62,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "slaves", "weight": 0.0188, "label": "Toxic" },
+      { "word": "nothing", "weight": 0.0124, "label": "Toxic" },
+      { "word": "aware", "weight": 0.0104, "label": "Non-toxic" },
+      { "word": "nationalitys", "weight": 0.0093, "label": "Non-toxic" },
+      { "word": "country", "weight": 0.0077, "label": "Non-toxic" },
+      { "word": "very", "weight": 0.0073, "label": "Non-toxic" },
+      { "word": "minded", "weight": 0.0072, "label": "Toxic" },
+      { "word": "skin", "weight": 0.0033, "label": "Toxic" },
+      { "word": "People", "weight": 0.0032, "label": "Toxic" },
+      { "word": "point", "weight": 0.0019, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "255eccdcab720d45",
+    "comment": "bcoz you are mad",
+    "prediction_proba": 43.63,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "mad", "weight": 0.3383, "label": "Toxic" },
+      { "word": "you", "weight": 0.2226, "label": "Toxic" },
+      { "word": "are", "weight": 0.0867, "label": "Toxic" },
+      { "word": "bcoz", "weight": 0.029, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "52251c8196e7c1db",
+    "comment": "== ISIL == \n Apparently, a bot would've wiped out my switch anyways. Didn't notice the {EngvarB|date=February 2015} tag at the top. Thanks for the link. Cheers!",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "the", "weight": 0.0025, "label": "Non-toxic" },
+      { "word": "switch", "weight": 0.0018, "label": "Non-toxic" },
+      { "word": "link", "weight": 0.0017, "label": "Non-toxic" },
+      { "word": "Didn", "weight": 0.0014, "label": "Non-toxic" },
+      { "word": "Apparently", "weight": 0.0013, "label": "Non-toxic" },
+      { "word": "date", "weight": 0.0011, "label": "Non-toxic" },
+      { "word": "2015", "weight": 0.0011, "label": "Toxic" },
+      { "word": "ISIL", "weight": 0.0009, "label": "Non-toxic" },
+      { "word": "wiped", "weight": 0.0008, "label": "Toxic" },
+      { "word": "my", "weight": 0.0006, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "a8e181547b99ce4b",
+    "comment": "\"What do you mean \"\"launce spaxcecraft\"\". And why would you invade Poland you Nazi vampire!!! (I'm just joking don't take this Nazi personal or as an insult)   \n\n  \n \"",
+    "prediction_proba": 77.43,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Nazi", "weight": 0.3637, "label": "Toxic" },
+      { "word": "you", "weight": 0.2629, "label": "Toxic" },
+      { "word": "mean", "weight": 0.0971, "label": "Non-toxic" },
+      { "word": "vampire", "weight": 0.0957, "label": "Toxic" },
+      { "word": "launce", "weight": 0.0858, "label": "Non-toxic" },
+      { "word": "insult", "weight": 0.0789, "label": "Toxic" },
+      { "word": "as", "weight": 0.0764, "label": "Toxic" },
+      { "word": "just", "weight": 0.0741, "label": "Non-toxic" },
+      { "word": "would", "weight": 0.052, "label": "Non-toxic" },
+      { "word": "I", "weight": 0.0463, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "5ee6803c5731aae8",
+    "comment": "yo all my hoes in the house, holla at meeeeeeee. \n if you like sleepin with midgets like laiting, you got seeeeeeeeeerious taste! \n HOLLA! iamfelicityahooooooe@midgetlovin.com",
+    "prediction_proba": 79.59,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "hoes", "weight": 0.3098, "label": "Toxic" },
+      { "word": "yo", "weight": 0.1143, "label": "Toxic" },
+      { "word": "my", "weight": 0.1004, "label": "Toxic" },
+      { "word": "taste", "weight": 0.0929, "label": "Non-toxic" },
+      { "word": "meeeeeeee", "weight": 0.0885, "label": "Toxic" },
+      { "word": "you", "weight": 0.0807, "label": "Toxic" },
+      { "word": "midgets", "weight": 0.0668, "label": "Toxic" },
+      { "word": "if", "weight": 0.0635, "label": "Non-toxic" },
+      { "word": "sleepin", "weight": 0.0335, "label": "Toxic" },
+      { "word": "iamfelicityahooooooe", "weight": 0.0322, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "5053986c9f998847",
+    "comment": "Failing that... Child Abuse.",
+    "prediction_proba": 86.71,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "Abuse", "weight": 0.0757, "label": "Toxic" },
+      { "word": "Child", "weight": 0.0733, "label": "Toxic" },
+      { "word": "that", "weight": 0.0156, "label": "Non-toxic" },
+      { "word": "Failing", "weight": 0.0112, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "9edcbb6d68a5d3aa",
+    "comment": "== Hey == \n\n Did you ever think that you're page gets vandalized because you're rude and you don't actually contribute anything of your own?  Also, that Harper Lee quote is lame.  Makes me think you're the type that rarely leaves your house -",
+    "prediction_proba": 67.91,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "lame", "weight": 0.1652, "label": "Toxic" },
+      { "word": "you", "weight": 0.103, "label": "Toxic" },
+      { "word": "your", "weight": 0.077, "label": "Toxic" },
+      { "word": "rude", "weight": 0.0551, "label": "Toxic" },
+      { "word": "Harper", "weight": 0.0524, "label": "Non-toxic" },
+      { "word": "me", "weight": 0.0335, "label": "Toxic" },
+      { "word": "actually", "weight": 0.0269, "label": "Non-toxic" },
+      { "word": "t", "weight": 0.0207, "label": "Toxic" },
+      { "word": "page", "weight": 0.0171, "label": "Toxic" },
+      { "word": "is", "weight": 0.0133, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "520370d12f1ea2c2",
+    "comment": "\" \n :Oh, wait, the kid with the brown hair is apparently \"\"Jason\"\" according to Stupid Spoiled Whore Video Playset. Nevermind. Just wondering about the blonde kid now.  \"",
+    "prediction_proba": 79.89,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Stupid", "weight": 0.519, "label": "Toxic" },
+      { "word": "Whore", "weight": 0.2416, "label": "Toxic" },
+      { "word": "Playset", "weight": 0.0777, "label": "Non-toxic" },
+      { "word": "Video", "weight": 0.0585, "label": "Non-toxic" },
+      { "word": "Oh", "weight": 0.0578, "label": "Toxic" },
+      { "word": "Spoiled", "weight": 0.0557, "label": "Toxic" },
+      { "word": "blonde", "weight": 0.0424, "label": "Toxic" },
+      { "word": "is", "weight": 0.032, "label": "Non-toxic" },
+      { "word": "now", "weight": 0.0227, "label": "Non-toxic" },
+      { "word": "according", "weight": 0.0155, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "2a066d8284d19604",
+    "comment": "Hey I am becky im a loud and abnocious girl that likes to molest people also I want to be gay with jessie j",
+    "prediction_proba": 91.34,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "gay", "weight": 0.3926, "label": "Toxic" },
+      { "word": "molest", "weight": 0.1912, "label": "Toxic" },
+      { "word": "girl", "weight": 0.0757, "label": "Toxic" },
+      { "word": "becky", "weight": 0.0653, "label": "Toxic" },
+      { "word": "likes", "weight": 0.0649, "label": "Toxic" },
+      { "word": "also", "weight": 0.0586, "label": "Non-toxic" },
+      { "word": "want", "weight": 0.0582, "label": "Toxic" },
+      { "word": "a", "weight": 0.0505, "label": "Toxic" },
+      { "word": "am", "weight": 0.048, "label": "Non-toxic" },
+      { "word": "abnocious", "weight": 0.0328, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "3bf94b981c737204",
+    "comment": "Having established that Hardin did not coin the phrase, or claim to, I have made changes in line with the above comments. The 'controversy' section is now simply misguided, but I've left it, pending a better one.",
+    "prediction_proba": 99.94,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "established", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "better", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "with", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "is", "weight": 0.0001, "label": "Toxic" },
+      { "word": "pending", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "section", "weight": 0.0001, "label": "Non-toxic" },
+      { "word": "Hardin", "weight": 0.0001, "label": "Toxic" },
+      { "word": "or", "weight": 0.0, "label": "Toxic" },
+      { "word": "above", "weight": 0.0, "label": "Non-toxic" },
+      { "word": "the", "weight": 0.0, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "160599f8384ac7b2",
+    "comment": "and very stupid, it's just pathetic, lazy americans being even more lazy!",
+    "prediction_proba": 98.66,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "stupid", "weight": 0.2315, "label": "Toxic" },
+      { "word": "lazy", "weight": 0.1817, "label": "Toxic" },
+      { "word": "pathetic", "weight": 0.1102, "label": "Toxic" },
+      { "word": "even", "weight": 0.0807, "label": "Non-toxic" },
+      { "word": "s", "weight": 0.0717, "label": "Toxic" },
+      { "word": "it", "weight": 0.052, "label": "Toxic" },
+      { "word": "more", "weight": 0.0256, "label": "Toxic" },
+      { "word": "very", "weight": 0.0226, "label": "Toxic" },
+      { "word": "being", "weight": 0.0194, "label": "Toxic" },
+      { "word": "americans", "weight": 0.0099, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "d7b8cb473bc07134",
+    "comment": "\" \n\n == social contribution == \n\n I have expanded the section. I am not sure if the song is suitable to this page or Ganesh Chaturthi. I went ahead and addedanyway. comments welcome. thanks.  \"",
+    "prediction_proba": 99.93,
+    "prediction_label": "Non-toxic",
+    "important_words": [
+      { "word": "suitable", "weight": 0.0012, "label": "Non-toxic" },
+      { "word": "Chaturthi", "weight": 0.0012, "label": "Toxic" },
+      { "word": "or", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "social", "weight": 0.0008, "label": "Non-toxic" },
+      { "word": "Ganesh", "weight": 0.0007, "label": "Toxic" },
+      { "word": "is", "weight": 0.0007, "label": "Non-toxic" },
+      { "word": "comments", "weight": 0.0006, "label": "Non-toxic" },
+      { "word": "expanded", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "song", "weight": 0.0005, "label": "Non-toxic" },
+      { "word": "this", "weight": 0.0004, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "f19d5263b02292b7",
+    "comment": "ja on his MYPSACE if you got guts. dumb cowards",
+    "prediction_proba": 97.87,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "cowards", "weight": 0.3341, "label": "Toxic" },
+      { "word": "dumb", "weight": 0.2679, "label": "Toxic" },
+      { "word": "guts", "weight": 0.1301, "label": "Toxic" },
+      { "word": "on", "weight": 0.0988, "label": "Non-toxic" },
+      { "word": "his", "weight": 0.0811, "label": "Toxic" },
+      { "word": "got", "weight": 0.0781, "label": "Non-toxic" },
+      { "word": "if", "weight": 0.0659, "label": "Non-toxic" },
+      { "word": "MYPSACE", "weight": 0.0601, "label": "Toxic" },
+      { "word": "ja", "weight": 0.0327, "label": "Toxic" },
+      { "word": "you", "weight": 0.0006, "label": "Toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "5f72ddc0e2839604",
+    "comment": "::Oops, I'm clearly an incompetent idiot. Sorry. \n ::I meant to deal with , and I grabbed the user-name from the next post. \n ::Sorry.",
+    "prediction_proba": 83.69,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "idiot", "weight": 0.7446, "label": "Toxic" },
+      { "word": "I", "weight": 0.069, "label": "Non-toxic" },
+      { "word": "Sorry", "weight": 0.066, "label": "Non-toxic" },
+      { "word": "incompetent", "weight": 0.0553, "label": "Toxic" },
+      { "word": "name", "weight": 0.0439, "label": "Toxic" },
+      { "word": "from", "weight": 0.0405, "label": "Toxic" },
+      { "word": "clearly", "weight": 0.0307, "label": "Non-toxic" },
+      { "word": "an", "weight": 0.0301, "label": "Toxic" },
+      { "word": "Oops", "weight": 0.0224, "label": "Non-toxic" },
+      { "word": "m", "weight": 0.0178, "label": "Non-toxic" }
+    ],
+    "checked": false
+  },
+  {
+    "id": "a1b79af39c3ff83f",
+    "comment": "==Enormous Cock== \n Is that really this guy's name? This has to be a joke.",
+    "prediction_proba": 87.83,
+    "prediction_label": "Toxic",
+    "important_words": [
+      { "word": "Cock", "weight": 0.7022, "label": "Toxic" },
+      { "word": "guy", "weight": 0.0514, "label": "Toxic" },
+      { "word": "a", "weight": 0.04, "label": "Toxic" },
+      { "word": "joke", "weight": 0.0295, "label": "Toxic" },
+      { "word": "has", "weight": 0.0268, "label": "Non-toxic" },
+      { "word": "be", "weight": 0.0248, "label": "Toxic" },
+      { "word": "s", "weight": 0.0241, "label": "Toxic" },
+      { "word": "really", "weight": 0.0196, "label": "Non-toxic" },
+      { "word": "Enormous", "weight": 0.0136, "label": "Toxic" },
+      { "word": "name", "weight": 0.0021, "label": "Toxic" }
+    ],
+    "checked": false
   }
 ]

@@ -53,11 +53,11 @@ const barchartdata = (important_words) => {
 
   for (let i = 0; i < important_words.length; i++) {
     labels.push(important_words[i].word);
-    if (important_words[i].weight > 0) {
+    if (important_words[i].label === "Toxic") {
       toxic_data.push(important_words[i].weight);
       non_toxic_data.push("0");
     } else {
-      non_toxic_data.push(important_words[i].weight * -1);
+      non_toxic_data.push(important_words[i].weight);
       toxic_data.push("0");
     }
   }
@@ -68,12 +68,12 @@ const barchartdata = (important_words) => {
       {
         label: "Toxic",
         data: toxic_data,
-        backgroundColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgb(237, 109, 133)",
       },
       {
         label: "Non-toxic",
         data: non_toxic_data,
-        backgroundColor: "rgb(75, 192, 192)",
+        backgroundColor: "rgb(77, 83, 185)",
       },
     ],
   };

@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // import context
-import PreTaskQuestionnaireContext from "../context/PreTaskQuestionnaireContext";
+import PreTaskQuestionnaireContext from "../../context/PreTaskQuestionnaireContext";
 
 // import bootstrap components
 import Table from "react-bootstrap/Table";
@@ -23,7 +23,6 @@ const PreviousExperienceQuestion = () => {
   };
 
   const responses = [
-    { value: 0, text: "Level 0" },
     {
       value: 1,
       text: "Level 1",
@@ -67,7 +66,7 @@ const PreviousExperienceQuestion = () => {
   ];
   const prevExperience = {
     question:
-      "11.	How experienced are you with AI systems from 0 to 10. Use the table below to help you determine you level of expertise.",
+      "11.	How experienced are you with AI systems from 1 to 10. Use the table below to help you determine you level of expertise.",
     responses: responses,
     layout: "stacked",
     onChange: (val) => {
@@ -77,128 +76,117 @@ const PreviousExperienceQuestion = () => {
 
   return (
     <>
+      <Likert {...prevExperience} />
+
       <Table striped bordered>
         <thead>
           <tr>
             <th>Level</th>
             <th>Name</th>
             <th>Description</th>
-            <th>Size</th>
-            <th>Practice</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>0</td>
+            <td>1</td>
             <td>Inexperienced</td>
             <td>I have never heard of AI systems.</td>
-            <td>10,000,000,000</td>
-            <td>None</td>
           </tr>
           <tr>
-            <td>1</td>
+            <td>2</td>
             <td>Interested</td>
             <td>
               I have heard a little about AI systems, but don't know much.
             </td>
-            <td>1,000,000,000</td>
-            <td>1 hour</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Pursuing</td>
-            <td>
-              I have read an article or two about AI systems and understand the
-              basics of what it is, but nothing in depth.
-            </td>
-            <td>100,000,000</td>
-            <td>1 day</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Beginner</td>
+            <td>Pursuing</td>
             <td>
-              I have read an in-depth article, primer, or how-to book, and/or
-              have played (tried out Chat GPT for example) with AI systems a
-              bit.
+              I have read an article/watched a vidoe online about AI systems and
+              understand the basics of what it is, but nothing in depth.
             </td>
-            <td>10,000,000</td>
-            <td>1 week</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>Apprentice</td>
+            <td>Beginner</td>
             <td>
-              I have used AI system for at least a few months and have
-              successfully completed a small project using it.
+              I have read an in-depth article, primer, or how-to book, and/or
+              have played with an AI systems a bit, such as ChatGPT.
             </td>
-            <td>1,000,000</td>
-            <td>3 months</td>
           </tr>
           <tr>
             <td>5</td>
-            <td>Intermediate</td>
+            <td>Apprentice</td>
             <td>
-              I have used AI systems for a year or more on a daily or regular
-              basis, and am comfortable using developing AI systems in
-              moderately complex projects.
+              I developed my own simple AI system for a small project.
+              <br /> <br />
+              Example: followed a tutorial online, taking an AI course at
+              university.
             </td>
-            <td>100,000</td>
-            <td>1 year</td>
           </tr>
           <tr>
             <td>6</td>
-            <td>Advanced</td>
+            <td>Intermediate</td>
             <td>
-              I have been using it for many years, know all of the basic
-              aspects, and am comfortable using it as a key element in complex
-              projects. People in my group come to me with their questions.
+              I have been developing AI systems for a while and am comfortable
+              developing AI systems for moderately complex projects.
+              <br /> <br />
+              Example: completed an AI course at university.
             </td>
-            <td>10,000</td>
-            <td>5 years</td>
           </tr>
           <tr>
             <td>7</td>
-            <td>Accomplished</td>
+            <td>Advanced</td>
             <td>
-              I am a team expert, with ten or more years of solid experience.
-              People in my division come to me with their questions on AI
+              I have been developing AI systems for a number of years on a
+              regular basis and understand all the basic aspects about AI
+              systems. Comfortable using AI systems as a key element in complex
+              projects.
+              <br /> <br />
+              Example: work as a junior data scientist/machine learning engineer
+              in a company using AI systems, Masters/PhD student focusing on AI
               systems.
             </td>
-            <td>1,000</td>
-            <td>10 years</td>
           </tr>
           <tr>
             <td>8</td>
-            <td>Master</td>
+            <td>Accomplished</td>
             <td>
-              I am a company-wide guru with twenty or more years of experience;
-              people from other divisions come to me with their questions on AI
-              systems.
+              I am a team expert, with 5 or more years of solid experience.
+              People come to me with their questions on AI systems.
+              <br /> <br />
+              Example: work as a senior data scientist/machine learning engineer
+              for a team in a company using AI systems, published 1-2 papers in
+              AI journals/conferences.
             </td>
-            <td>100</td>
-            <td>20 years</td>
           </tr>
           <tr>
             <td>9</td>
-            <td>Grandmaster</td>
+            <td>Master</td>
             <td>
-              I am a recognized international authority (highly renowned
-              researcher) on AI systems.
+              I am a company-wide guru with ten or more years of experience;
+              people from other divisions come to me with their questions on AI
+              systems.
+              <br /> <br />
+              Example: work as a principal data scientist/machine learning
+              engineer in a company using AI systems, an experienced researcher
+              in AI systems who as written a large number of papers which have
+              been published in AI journals/conferences.
             </td>
-            <td>10</td>
-            <td>30 years</td>
           </tr>
           <tr>
             <td>10</td>
-            <td>Great grandmaster</td>
-            <td>I created it, and am the number 1 expert in the world.</td>
-            <td>1</td>
-            <td>50 years</td>
+            <td>Grandmaster</td>
+            <td>
+              I am a recognized international authority.
+              <br /> <br />
+              Example: highly renowned researcher who has made a very big impact
+              in the field of AI systems.
+            </td>
           </tr>
         </tbody>
       </Table>
-      <Likert {...prevExperience} />
     </>
   );
 };

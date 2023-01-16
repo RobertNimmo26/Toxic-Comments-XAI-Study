@@ -1,9 +1,6 @@
 // import react components
 import { createContext } from "react";
 
-const PageContext = createContext({
-  page: 1,
-  setPage: () => {},
-});
+const PageContext = createContext();
 
 export default PageContext;
