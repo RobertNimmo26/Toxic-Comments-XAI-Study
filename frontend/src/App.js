@@ -56,7 +56,7 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(3);
+  const [page, setPage] = useState(1);
 
   // Everytime page changes, reset window view
   useEffect(() => {
