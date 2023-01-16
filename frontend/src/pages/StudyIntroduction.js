@@ -15,7 +15,7 @@ import Col from "react-bootstrap/Col";
 import PageContext from "../context/PageContext";
 
 const StudyIntroduction = () => {
-  const { page, setPage } = useContext(PageContext);
+  const { setPage } = useContext(PageContext);
 
   const [continueButton, setContinueButton] = useState(true);
   const [confirmedQuestionAnswers, setConfirmedQuestionAnswers] = useState({
@@ -37,7 +37,7 @@ const StudyIntroduction = () => {
   }, [confirmedQuestionAnswers]);
 
   const redirectProlific = () => {
-    if (process.env.REACT_APP_ENVIRONMENT == "Production") {
+    if (process.env.REACT_APP_ENVIRONMENT === "Production") {
       // During production redirect to Prolific
       window.location.replace(process.env.REACT_APP_PROLIFIC_REDIRECT_CONSENT);
     } else {

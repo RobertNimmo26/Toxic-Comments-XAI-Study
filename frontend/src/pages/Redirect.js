@@ -44,7 +44,7 @@ const Redirect = ({ content }) => {
       .then((response) => {
         console.log(response);
         setTimeout(() => {
-          if (process.env.REACT_APP_ENVIRONMENT == "Production") {
+          if (process.env.REACT_APP_ENVIRONMENT === "Production") {
             // During production redirect to Prolific
             window.location.replace(
               process.env.REACT_APP_PROLIFIC_REDIRECT_COMPLETE
@@ -64,7 +64,7 @@ const Redirect = ({ content }) => {
           "There has been an issue saving your results. Please contact Robert.Nimmo@glasgow.ac.uk for advice and keep downloaded file (xai_study_results.json) saved."
         );
       });
-  }, []);
+  }, [content]);
 
   return (
     <>
