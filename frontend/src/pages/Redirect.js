@@ -44,7 +44,7 @@ const Redirect = ({ content }) => {
       .then((response) => {
         console.log(response);
         setTimeout(() => {
-          if (process.env.REACT_APP_MONGODB_DATABASE == "Production") {
+          if (process.env.REACT_APP_ENVIRONMENT == "Production") {
             // During production redirect to Prolific
             window.location.replace(
               "https://app.prolific.co/submissions/complete?cc=C156XLP8"

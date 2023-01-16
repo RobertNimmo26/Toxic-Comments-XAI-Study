@@ -18,7 +18,7 @@ const RadioButtonQuestionare = ({ questionData, questionContext }) => {
     <>
       <Form.Group controlId={questionData.id}>
         <Form.Label>{questionData.question}</Form.Label>
-        {questionData.responses.map((question, i) => (
+        {questionData.responses.map((question, _i) => (
           <Form.Check
             value={question.value}
             type="radio"

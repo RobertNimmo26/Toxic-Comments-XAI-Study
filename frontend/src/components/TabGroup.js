@@ -19,16 +19,7 @@ const TabGroup = () => {
 
   return (
     <>
-      <Tab.Container
-        mountOnEnter="true"
-        defaultActiveKey="1"
-        onSelect={() => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }}
-      >
+      <Tab.Container mountOnEnter="true" defaultActiveKey="1">
         <Row>
           <Col md={3}>
             <div className="align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">

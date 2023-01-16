@@ -125,6 +125,7 @@ const TabContent = ({ explanationDataIndex }) => {
   };
 
   const onCheckButtonClick = () => {
+    window.scrollTo(0, 0);
     setExplanationData((prevExplanationData) => {
       const logResult = `Checked comment ${prevExplanationData.user[explanationDataIndex].id}`;
 
@@ -137,6 +138,7 @@ const TabContent = ({ explanationDataIndex }) => {
   };
 
   const onResetButtonClick = () => {
+    window.scrollTo(0, 0);
     setExplanationData((prevExplanationData) => {
       const logResult = `Reset comment ${prevExplanationData.user[explanationDataIndex].id}`;
 
