@@ -84,6 +84,15 @@ const TaskIntroduction = () => {
             will reject the submission.
           </p>
         </Row>
+        <Row>
+          <h5>Please be aware:</h5>
+          <p>
+            Please do not refresh your browser while completing the study and
+            until you get redirected back to Prolific. If you do refresh your
+            browser, data collected will be lost and you will be taken back to
+            the start of study.
+          </p>
+        </Row>
         <Button
           variant="primary"
           size="lg"

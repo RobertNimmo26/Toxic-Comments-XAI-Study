@@ -28,15 +28,17 @@ import Container from "react-bootstrap/Container";
 import { isDesktop, isIE } from "react-device-detect";
 
 const App = () => {
+  // Get Prolific ID info
   const queryParameters = new URLSearchParams(window.location.search);
-  const studyID = queryParameters.get("STUDY_ID");
   const prolificID = queryParameters.get("PROLIFIC_PID");
-  const sessionID = queryParameters.get("SESSION_ID");
 
-  const [prolificInfo] = useState({
-    studyID: studyID,
+  const [studyInfo] = useState({
     prolificID: prolificID,
-    sessionID: sessionID,
+    startTimeStamp: new Date()
+      .toISOString()
+      .slice(0, 19)
+      .replace(/-/g, "/")
+      .replace("T", " "),
   });
 
   // User log state
@@ -57,6 +59,11 @@ const App = () => {
 
   // Page state
   const [page, setPage] = useState(1);
+
+  // Warn users not to refresh page
+  if (page !== 1) {
+    window.onbeforeunload = () => true;
+  }
 
   // Everytime page changes, reset window view
   useEffect(() => {
@@ -196,10 +203,14 @@ const App = () => {
     case 7:
       const combined_data = {
         checked: false,
-        prolificInfo: {
-          studyID: prolificInfo.studyID,
-          prolificID: prolificInfo.prolificID,
-          sessionID: prolificInfo.sessionID,
+        studyInfo: {
+          prolificID: studyInfo.prolificID,
+          startTimeStamp: studyInfo.startTimeStamp,
+          endTimeStamp: new Date()
+            .toISOString()
+            .slice(0, 19)
+            .replace(/-/g, "/")
+            .replace("T", " "),
         },
         questionnaire: { preTask: preTaskForm, postTask: postTaskForm },
         taskDataUser: {
