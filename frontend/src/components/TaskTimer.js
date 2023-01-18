@@ -27,6 +27,18 @@ const TaskTimer = () => {
         <Button variant="outline-primary" disabled={true}>
           Time left: {minutes} minutes {seconds} seconds
         </Button>
+        {process.env.REACT_APP_ENVIRONMENT !== "Production" && (
+          <Button
+            variant="warning"
+            onClick={() => {
+              setPage(6);
+            }}
+            style={{ marginTop: "5px" }}
+          >
+            Skip task (Testing/development env only)
+          </Button>
+        )}
+
         {!isRunning && <ModelTaskTimerEndTask />}
       </>
     );
