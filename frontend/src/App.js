@@ -61,7 +61,7 @@ const App = () => {
   const [page, setPage] = useState(1);
 
   // Warn users not to refresh page
-  if (page !== 1) {
+  if (page !== 1 || page !== 7) {
     window.onbeforeunload = () => true;
   }
 
