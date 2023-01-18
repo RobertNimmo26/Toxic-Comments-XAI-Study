@@ -32,6 +32,14 @@ const TabContent = ({ explanationDataIndex }) => {
     ExplanationDataContext
   );
 
+  const generateTimestamp = () => {
+    return new Date()
+      .toISOString()
+      .slice(0, 19)
+      .replace(/-/g, "/")
+      .replace("T", " ");
+  };
+
   // Create a key/value object for important key words in comment explanation
   const getImportantWordsKV = (type) => {
     let explanationDataImportantWords;
@@ -72,7 +80,9 @@ const TabContent = ({ explanationDataIndex }) => {
       100;
 
     setExplanationData((prevExplanationData) => {
-      const logResult = `Changed "${word}" slider to ${finalValue} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+      const logResult = `${generateTimestamp()}: Changed "${word}" slider to ${finalValue} for comment ${
+        prevExplanationData.user[explanationDataIndex].id
+      }`;
 
       setUserLog([...userLog, logResult]);
 
@@ -90,7 +100,9 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onImportantWordLabelChange = ({ value, word }) => {
     setExplanationData((prevExplanationData) => {
-      const logResult = `Changed "${word}" label to ${value.target.value} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+      const logResult = `${generateTimestamp()}: Changed "${word}" label to ${
+        value.target.value
+      } for comment ${prevExplanationData.user[explanationDataIndex].id}`;
 
       setUserLog([...userLog, logResult]);
 
@@ -113,7 +125,9 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onLabelChange = ({ value }) => {
     setExplanationData((prevExplanationData) => {
-      const logResult = `Changed comment label to ${value.target.value} for comment ${prevExplanationData.user[explanationDataIndex].id}`;
+      const logResult = `${generateTimestamp()}: Changed comment label to ${
+        value.target.value
+      } for comment ${prevExplanationData.user[explanationDataIndex].id}`;
 
       setUserLog([...userLog, logResult]);
 
@@ -127,7 +141,9 @@ const TabContent = ({ explanationDataIndex }) => {
   const onCheckButtonClick = () => {
     window.scrollTo(0, 0);
     setExplanationData((prevExplanationData) => {
-      const logResult = `Checked comment ${prevExplanationData.user[explanationDataIndex].id}`;
+      const logResult = `${generateTimestamp()}: Checked comment ${
+        prevExplanationData.user[explanationDataIndex].id
+      }`;
 
       setUserLog([...userLog, logResult]);
 
@@ -140,7 +156,9 @@ const TabContent = ({ explanationDataIndex }) => {
   const onResetButtonClick = () => {
     window.scrollTo(0, 0);
     setExplanationData((prevExplanationData) => {
-      const logResult = `Reset comment ${prevExplanationData.user[explanationDataIndex].id}`;
+      const logResult = `${generateTimestamp()}: Reset comment ${
+        prevExplanationData.user[explanationDataIndex].id
+      }`;
 
       setUserLog([...userLog, logResult]);
 
