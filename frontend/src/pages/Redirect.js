@@ -44,15 +44,19 @@ const Redirect = ({ content }) => {
       .then((response) => {
         console.log(response);
         setTimeout(() => {
-          if (process.env.REACT_APP_ENVIRONMENT === "Production") {
-            // During production redirect to Prolific
+          if (process.env.REACT_APP_ENVIRONMENT === "Dev") {
+            // During dev redirect to Google and download results to client
+            exportToJson(content);
+            window.location.replace("https://google.com");
+          } else {
+            // During testing/production redirect to Prolific and during testing download results to client
+            if (process.env.REACT_APP_ENVIRONMENT === "Testing") {
+              exportToJson(content);
+            }
+
             window.location.replace(
               process.env.REACT_APP_PROLIFIC_REDIRECT_COMPLETE
             );
-          } else {
-            // During testing/development download results to client and redirect to Google
-            exportToJson(content);
-            window.location.replace("https://google.com");
           }
         }, 4000);
       })

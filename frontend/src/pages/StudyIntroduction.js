@@ -37,12 +37,12 @@ const StudyIntroduction = () => {
   }, [confirmedQuestionAnswers]);
 
   const redirectProlific = () => {
-    if (process.env.REACT_APP_ENVIRONMENT === "Production") {
-      // During production redirect to Prolific
-      window.location.replace(process.env.REACT_APP_PROLIFIC_REDIRECT_CONSENT);
-    } else {
-      // During testing/development redirect to Google
+    if (process.env.REACT_APP_ENVIRONMENT === "Dev") {
+      // During dev redirect to Google
       window.location.replace("https://google.com");
+    } else {
+      // During testing/production redirect to Prolific
+      window.location.replace(process.env.REACT_APP_PROLIFIC_REDIRECT_CONSENT);
     }
   };
 
