@@ -60,13 +60,17 @@ const App = () => {
   // Page state
   const [page, setPage] = useState(1);
 
-  // Warn users not to refresh page
-  if (page !== 1 || page !== 7) {
-    window.onbeforeunload = () => true;
-  }
+  // Everytime page changes, reset window view and warn users not to refresh page
 
-  // Everytime page changes, reset window view
   useEffect(() => {
+    // Warn users not to refresh page if they are not on the first or last page
+    if (page == 1 || page == 7) {
+      window.onbeforeunload = () => undefined;
+    } else {
+      window.onbeforeunload = () => true;
+    }
+
+    // Reset window view
     window.scrollTo(0, 0);
   }, [page]);
 
