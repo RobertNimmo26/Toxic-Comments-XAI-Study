@@ -17,13 +17,23 @@ import ExplanationDataContext from "../context/ExplanationDataContext";
 const TabGroup = () => {
   const { explanationData } = useContext(ExplanationDataContext);
 
+  let countChecked = 0;
+  explanationData.user.map((i) => {
+    if (i.checked == true) {
+      countChecked += 1;
+    }
+  });
+
   return (
     <>
       <Tab.Container mountOnEnter="true" defaultActiveKey="1">
         <Row>
           <Col md={3}>
-            <div className="align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+            <div className="align-items-center flex-shrink-0 px-3 py-1 link-dark text-decoration-none border-bottom">
               <h5 className="fs-5 ">Comments to review</h5>
+              <h6>
+                Checked: {countChecked}/{explanationData.reset.length}
+              </h6>
             </div>
             <SideBar />
           </Col>
