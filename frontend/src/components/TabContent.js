@@ -70,14 +70,7 @@ const TabContent = ({ explanationDataIndex }) => {
   }, [explanationData]);
 
   const onSliderChange = ({ value, word }) => {
-    let finalValue =
-      (value *
-        Math.max(
-          ...explanationData.reset[explanationDataIndex].important_words.map(
-            (t) => t.weight
-          )
-        )) /
-      100;
+    let finalValue = value / 100;
 
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Changed "${word}" slider to ${finalValue} for comment ${
@@ -389,14 +382,7 @@ const TabContent = ({ explanationDataIndex }) => {
                       <Col style={{ textAlign: "center" }} md={6}>
                         {/* Word importance slider */}
                         <Slider
-                          value={
-                            (100 * iwWordWeight) /
-                            Math.max(
-                              ...explanationData.reset[
-                                explanationDataIndex
-                              ].important_words.map((t) => t.weight)
-                            )
-                          }
+                          value={100 * iwWordWeight}
                           onChange={(value) => {
                             onSliderChange({
                               value: value,
