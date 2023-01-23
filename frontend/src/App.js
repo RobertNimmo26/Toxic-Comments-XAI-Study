@@ -9,6 +9,7 @@ import TaskIntroduction from "./pages/TaskIntroduction";
 import PracticeTask from "./pages/PracticeTask";
 import PostTaskQuestionnaire from "./pages/PostTaskQuestionnaire";
 import Redirect from "./pages/Redirect";
+import ProlificIdNotPresent from "./pages/ProlificIdNotPresent";
 
 // import context
 import PageContext from "./context/PageContext";
@@ -28,18 +29,22 @@ import Container from "react-bootstrap/Container";
 import { isDesktop, isIE } from "react-device-detect";
 
 const App = () => {
-  // Get Prolific ID info
-  const queryParameters = new URLSearchParams(window.location.search);
-  const prolificID = queryParameters.get("PROLIFIC_PID");
+  const [studyInfo, setStudyInfo] = useState({});
 
-  const [studyInfo] = useState({
-    prolificID: prolificID,
-    startTimeStamp: new Date()
-      .toISOString()
-      .slice(0, 19)
-      .replace(/-/g, "/")
-      .replace("T", " "),
-  });
+  useEffect(() => {
+    // Get Prolific ID info
+    const queryParameters = new URLSearchParams(window.location.search);
+    const prolificID = queryParameters.get("PROLIFIC_PID");
+
+    setStudyInfo({
+      prolificID: prolificID,
+      startTimeStamp: new Date()
+        .toISOString()
+        .slice(0, 19)
+        .replace(/-/g, "/")
+        .replace("T", " "),
+    });
+  }, []);
 
   // User log state
   const [userLog, setUserLog] = useState([]);
@@ -58,13 +63,13 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(4);
 
   // Everytime page changes, reset window view and warn users not to refresh page
 
   useEffect(() => {
     // Warn users not to refresh page if they are not on the first or last page
-    if (page == 1 || page == 7) {
+    if (page === 1 || page === 7) {
       window.onbeforeunload = () => undefined;
     } else {
       window.onbeforeunload = () => true;
@@ -150,6 +155,11 @@ const App = () => {
         </h3>
       </Container>
     );
+  }
+
+  // Check if Prolific ID is present in the URL, if not show a error screen which provides instructions to fix issue
+  if (studyInfo.prolificID === null || studyInfo.prolificID === "") {
+    return <ProlificIdNotPresent />;
   }
 
   switch (page) {
