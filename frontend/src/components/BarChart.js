@@ -41,6 +41,8 @@ const options = {
         text: "Word weight",
         display: true,
       },
+      suggestedMin: 0.0,
+      suggestedMax: 1.0,
     },
   },
 };
@@ -55,10 +57,10 @@ const barchartdata = (important_words) => {
     labels.push(important_words[i].word);
     if (important_words[i].label === "Toxic") {
       toxic_data.push(important_words[i].weight);
-      non_toxic_data.push("0");
+      non_toxic_data.push(0);
     } else {
       non_toxic_data.push(important_words[i].weight);
-      toxic_data.push("0");
+      toxic_data.push(0);
     }
   }
 
