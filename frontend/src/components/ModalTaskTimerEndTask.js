@@ -9,7 +9,7 @@ import Modal from "react-bootstrap/Modal";
 import PageContext from "../context/PageContext";
 
 const ModelTaskTimerEndTask = () => {
-  const { page, setPage } = useContext(PageContext);
+  const { setPage } = useContext(PageContext);
 
   return (
     <>
