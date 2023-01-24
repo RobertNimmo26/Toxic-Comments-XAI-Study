@@ -18,6 +18,7 @@ import Button from "react-bootstrap/Button";
 // import rc-slider components
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
+import { sliderHandleRender } from "../handleHooks/sliderHandle";
 
 import Highlighter from "react-highlight-words";
 
@@ -25,12 +26,20 @@ import Highlighter from "react-highlight-words";
 import ExplanationDataContext from "../context/ExplanationDataContext";
 import UserLogContext from "../context/UserLogContext";
 
-const TabContent = ({ explanationDataIndex }) => {
+const TabContent = ({
+  explanationDataIndex,
+  currentTabValues,
+  countCheckedValues,
+}) => {
   const { userLog, setUserLog } = useContext(UserLogContext);
 
   const { explanationData, setExplanationData } = useContext(
     ExplanationDataContext
   );
+
+  const { currentTab, setCurrentTab } = currentTabValues;
+
+  const { countChecked, setCountChecked } = countCheckedValues;
 
   const generateTimestamp = () => {
     return new Date()
@@ -133,6 +142,11 @@ const TabContent = ({ explanationDataIndex }) => {
 
   const onCheckButtonClick = () => {
     window.scrollTo(0, 0);
+
+    if (!explanationData.user[explanationDataIndex].checked) {
+      setCountChecked(countChecked + 1);
+    }
+
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Checked comment ${
         prevExplanationData.user[explanationDataIndex].id
@@ -144,10 +158,19 @@ const TabContent = ({ explanationDataIndex }) => {
 
       return { ...prevExplanationData };
     });
+
+    if (+currentTab !== explanationData.user.length) {
+      setCurrentTab(+currentTab + 1);
+    }
   };
 
   const onResetButtonClick = () => {
     window.scrollTo(0, 0);
+
+    if (explanationData.user[explanationDataIndex].checked) {
+      setCountChecked(countChecked - 1);
+    }
+
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Reset comment ${
         prevExplanationData.user[explanationDataIndex].id
@@ -389,6 +412,7 @@ const TabContent = ({ explanationDataIndex }) => {
                               word: iwWord,
                             });
                           }}
+                          handleRender={sliderHandleRender}
                         />
                       </Col>
                     </Row>
