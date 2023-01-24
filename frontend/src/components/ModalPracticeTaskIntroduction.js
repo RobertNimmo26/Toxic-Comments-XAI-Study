@@ -8,10 +8,10 @@ import Modal from "react-bootstrap/Modal";
 const ModalPracticeTaskIntroduction = () => {
   const [show, setShow] = useState(true);
 
-  // reopen modal if "I" is pressed on the keyboard
+  // reopen modal if "B" is pressed on the keyboard
   useEffect(() => {
     const handler = (event) => {
-      if (event.keyCode === 73) {
+      if (event.keyCode === 66) {
         setShow(true);
       }
     };
@@ -39,8 +39,8 @@ const ModalPracticeTaskIntroduction = () => {
           If you are required to reset your changes, press "Reset comment".
           <br />
           <br />
-          If you require to reopen this instructions brief press "I" on your
-          keyboard.
+          If you require to reopen this instructions brief press "
+          <strong>B</strong>" on your keyboard.
           <br />
           <br />
           <b>This is an attention check.</b>

@@ -120,7 +120,8 @@ const StudyIntroduction = () => {
             Yes, you <ins>must</ins> be using a laptop/desktop computer with an
             up-to-date modern browser such as Chrome, Edge, Safari or Firefox.
             You <ins>cannot</ins> use a mobile phone or tablet (including iPads)
-            to participate in this study.
+            to participate in this study. Please also keep your browser window
+            in full screen for the full length of the study.
           </p>
           <h5>Will my taking part in the study be kept confidential?</h5>
           <p>

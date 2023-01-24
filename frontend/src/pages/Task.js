@@ -4,6 +4,7 @@ import { useState } from "react";
 // import components
 import TabGroup from "../components/TabGroup";
 import TitleNav from "../components/TitleNav";
+import ModalPrototypeInstructions from "../components/ModalPrototypeInstructions";
 
 // import context
 import ExpiryTimestampContext from "../context/ExpiryTimestampContext";
@@ -16,6 +17,7 @@ const Task = () => {
   return (
     <>
       <TitleNav pageTitle={"Task"} />
+      <ModalPrototypeInstructions />
       <ExpiryTimestampContext.Provider value={time}>
         <TabGroup />
       </ExpiryTimestampContext.Provider>
