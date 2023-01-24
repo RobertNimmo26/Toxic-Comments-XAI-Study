@@ -20,13 +20,17 @@ import UserLogContext from "./context/UserLogContext";
 
 // import data
 import MainTaskExplanationData from "./config/MainTaskExplanationData";
-import PracticeTaskExplanationData from "./config/PracticeExplanationData";
+// import PracticeTaskExplanationData from "./config/PracticeExplanationData";
+import PracticeTaskExplanationData from "./config/PostTaskQuestionnaireActualUnderstandingExplanationData";
 
 // import bootstrap components
 import Container from "react-bootstrap/Container";
 
 // import react-device-detect
 import { isDesktop, isIE } from "react-device-detect";
+
+// import components
+import PopupScreenSize from "./components/PopupScreenSize";
 
 const App = () => {
   const [studyInfo, setStudyInfo] = useState({});
@@ -63,10 +67,9 @@ const App = () => {
     });
 
   // Page state
-  const [page, setPage] = useState(4);
+  const [page, setPage] = useState(1);
 
   // Everytime page changes, reset window view and warn users not to refresh page
-
   useEffect(() => {
     // Warn users not to refresh page if they are not on the first or last page
     if (page === 1 || page === 7) {
@@ -166,6 +169,7 @@ const App = () => {
     case 1:
       return (
         <PageContext.Provider value={pageValue}>
+          <PopupScreenSize />
           <StudyIntroduction />
         </PageContext.Provider>
       );
@@ -174,6 +178,7 @@ const App = () => {
       return (
         <PageContext.Provider value={pageValue}>
           <PreTaskQuestionnaireContext.Provider value={preTaskFormValue}>
+            <PopupScreenSize />
             <PreTaskQuestionnaire />
           </PreTaskQuestionnaireContext.Provider>
         </PageContext.Provider>
@@ -181,6 +186,7 @@ const App = () => {
     case 3:
       return (
         <PageContext.Provider value={pageValue}>
+          <PopupScreenSize />
           <TaskIntroduction />
         </PageContext.Provider>
       );
@@ -191,6 +197,7 @@ const App = () => {
             value={practiceTaskExplanationDataValue}
           >
             <UserLogContext.Provider value={userLogValue}>
+              <PopupScreenSize />
               <PracticeTask />
             </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
@@ -201,6 +208,7 @@ const App = () => {
         <PageContext.Provider value={pageValue}>
           <ExplanationDataContext.Provider value={mainTaskExplanationDataValue}>
             <UserLogContext.Provider value={userLogValue}>
+              <PopupScreenSize />
               <Task />
             </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
@@ -210,6 +218,7 @@ const App = () => {
       return (
         <PageContext.Provider value={pageValue}>
           <PostTaskQuestionnaireContext.Provider value={postTaskFormValue}>
+            <PopupScreenSize />
             <PostTaskQuestionnaire />
           </PostTaskQuestionnaireContext.Provider>
         </PageContext.Provider>
