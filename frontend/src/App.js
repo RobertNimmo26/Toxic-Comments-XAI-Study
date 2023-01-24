@@ -20,8 +20,7 @@ import UserLogContext from "./context/UserLogContext";
 
 // import data
 import MainTaskExplanationData from "./config/MainTaskExplanationData";
-// import PracticeTaskExplanationData from "./config/PracticeExplanationData";
-import PracticeTaskExplanationData from "./config/PostTaskQuestionnaireActualUnderstandingExplanationData";
+import PracticeTaskExplanationData from "./config/PracticeExplanationData";
 
 // import bootstrap components
 import Container from "react-bootstrap/Container";

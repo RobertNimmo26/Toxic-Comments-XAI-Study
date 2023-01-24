@@ -28,12 +28,13 @@ const ModalPracticeTaskIntroduction = () => {
         </Modal.Header>
         <Modal.Body>
           <h5>Brief:</h5>
-          You believe the word "political" should have been labelled "Toxic".{" "}
+          You believe the word "political" should have been labelled "Toxic".
           <br />
           <br />
           <h5>Task:</h5>
-          First, change the word label and then change the word importance
-          slider to 50% for the word "political".
+          First, change the word label to "Toxic" and then afterwards change the
+          word importance slider to 50% for the word "political".
+          <br />
           <br />
           Once you have completed this task press the button "Checked comment".
           If you are required to reset your changes, press "Reset comment".
