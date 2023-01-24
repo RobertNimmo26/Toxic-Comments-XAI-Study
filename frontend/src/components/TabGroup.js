@@ -1,5 +1,5 @@
 // import react components
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 // import components
 import SideBar from "./SideBar";
@@ -17,16 +17,19 @@ import ExplanationDataContext from "../context/ExplanationDataContext";
 const TabGroup = () => {
   const { explanationData } = useContext(ExplanationDataContext);
 
-  let countChecked = 0;
-  explanationData.user.map((i) => {
-    if (i.checked == true) {
-      countChecked += 1;
-    }
-  });
+  const [countChecked, setCountChecked] = useState(0);
+  const countCheckedValues = { countChecked, setCountChecked };
+
+  const [currentTab, setCurrentTab] = useState(1);
+  const currentTabValues = { currentTab, setCurrentTab };
 
   return (
     <>
-      <Tab.Container mountOnEnter="true" defaultActiveKey="1">
+      <Tab.Container
+        mountOnEnter="true"
+        activeKey={currentTab}
+        onSelect={(key) => setCurrentTab(key)}
+      >
         <Row>
           <Col md={3}>
             <div className="align-items-center flex-shrink-0 px-3 py-1 link-dark text-decoration-none border-bottom">
@@ -45,7 +48,11 @@ const TabGroup = () => {
                 return (
                   <>
                     <Tab.Pane eventKey={i + 1}>
-                      <TabContent explanationDataIndex={i} />
+                      <TabContent
+                        explanationDataIndex={i}
+                        currentTabValues={currentTabValues}
+                        countCheckedValues={countCheckedValues}
+                      />
                     </Tab.Pane>
                   </>
                 );
