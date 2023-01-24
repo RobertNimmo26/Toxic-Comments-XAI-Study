@@ -38,7 +38,7 @@ const options = {
     y: {
       stacked: true,
       title: {
-        text: "Word weight",
+        text: "Word importance",
         display: true,
       },
       suggestedMin: 0.0,
