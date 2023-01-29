@@ -23,6 +23,7 @@ const StudyIntroduction = () => {
     confirm2: false,
     confirm3: false,
     confirm4: false,
+    confirm5: false,
   });
 
   const handleChange = (event) => {
@@ -137,7 +138,8 @@ const StudyIntroduction = () => {
           </p>
           <h5>What are the possible disadvantages and risks of taking part?</h5>
           <p>
-            There are no risks or side effects for taking part in this study.
+            You will be exposed to "toxic" language while completing the study
+            which may make you feel uncomfortable.
           </p>
           <h5>What are the possible benefits of taking part?</h5>
           <p>
@@ -212,8 +214,7 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm2">
               <Form.Check
                 type="checkbox"
-                label="I understand that the data may be used in future
-                    publications, both print and online."
+                label='I understand that I will be exposed to "toxic" language while completing the study.'
                 onChange={handleChange}
                 name="confirm2"
                 style={{ marginTop: "5px" }}
@@ -222,7 +223,8 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm3">
               <Form.Check
                 type="checkbox"
-                label="I understand that the data may be made available to other researchers. I waive my copyright to any data collected as part of this project."
+                label="I understand that the data may be used in future
+                    publications, both print and online."
                 onChange={handleChange}
                 name="confirm3"
                 style={{ marginTop: "5px" }}
@@ -231,9 +233,18 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm4">
               <Form.Check
                 type="checkbox"
-                label="I agree to take part in this research study."
+                label="I understand that the data may be made available to other researchers. I waive my copyright to any data collected as part of this project."
                 onChange={handleChange}
                 name="confirm4"
+                style={{ marginTop: "5px" }}
+              />
+            </Form.Group>
+            <Form.Group controlId="confirm5">
+              <Form.Check
+                type="checkbox"
+                label="I agree to take part in this research study."
+                onChange={handleChange}
+                name="confirm5"
                 style={{ marginTop: "5px" }}
               />
             </Form.Group>
