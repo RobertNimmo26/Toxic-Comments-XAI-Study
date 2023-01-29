@@ -11,7 +11,7 @@ const SideBar = () => {
   const { explanationData } = useContext(ExplanationDataContext);
   return (
     <>
-      <ListGroup variant="flush" style={{ height: "100vh", overflowY: "auto" }}>
+      <ListGroup variant="flush" style={{ height: "90vh", overflowY: "auto" }}>
         {explanationData.user.map((x, i) => (
           <ListGroup.Item action eventKey={i + 1} key={i + 1}>
             <div className="d-flex w-100 align-items-center justify-content-between">

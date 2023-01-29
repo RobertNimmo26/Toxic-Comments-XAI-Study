@@ -20,7 +20,11 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import { sliderHandleRender } from "../handleHooks/sliderHandle";
 
+// import highlighter component
 import Highlighter from "react-highlight-words";
+
+// import uuid generator component (unique ID)
+import { v4 as uuidv4 } from "uuid";
 
 // import context
 import ExplanationDataContext from "../context/ExplanationDataContext";
@@ -31,16 +35,7 @@ const TabContent = ({
   currentTabValues,
   countCheckedValues,
 }) => {
-  const { userLog, setUserLog } = useContext(UserLogContext);
-
-  const { explanationData, setExplanationData } = useContext(
-    ExplanationDataContext
-  );
-
-  const { currentTab, setCurrentTab } = currentTabValues;
-
-  const { countChecked, setCountChecked } = countCheckedValues;
-
+  // generate timestamp string
   const generateTimestamp = () => {
     return new Date()
       .toISOString()
@@ -48,6 +43,23 @@ const TabContent = ({
       .replace(/-/g, "/")
       .replace("T", " ");
   };
+
+  // ---
+
+  // Access the currentTab state values
+  const { currentTab, setCurrentTab } = currentTabValues;
+
+  // ---
+
+  // Access the countChecked state values
+  const { countChecked, setCountChecked } = countCheckedValues;
+
+  // ---
+
+  // Explanation data context
+  const { explanationData, setExplanationData } = useContext(
+    ExplanationDataContext
+  );
 
   // Create a key/value object for important key words in comment explanation
   const getImportantWordsKV = (type) => {
@@ -67,18 +79,137 @@ const TabContent = ({
     }, {});
   };
 
+  // Set the states for importantWordsKVUser value using getImportantWordsKV function
   const [importantWordsKVReset] = useState(getImportantWordsKV("reset"));
-
   const [importantWordsKVUser, setImportantWordsKVUser] = useState(
     getImportantWordsKV("user")
   );
 
-  // If explanationData changes then update importantWordsKVUser value using getImportantWordsKV function
+  // If explanationData changes, then update importantWordsKVUser value using getImportantWordsKV function
   useEffect(() => {
     setImportantWordsKVUser(getImportantWordsKV("user"));
   }, [explanationData]);
 
-  const onSliderChange = ({ value, word }) => {
+  // ---
+
+  // UserLog context
+  const { userLog, setUserLog } = useContext(UserLogContext);
+
+  // ---
+
+  // New important words added by users required functions //
+
+  // Set the state for newImportantWords to a empty list
+  const [newImportantWords, setNewImportantWords] = useState([]);
+
+  // Add a new IW
+  const addNewIWWord = () => {
+    setNewImportantWords((prevNewWord) => {
+      const newIWID = uuidv4();
+
+      const logResult = `${generateTimestamp()}: Added a new important word with ID ${newIWID} for comment ${
+        explanationData.user[explanationDataIndex].id
+      }`;
+      setUserLog([...userLog, logResult]);
+
+      return [
+        ...prevNewWord,
+        { word: undefined, weight: 0, label: undefined, id: newIWID },
+      ];
+    });
+  };
+
+  // Delete a new IW
+  const deleteNewIWWord = (id) => {
+    setNewImportantWords((prevNewWord) => {
+      const logResult = `${generateTimestamp()}: Deleted a new important word with ID ${id} for comment ${
+        explanationData.user[explanationDataIndex].id
+      }`;
+      setUserLog([...userLog, logResult]);
+
+      const index = prevNewWord.findIndex((x) => x.id === id);
+
+      if (index > -1) {
+        prevNewWord.splice(index, 1);
+      }
+
+      return [...prevNewWord];
+    });
+  };
+
+  // Get all possible new IW from the comment
+  const getPossibleNewIWWords = () => {
+    const notInclude = Object.keys(importantWordsKVReset);
+    const comment = explanationData.reset[explanationDataIndex].comment;
+
+    return [
+      ...new Set(
+        comment.match(/\b(\w+)\b/g).filter((x) => !notInclude.includes(x))
+      ),
+    ];
+  };
+
+  // When the word changes for the new IW object
+  const onNewIWWordChange = ({ value, id }) => {
+    setNewImportantWords((prevNewWord) => {
+      const logResult = `${generateTimestamp()}: Changed IW word on new IW with the ID ${id} to ${
+        value.target.value
+      } for comment ${explanationData.user[explanationDataIndex].id}`;
+
+      setUserLog([...userLog, logResult]);
+
+      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+
+      prevNewWord[foundIndex].word = value.target.value;
+
+      return [...prevNewWord];
+    });
+  };
+
+  // When the label changes for the new IW object
+  const onNewIWLabelChange = ({ value, id }) => {
+    setNewImportantWords((prevNewWord) => {
+      const logResult = `${generateTimestamp()}: Changed new IW with the ID ${id} label to ${
+        value.target.value
+      } for comment ${explanationData.user[explanationDataIndex].id}
+      `;
+
+      setUserLog([...userLog, logResult]);
+
+      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+
+      prevNewWord[foundIndex].label = value.target.value;
+
+      return [...prevNewWord];
+    });
+  };
+
+  // When the weight slider changes for the new IW object
+  const onNewIWSliderChange = ({ value, id }) => {
+    let finalValue = value / 100;
+
+    setNewImportantWords((prevNewWord) => {
+      const logResult = `${generateTimestamp()}: Changed new IW with the ID ${id} slider to ${finalValue} for comment ${
+        explanationData.user[explanationDataIndex].id
+      }
+      `;
+
+      setUserLog([...userLog, logResult]);
+
+      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+
+      prevNewWord[foundIndex].weight = structuredClone(finalValue);
+
+      return [...prevNewWord];
+    });
+  };
+
+  // ---
+
+  // Top-10 important words required functions //
+
+  // When the weight slider changes for the important word object
+  const onImportantWordSliderChange = ({ value, word }) => {
     let finalValue = value / 100;
 
     setExplanationData((prevExplanationData) => {
@@ -100,6 +231,7 @@ const TabContent = ({
     });
   };
 
+  // When the label changes for the important word object
   const onImportantWordLabelChange = ({ value, word }) => {
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Changed "${word}" label to ${
@@ -112,19 +244,19 @@ const TabContent = ({
         explanationDataIndex
       ].important_words.findIndex((item) => item.word === word);
 
-      if (value.target.value === "Toxic") {
-        prevExplanationData.user[explanationDataIndex].important_words[
-          foundIndex
-        ].label = "Toxic";
-      } else {
-        prevExplanationData.user[explanationDataIndex].important_words[
-          foundIndex
-        ].label = "Non-toxic";
-      }
+      prevExplanationData.user[explanationDataIndex].important_words[
+        foundIndex
+      ].label = value.target.value;
+
       return { ...prevExplanationData };
     });
   };
 
+  // ---
+
+  // The comment label change //
+
+  // When the label changes for the comment object
   const onLabelChange = ({ value }) => {
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Changed comment label to ${
@@ -140,6 +272,9 @@ const TabContent = ({
     });
   };
 
+  // ---
+
+  // Checked comment object
   const onCheckButtonClick = () => {
     window.scrollTo(0, 0);
 
@@ -154,6 +289,15 @@ const TabContent = ({
 
       setUserLog([...userLog, logResult]);
 
+      const newIWToAdd = newImportantWords.filter(
+        (item) => item.word !== undefined && item.label !== undefined
+      );
+
+      console.log(newIWToAdd);
+
+      prevExplanationData.user[explanationDataIndex].new_important_words =
+        newIWToAdd;
+
       prevExplanationData.user[explanationDataIndex].checked = true;
 
       return { ...prevExplanationData };
@@ -162,8 +306,11 @@ const TabContent = ({
     if (+currentTab !== explanationData.user.length) {
       setCurrentTab(+currentTab + 1);
     }
+
+    console.log(explanationData);
   };
 
+  // Reset the comment object
   const onResetButtonClick = () => {
     window.scrollTo(0, 0);
 
@@ -171,6 +318,10 @@ const TabContent = ({
       setCountChecked(countChecked - 1);
     }
 
+    // Reset new important words
+    setNewImportantWords([]);
+
+    // Reset users explanations data
     setExplanationData((prevExplanationData) => {
       const logResult = `${generateTimestamp()}: Reset comment ${
         prevExplanationData.user[explanationDataIndex].id
@@ -186,14 +337,17 @@ const TabContent = ({
     });
   };
 
-  // Highlighting text functions
+  // ---
+
+  // Highlighting text functions //
+
   const Highlight = ({ children }) => {
     try {
       if (importantWordsKVReset[children].label === "Toxic") {
         // if word is labelled toxic set highlight color to red
         return <span style={{ color: "rgb(237, 109, 133)" }}>{children}</span>;
       } else {
-        // if word is labelled non-toxic set highlight color to green
+        // if word is labelled non-toxic set highlight color to blue
         return <span style={{ color: "rgb(77, 83, 185)" }}>{children}</span>;
       }
     } catch {
@@ -202,6 +356,7 @@ const TabContent = ({
     }
   };
 
+  // Highlight regex
   const findChunksMultipleMatches = ({ searchWords, textToHighlight }) => {
     // Regex expression to find words to be highlighted
     const regexHighlight = new RegExp(
@@ -239,9 +394,10 @@ const TabContent = ({
 
   return (
     <>
-      <Container>
+      <Container style={{ marginBottom: "30px" }}>
         <Row>
           <Col md={6}>
+            {/* Highlighted comment */}
             <h5>Comment:</h5>
             <p>
               <Highlighter
@@ -265,13 +421,161 @@ const TabContent = ({
                 higher correlation to labeling the comment as Toxic.
               </i>
             </p>
+
+            {/* Important words bar chart */}
             <h6>Important words:</h6>
             <BarChart
               important_words={
                 explanationData.reset[explanationDataIndex].important_words
               }
             />
-            <Row style={{ textAlign: "center", marginTop: "50px" }}>
+
+            {/* Add new important words */}
+            <hr />
+            <Stack gap={3}>
+              <Row>
+                <Col style={{ textAlign: "center" }} md={7}>
+                  <h5>Add new important words</h5>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={5}>
+                  <Button
+                    variant="primary"
+                    onClick={() => {
+                      addNewIWWord();
+                    }}
+                    className="rounded-pill"
+                  >
+                    Add new word
+                  </Button>
+                </Col>
+              </Row>
+              {/* Headings */}
+              <Row>
+                <Col style={{ textAlign: "center" }} md={3}>
+                  <strong>Important word</strong>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={3}>
+                  <strong>Label</strong>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={4}>
+                  <strong>Word importance</strong>
+                </Col>
+                <Col style={{ textAlign: "center" }} md={2}>
+                  <strong>Delete word</strong>
+                </Col>
+              </Row>
+              <Row>
+                {newImportantWords.map((newIW) => (
+                  <Row>
+                    <Col style={{ textAlign: "center" }} md={3}>
+                      {/* Important word dropdown */}
+                      <Form.Select
+                        style={{ fontSize: "small" }}
+                        value={newIW.word}
+                        id={newIW.id.concat("NewIWWordDropdown")}
+                        onChange={(value) => {
+                          onNewIWWordChange({
+                            value: value,
+                            id: newIW.id,
+                          });
+                        }}
+                      >
+                        <option
+                          value={undefined}
+                          selected="selected"
+                          disabled={true}
+                        >
+                          Select word
+                        </option>
+                        {getPossibleNewIWWords().map((possibleOption) => {
+                          const alreadySelectedIndex =
+                            newImportantWords.findIndex(
+                              (x) => x.word === possibleOption
+                            );
+
+                          // If word already selected (alreadySelected > -1) and
+                          // this is not the instance where the word has been selected,
+                          // don't include word as a option
+                          if (
+                            alreadySelectedIndex > -1 &&
+                            newImportantWords[alreadySelectedIndex].id !==
+                              newIW.id
+                          ) {
+                            return <></>;
+                          } else {
+                            return (
+                              <option value={possibleOption}>
+                                {possibleOption}
+                              </option>
+                            );
+                          }
+                        })}
+                      </Form.Select>
+                    </Col>
+                    <Col style={{ textAlign: "center" }} md={3}>
+                      {/* Label dropdown */}
+                      <Form.Select
+                        style={{ fontSize: "small" }}
+                        value={newIW.label}
+                        id={newIW.id.concat("NewIWLabelDropdown")}
+                        onChange={(value) => {
+                          onNewIWLabelChange({
+                            value: value,
+                            id: newIW.id,
+                          });
+                        }}
+                      >
+                        <option
+                          value={undefined}
+                          selected="selected"
+                          disabled={true}
+                        >
+                          Select label
+                        </option>
+                        <option value="Toxic">Toxic</option>
+                        <option value="Non-toxic">Non-toxic</option>
+                      </Form.Select>
+                    </Col>
+                    <Col style={{ textAlign: "center" }} md={5}>
+                      {/* Word importance slider */}
+                      <Slider
+                        value={100 * newIW.weight}
+                        onChange={(value) => {
+                          onNewIWSliderChange({
+                            value: value,
+                            id: newIW.id,
+                          });
+                        }}
+                        handleRender={sliderHandleRender}
+                      />
+                    </Col>
+                    <Col md={1}>
+                      <Button
+                        variant="link"
+                        onClick={() => {
+                          deleteNewIWWord(newIW.id);
+                        }}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-x-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                        </svg>
+                      </Button>
+                    </Col>
+                  </Row>
+                ))}
+              </Row>
+            </Stack>
+            <hr />
+
+            {/* Reset and checked comment buttons */}
+            <Row style={{ textAlign: "center", marginTop: "20px" }}>
               <Col>
                 <Button
                   variant="primary"
@@ -296,29 +600,38 @@ const TabContent = ({
               </Col>
             </Row>
           </Col>
+
           <Col md={6}>
             <Stack gap={3}>
+              {/* Tasktimer */}
               <Row style={{ marginLeft: "55px", marginRight: "55px" }}>
                 <TaskTimer />
               </Row>
 
+              {/* Prediction probablity */}
               <Card style={{ marginLeft: "55px", marginRight: "55px" }}>
                 <ListGroup variant="flush">
                   <ListGroup.Item
                     style={{ marginTop: "1px", marginBottom: "1px" }}
                   >
-                    <h6>
-                      We predict this comment is{" "}
-                      {
-                        explanationData.reset[explanationDataIndex]
-                          .prediction_label
-                      }{" "}
+                    <h6 style={{ textAlign: "center" }}>
+                      We predict this comment is
+                      <br />
+                      <strong>
+                        {
+                          explanationData.reset[explanationDataIndex]
+                            .prediction_label
+                        }
+                      </strong>{" "}
                       with an{" "}
-                      {
-                        explanationData.reset[explanationDataIndex]
-                          .prediction_proba
-                      }
-                      % confidence.
+                      <strong>
+                        {
+                          explanationData.reset[explanationDataIndex]
+                            .prediction_proba
+                        }
+                        %{" "}
+                      </strong>
+                      confidence.
                     </h6>
                   </ListGroup.Item>
                   <ListGroup.Item
@@ -329,6 +642,7 @@ const TabContent = ({
                     </p>
                     <Form.Group>
                       <Row>
+                        {/* Change comment label dropdown */}
                         <Col md={4}>
                           <Form.Label
                             style={{ textAlign: "center" }}
@@ -360,6 +674,10 @@ const TabContent = ({
                 </ListGroup>
               </Card>
 
+              {/* Top-10 important words */}
+              <h5 style={{ textAlign: "center" }}>
+                Top-10 most important words
+              </h5>
               {/* Headings */}
               <Row>
                 <Col style={{ textAlign: "center" }} md={3}>
@@ -373,7 +691,6 @@ const TabContent = ({
                 </Col>
               </Row>
 
-              {/* Components */}
               {Object.entries(importantWordsKVUser).map((x) => {
                 const iwWord = x[0];
                 const iwWordWeight = x[1].weight;
@@ -407,7 +724,7 @@ const TabContent = ({
                         <Slider
                           value={100 * iwWordWeight}
                           onChange={(value) => {
-                            onSliderChange({
+                            onImportantWordSliderChange({
                               value: value,
                               word: iwWord,
                             });
