@@ -40,8 +40,8 @@ const ModalPracticeTaskIntroduction = () => {
           If you are required to reset your changes, press "Reset comment".
           <br />
           <br />
-          If you require to reopen this instructions brief press "
-          <strong>B</strong>" on your keyboard.
+          If you require to reopen this instructions brief press{" "}
+          <strong>B</strong> on your keyboard.
           <br />
           <br />
           <b>This is an attention check.</b>
