@@ -64,7 +64,7 @@ const ActualUnderstanding = () => {
   };
 
   const actualunderstanding5 = {
-    question: `13. You believe "Shut" has been marked as too important and you feel it shouldn't be part of the AI systems, what position will you move the slider too?`,
+    question: `13. You believe "Shut" has been marked as too important and you feel it shouldn't be part of the AI systems explanation, what position will you move the slider too?`,
     id: "actualunderstanding5",
     responses: [
       { value: "a", text: "a.", image: Slider0 },
