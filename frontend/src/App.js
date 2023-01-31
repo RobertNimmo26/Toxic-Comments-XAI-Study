@@ -147,7 +147,7 @@ const App = () => {
     );
   }
 
-  // Check that user is not using internet explorer
+  // Check that user is not using internet explorer browser
   if (isIE) {
     return (
       <Container>
