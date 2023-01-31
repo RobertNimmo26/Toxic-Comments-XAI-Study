@@ -55,7 +55,7 @@ const ActualUnderstanding = () => {
   };
 
   const actualunderstanding4 = {
-    question: `12. Which label will the word "voted" be initially with no feedback changes?`,
+    question: `13. Which label will the word "voted" be initially with no feedback changes?`,
     id: "actualunderstanding4",
     responses: [
       { value: "a", text: "a.	Toxic" },
@@ -64,7 +64,7 @@ const ActualUnderstanding = () => {
   };
 
   const actualunderstanding5 = {
-    question: `13. You believe "Shut" has been marked as too important and you feel it shouldn't be part of the AI systems explanation, what position will you move the slider too?`,
+    question: `14. You believe "Shut" has been marked as too important and you feel it shouldn't be part of the AI systems explanation, what position will you move the slider too?`,
     id: "actualunderstanding5",
     responses: [
       { value: "a", text: "a.", image: Slider0 },
@@ -77,7 +77,7 @@ const ActualUnderstanding = () => {
   return (
     <>
       <h5>
-        For question (10-13), use the details bellow to answer the questions.
+        For question (10-14), use the details bellow to answer the questions.
       </h5>
       <Image
         src={CommentImage}
