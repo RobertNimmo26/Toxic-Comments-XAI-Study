@@ -66,7 +66,7 @@ const PreviousExperienceQuestion = () => {
   ];
   const prevExperience = {
     question:
-      "11.	How experienced are you with AI systems from 1 to 10. Use the table below to help you determine you level of expertise.",
+      "11.	How experienced are you with AI systems from 1 to 10. Use the table below to help you determine your level of expertise.",
     responses: responses,
     layout: "stacked",
     onChange: (val) => {

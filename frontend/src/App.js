@@ -9,6 +9,7 @@ import TaskIntroduction from "./pages/TaskIntroduction";
 import PracticeTask from "./pages/PracticeTask";
 import PostTaskQuestionnaire from "./pages/PostTaskQuestionnaire";
 import Redirect from "./pages/Redirect";
+import ProlificIdNotPresent from "./pages/ProlificIdNotPresent";
 
 // import context
 import PageContext from "./context/PageContext";
@@ -27,17 +28,26 @@ import Container from "react-bootstrap/Container";
 // import react-device-detect
 import { isDesktop, isIE } from "react-device-detect";
 
-const App = () => {
-  const queryParameters = new URLSearchParams(window.location.search);
-  const studyID = queryParameters.get("STUDY_ID");
-  const prolificID = queryParameters.get("PROLIFIC_PID");
-  const sessionID = queryParameters.get("SESSION_ID");
+// import components
+import PopupScreenSize from "./components/PopupScreenSize";
 
-  const [prolificInfo] = useState({
-    studyID: studyID,
-    prolificID: prolificID,
-    sessionID: sessionID,
-  });
+const App = () => {
+  const [studyInfo, setStudyInfo] = useState({});
+
+  useEffect(() => {
+    // Get Prolific ID info
+    const queryParameters = new URLSearchParams(window.location.search);
+    const prolificID = queryParameters.get("PROLIFIC_PID");
+
+    setStudyInfo({
+      prolificID: prolificID,
+      startTimeStamp: new Date()
+        .toISOString()
+        .slice(0, 19)
+        .replace(/-/g, "/")
+        .replace("T", " "),
+    });
+  }, []);
 
   // User log state
   const [userLog, setUserLog] = useState([]);
@@ -58,8 +68,16 @@ const App = () => {
   // Page state
   const [page, setPage] = useState(1);
 
-  // Everytime page changes, reset window view
+  // Everytime page changes, reset window view and warn users not to refresh page
   useEffect(() => {
+    // Warn users not to refresh page if they are not on the first or last page
+    if (page === 1 || page === 7) {
+      window.onbeforeunload = () => undefined;
+    } else {
+      window.onbeforeunload = () => true;
+    }
+
+    // Reset window view
     window.scrollTo(0, 0);
   }, [page]);
 
@@ -141,10 +159,16 @@ const App = () => {
     );
   }
 
+  // Check if Prolific ID is present in the URL, if not show a error screen which provides instructions to fix issue
+  if (studyInfo.prolificID === null || studyInfo.prolificID === "") {
+    return <ProlificIdNotPresent />;
+  }
+
   switch (page) {
     case 1:
       return (
         <PageContext.Provider value={pageValue}>
+          <PopupScreenSize />
           <StudyIntroduction />
         </PageContext.Provider>
       );
@@ -153,6 +177,7 @@ const App = () => {
       return (
         <PageContext.Provider value={pageValue}>
           <PreTaskQuestionnaireContext.Provider value={preTaskFormValue}>
+            <PopupScreenSize />
             <PreTaskQuestionnaire />
           </PreTaskQuestionnaireContext.Provider>
         </PageContext.Provider>
@@ -160,6 +185,7 @@ const App = () => {
     case 3:
       return (
         <PageContext.Provider value={pageValue}>
+          <PopupScreenSize />
           <TaskIntroduction />
         </PageContext.Provider>
       );
@@ -170,6 +196,7 @@ const App = () => {
             value={practiceTaskExplanationDataValue}
           >
             <UserLogContext.Provider value={userLogValue}>
+              <PopupScreenSize />
               <PracticeTask />
             </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
@@ -180,6 +207,7 @@ const App = () => {
         <PageContext.Provider value={pageValue}>
           <ExplanationDataContext.Provider value={mainTaskExplanationDataValue}>
             <UserLogContext.Provider value={userLogValue}>
+              <PopupScreenSize />
               <Task />
             </UserLogContext.Provider>
           </ExplanationDataContext.Provider>
@@ -189,6 +217,7 @@ const App = () => {
       return (
         <PageContext.Provider value={pageValue}>
           <PostTaskQuestionnaireContext.Provider value={postTaskFormValue}>
+            <PopupScreenSize />
             <PostTaskQuestionnaire />
           </PostTaskQuestionnaireContext.Provider>
         </PageContext.Provider>
@@ -196,10 +225,14 @@ const App = () => {
     case 7:
       const combined_data = {
         checked: false,
-        prolificInfo: {
-          studyID: prolificInfo.studyID,
-          prolificID: prolificInfo.prolificID,
-          sessionID: prolificInfo.sessionID,
+        studyInfo: {
+          prolificID: studyInfo.prolificID,
+          startTimeStamp: studyInfo.startTimeStamp,
+          endTimeStamp: new Date()
+            .toISOString()
+            .slice(0, 19)
+            .replace(/-/g, "/")
+            .replace("T", " "),
         },
         questionnaire: { preTask: preTaskForm, postTask: postTaskForm },
         taskDataUser: {

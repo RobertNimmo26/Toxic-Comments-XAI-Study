@@ -17,6 +17,7 @@ const PracticeExplanationData = Array.from([
       { word: "centuries", weight: 0.0075, label: "Non-toxic" },
       { word: "used", weight: 0.0024, label: "Toxic" },
     ],
+    new_important_words: [],
     checked: false,
   },
 ]);

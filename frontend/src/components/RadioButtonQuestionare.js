@@ -10,7 +10,6 @@ const RadioButtonQuestionare = ({ questionData, questionContext }) => {
   const { postTaskForm, setPostTaskForm } = useContext(questionContext);
 
   const handleChange = (event) => {
-    console.log(event.target);
     setPostTaskForm({
       ...postTaskForm,
       [event.target.id]: event.target.value,

@@ -11,7 +11,7 @@ const SideBar = () => {
   const { explanationData } = useContext(ExplanationDataContext);
   return (
     <>
-      <ListGroup variant="flush" style={{ height: "100vh", overflowY: "auto" }}>
+      <ListGroup variant="flush" style={{ height: "90vh", overflowY: "auto" }}>
         {explanationData.user.map((x, i) => (
           <ListGroup.Item action eventKey={i + 1} key={i + 1}>
             <div className="d-flex w-100 align-items-center justify-content-between">
@@ -22,8 +22,13 @@ const SideBar = () => {
                 <small>Unchecked</small>
               )}
             </div>
-            <div className="col-10 mb-1 small">
-              {x.comment.split(" ").slice(0, 5).join(" ")}
+            <div className="col-10 mb-1 small d-flex w-100 justify-content-between">
+              {x.comment.split(" ").slice(0, 5).join(" ")}...
+              {explanationData.reset[i].prediction_label === "Toxic" ? (
+                <strong style={{ textAlign: "right" }}>Toxic</strong>
+              ) : (
+                <strong style={{ textAlign: "right" }}>Non-toxic</strong>
+              )}
             </div>
           </ListGroup.Item>
         ))}

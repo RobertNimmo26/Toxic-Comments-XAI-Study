@@ -12,9 +12,7 @@ import ExplanationDataContext from "../context/ExplanationDataContext";
 const ModalCheckedEndTask = () => {
   const { page, setPage } = useContext(PageContext);
 
-  const { explanationData, setExplanationData } = useContext(
-    ExplanationDataContext
-  );
+  const { explanationData } = useContext(ExplanationDataContext);
 
   const checkedArray = explanationData.user.map((item) => item.checked);
 

@@ -23,6 +23,7 @@ const StudyIntroduction = () => {
     confirm2: false,
     confirm3: false,
     confirm4: false,
+    confirm5: false,
   });
 
   const handleChange = (event) => {
@@ -37,12 +38,12 @@ const StudyIntroduction = () => {
   }, [confirmedQuestionAnswers]);
 
   const redirectProlific = () => {
-    if (process.env.REACT_APP_ENVIRONMENT === "Production") {
-      // During production redirect to Prolific
-      window.location.replace(process.env.REACT_APP_PROLIFIC_REDIRECT_CONSENT);
-    } else {
-      // During testing/development redirect to Google
+    if (process.env.REACT_APP_ENVIRONMENT === "Dev") {
+      // During dev redirect to Google
       window.location.replace("https://google.com");
+    } else {
+      // During testing/production redirect to Prolific
+      window.location.replace(process.env.REACT_APP_PROLIFIC_REDIRECT_CONSENT);
     }
   };
 
@@ -120,7 +121,8 @@ const StudyIntroduction = () => {
             Yes, you <ins>must</ins> be using a laptop/desktop computer with an
             up-to-date modern browser such as Chrome, Edge, Safari or Firefox.
             You <ins>cannot</ins> use a mobile phone or tablet (including iPads)
-            to participate in this study.
+            to participate in this study. Please also keep your browser window
+            in full screen for the full length of the study.
           </p>
           <h5>Will my taking part in the study be kept confidential?</h5>
           <p>
@@ -136,7 +138,8 @@ const StudyIntroduction = () => {
           </p>
           <h5>What are the possible disadvantages and risks of taking part?</h5>
           <p>
-            There are no risks or side effects for taking part in this study.
+            You will be exposed to "toxic" language while completing the study
+            which may make you feel uncomfortable.
           </p>
           <h5>What are the possible benefits of taking part?</h5>
           <p>
@@ -211,8 +214,7 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm2">
               <Form.Check
                 type="checkbox"
-                label="I understand that the data may be used in future
-                    publications, both print and online."
+                label='I understand that I will be exposed to "toxic" language while completing the study.'
                 onChange={handleChange}
                 name="confirm2"
                 style={{ marginTop: "5px" }}
@@ -221,7 +223,8 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm3">
               <Form.Check
                 type="checkbox"
-                label="I understand that the data may be made available to other researchers. I waive my copyright to any data collected as part of this project."
+                label="I understand that the data may be used in future
+                    publications, both print and online."
                 onChange={handleChange}
                 name="confirm3"
                 style={{ marginTop: "5px" }}
@@ -230,9 +233,18 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm4">
               <Form.Check
                 type="checkbox"
-                label="I agree to take part in this research study."
+                label="I understand that the data may be made available to other researchers. I waive my copyright to any data collected as part of this project."
                 onChange={handleChange}
                 name="confirm4"
+                style={{ marginTop: "5px" }}
+              />
+            </Form.Group>
+            <Form.Group controlId="confirm5">
+              <Form.Check
+                type="checkbox"
+                label="I agree to take part in this research study."
+                onChange={handleChange}
+                name="confirm5"
                 style={{ marginTop: "5px" }}
               />
             </Form.Group>
