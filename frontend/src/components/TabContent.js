@@ -1,5 +1,5 @@
 // import react components
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, Fragment } from "react";
 
 // import components
 import TaskTimer from "./TaskTimer";
@@ -104,7 +104,7 @@ const TabContent = ({
 
   // Add a new IW
   const addNewIWWord = () => {
-    setNewImportantWords((prevNewWord) => {
+    setNewImportantWords((preNewImportantWords) => {
       const newIWID = uuidv4();
 
       const logResult = `${generateTimestamp()}: Added a new important word with ID ${newIWID} for comment ${
@@ -113,7 +113,7 @@ const TabContent = ({
       setUserLog([...userLog, logResult]);
 
       return [
-        ...prevNewWord,
+        ...preNewImportantWords,
         { word: undefined, weight: 0, label: undefined, id: newIWID },
       ];
     });
@@ -121,19 +121,13 @@ const TabContent = ({
 
   // Delete a new IW
   const deleteNewIWWord = (id) => {
-    setNewImportantWords((prevNewWord) => {
+    setNewImportantWords((preNewImportantWords) => {
       const logResult = `${generateTimestamp()}: Deleted a new important word with ID ${id} for comment ${
         explanationData.user[explanationDataIndex].id
       }`;
       setUserLog([...userLog, logResult]);
 
-      const index = prevNewWord.findIndex((x) => x.id === id);
-
-      if (index > -1) {
-        prevNewWord.splice(index, 1);
-      }
-
-      return [...prevNewWord];
+      return preNewImportantWords.filter((x) => x.id !== id);
     });
   };
 
@@ -151,24 +145,27 @@ const TabContent = ({
 
   // When the word changes for the new IW object
   const onNewIWWordChange = ({ value, id }) => {
-    setNewImportantWords((prevNewWord) => {
+    setNewImportantWords((preNewImportantWords) => {
       const logResult = `${generateTimestamp()}: Changed IW word on new IW with the ID ${id} to ${
         value.target.value
       } for comment ${explanationData.user[explanationDataIndex].id}`;
 
       setUserLog([...userLog, logResult]);
 
-      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+      const foundIndex = preNewImportantWords.findIndex(
+        (item) => item.id === id
+      );
 
-      prevNewWord[foundIndex].word = value.target.value;
+      preNewImportantWords[foundIndex].word = value.target.value;
 
-      return [...prevNewWord];
+      return [...preNewImportantWords];
     });
   };
 
   // When the label changes for the new IW object
   const onNewIWLabelChange = ({ value, id }) => {
-    setNewImportantWords((prevNewWord) => {
+    console.log(id);
+    setNewImportantWords((preNewImportantWords) => {
       const logResult = `${generateTimestamp()}: Changed new IW with the ID ${id} label to ${
         value.target.value
       } for comment ${explanationData.user[explanationDataIndex].id}
@@ -176,11 +173,13 @@ const TabContent = ({
 
       setUserLog([...userLog, logResult]);
 
-      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+      const foundIndex = preNewImportantWords.findIndex(
+        (item) => item.id === id
+      );
 
-      prevNewWord[foundIndex].label = value.target.value;
+      preNewImportantWords[foundIndex].label = value.target.value;
 
-      return [...prevNewWord];
+      return [...preNewImportantWords];
     });
   };
 
@@ -188,7 +187,7 @@ const TabContent = ({
   const onNewIWSliderChange = ({ value, id }) => {
     let finalValue = value / 100;
 
-    setNewImportantWords((prevNewWord) => {
+    setNewImportantWords((preNewImportantWords) => {
       const logResult = `${generateTimestamp()}: Changed new IW with the ID ${id} slider to ${finalValue} for comment ${
         explanationData.user[explanationDataIndex].id
       }
@@ -196,11 +195,13 @@ const TabContent = ({
 
       setUserLog([...userLog, logResult]);
 
-      const foundIndex = prevNewWord.findIndex((item) => item.id === id);
+      const foundIndex = preNewImportantWords.findIndex(
+        (item) => item.id === id
+      );
 
-      prevNewWord[foundIndex].weight = structuredClone(finalValue);
+      preNewImportantWords[foundIndex].weight = structuredClone(finalValue);
 
-      return [...prevNewWord];
+      return [...preNewImportantWords];
     });
   };
 
@@ -466,109 +467,111 @@ const TabContent = ({
               </Row>
               <Row>
                 {newImportantWords.map((newIW) => (
-                  <Row>
-                    <Col style={{ textAlign: "center" }} md={3}>
-                      {/* Important word dropdown */}
-                      <Form.Select
-                        style={{ fontSize: "small" }}
-                        value={newIW.word}
-                        id={newIW.id.concat("NewIWWordDropdown")}
-                        onChange={(value) => {
-                          onNewIWWordChange({
-                            value: value,
-                            id: newIW.id,
-                          });
-                        }}
-                      >
-                        <option
-                          value={undefined}
-                          selected="selected"
-                          disabled={true}
+                  <Fragment key={newIW.id}>
+                    <Row>
+                      <Col style={{ textAlign: "center" }} md={3}>
+                        {/* Important word dropdown */}
+                        <Form.Select
+                          style={{ fontSize: "small" }}
+                          value={newIW.word}
+                          id={newIW.id.concat("NewIWWordDropdown")}
+                          onChange={(value) => {
+                            onNewIWWordChange({
+                              value: value,
+                              id: newIW.id,
+                            });
+                          }}
                         >
-                          Select word
-                        </option>
-                        {getPossibleNewIWWords().map((possibleOption) => {
-                          const alreadySelectedIndex =
-                            newImportantWords.findIndex(
-                              (x) => x.word === possibleOption
-                            );
+                          <option
+                            value={undefined}
+                            selected="selected"
+                            disabled={true}
+                          >
+                            Select word
+                          </option>
+                          {getPossibleNewIWWords().map((possibleOption) => {
+                            const alreadySelectedIndex =
+                              newImportantWords.findIndex(
+                                (x) => x.word === possibleOption
+                              );
 
-                          // If word already selected (alreadySelected > -1) and
-                          // this is not the instance where the word has been selected,
-                          // don't include word as a option
-                          if (
-                            alreadySelectedIndex > -1 &&
-                            newImportantWords[alreadySelectedIndex].id !==
-                              newIW.id
-                          ) {
-                            return <></>;
-                          } else {
-                            return (
-                              <option value={possibleOption}>
-                                {possibleOption}
-                              </option>
-                            );
-                          }
-                        })}
-                      </Form.Select>
-                    </Col>
-                    <Col style={{ textAlign: "center" }} md={3}>
-                      {/* Label dropdown */}
-                      <Form.Select
-                        style={{ fontSize: "small" }}
-                        value={newIW.label}
-                        id={newIW.id.concat("NewIWLabelDropdown")}
-                        onChange={(value) => {
-                          onNewIWLabelChange({
-                            value: value,
-                            id: newIW.id,
-                          });
-                        }}
-                      >
-                        <option
-                          value={undefined}
-                          selected="selected"
-                          disabled={true}
+                            // If word already selected (alreadySelected > -1) and
+                            // this is not the instance where the word has been selected,
+                            // don't include word as a option
+                            if (
+                              alreadySelectedIndex > -1 &&
+                              newImportantWords[alreadySelectedIndex].id !==
+                                newIW.id
+                            ) {
+                              return <></>;
+                            } else {
+                              return (
+                                <option value={possibleOption}>
+                                  {possibleOption}
+                                </option>
+                              );
+                            }
+                          })}
+                        </Form.Select>
+                      </Col>
+                      <Col style={{ textAlign: "center" }} md={3}>
+                        {/* Label dropdown */}
+                        <Form.Select
+                          style={{ fontSize: "small" }}
+                          value={newIW.label}
+                          id={newIW.id.concat("NewIWLabelDropdown")}
+                          onChange={(value) => {
+                            onNewIWLabelChange({
+                              value: value,
+                              id: newIW.id,
+                            });
+                          }}
                         >
-                          Select label
-                        </option>
-                        <option value="Toxic">Toxic</option>
-                        <option value="Non-toxic">Non-toxic</option>
-                      </Form.Select>
-                    </Col>
-                    <Col style={{ textAlign: "center" }} md={5}>
-                      {/* Word importance slider */}
-                      <Slider
-                        value={100 * newIW.weight}
-                        onChange={(value) => {
-                          onNewIWSliderChange({
-                            value: value,
-                            id: newIW.id,
-                          });
-                        }}
-                        handleRender={sliderHandleRender}
-                      />
-                    </Col>
-                    <Col md={1}>
-                      <Button
-                        variant="link"
-                        onClick={() => {
-                          deleteNewIWWord(newIW.id);
-                        }}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-x-circle-fill"
-                          viewBox="0 0 16 16"
+                          <option
+                            value={undefined}
+                            selected="selected"
+                            disabled={true}
+                          >
+                            Select label
+                          </option>
+                          <option value="Toxic">Toxic</option>
+                          <option value="Non-toxic">Non-toxic</option>
+                        </Form.Select>
+                      </Col>
+                      <Col style={{ textAlign: "center" }} md={5}>
+                        {/* Word importance slider */}
+                        <Slider
+                          value={100 * newIW.weight}
+                          onChange={(value) => {
+                            onNewIWSliderChange({
+                              value: value,
+                              id: newIW.id,
+                            });
+                          }}
+                          handleRender={sliderHandleRender}
+                        />
+                      </Col>
+                      <Col md={1}>
+                        <Button
+                          variant="link"
+                          onClick={() => {
+                            deleteNewIWWord(newIW.id);
+                          }}
                         >
-                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                        </svg>
-                      </Button>
-                    </Col>
-                  </Row>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                          </svg>
+                        </Button>
+                      </Col>
+                    </Row>
+                  </Fragment>
                 ))}
               </Row>
             </Stack>
@@ -697,42 +700,44 @@ const TabContent = ({
                 const iwWordLabel = x[1].label;
                 return (
                   <>
-                    <Row>
-                      <Col style={{ textAlign: "center" }} md={3}>
-                        {/* Important word */}
-                        <p>{iwWord}</p>
-                      </Col>
-                      <Col style={{ textAlign: "center" }} md={3}>
-                        {/* Label dropdown */}
-                        <Form.Select
-                          style={{ fontSize: "small" }}
-                          value={iwWordLabel}
-                          id={iwWord.concat("IWLabelDropdown")}
-                          onChange={(value) => {
-                            onImportantWordLabelChange({
-                              value: value,
-                              word: iwWord,
-                            });
-                          }}
-                        >
-                          <option value="Toxic">Toxic</option>
-                          <option value="Non-toxic">Non-toxic</option>
-                        </Form.Select>
-                      </Col>
-                      <Col style={{ textAlign: "center" }} md={6}>
-                        {/* Word importance slider */}
-                        <Slider
-                          value={100 * iwWordWeight}
-                          onChange={(value) => {
-                            onImportantWordSliderChange({
-                              value: value,
-                              word: iwWord,
-                            });
-                          }}
-                          handleRender={sliderHandleRender}
-                        />
-                      </Col>
-                    </Row>
+                    <Fragment key={x}>
+                      <Row>
+                        <Col style={{ textAlign: "center" }} md={3}>
+                          {/* Important word */}
+                          <p>{iwWord}</p>
+                        </Col>
+                        <Col style={{ textAlign: "center" }} md={3}>
+                          {/* Label dropdown */}
+                          <Form.Select
+                            style={{ fontSize: "small" }}
+                            value={iwWordLabel}
+                            id={iwWord.concat("IWLabelDropdown")}
+                            onChange={(value) => {
+                              onImportantWordLabelChange({
+                                value: value,
+                                word: iwWord,
+                              });
+                            }}
+                          >
+                            <option value="Toxic">Toxic</option>
+                            <option value="Non-toxic">Non-toxic</option>
+                          </Form.Select>
+                        </Col>
+                        <Col style={{ textAlign: "center" }} md={6}>
+                          {/* Word importance slider */}
+                          <Slider
+                            value={100 * iwWordWeight}
+                            onChange={(value) => {
+                              onImportantWordSliderChange({
+                                value: value,
+                                word: iwWord,
+                              });
+                            }}
+                            handleRender={sliderHandleRender}
+                          />
+                        </Col>
+                      </Row>
+                    </Fragment>
                   </>
                 );
               })}
