@@ -91,11 +91,19 @@ const StudyIntroduction = () => {
         <Row>
           <h5>What is the purpose of the study?</h5>
           <p>
-            This study will investigate the influence the Big 5 personality
-            traits can affect explanations in AI. You will be able to give
-            feedback about whether you think a decision is correct or incorrect
-            and provide suggested changes to how the AI system might make
-            decisions in future.
+            This study will investigate the influence the{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Big_Five_personality_traits"
+              target="_blank"
+            >
+              Big 5 personality traits
+            </a>{" "}
+            can have on explainable Artifical Intelligence (AI) systems. An
+            explanation explaining why a decision was made will be generated for
+            each comment. You will be able to give feedback about whether you
+            think a decision is correct or incorrect and provide suggested
+            feedback on how the AI system could make better decisions in the
+            future.
           </p>
           <h5>What will happen if I take part?</h5>
           <p>
@@ -104,15 +112,16 @@ const StudyIntroduction = () => {
             experience with AI systems. Afterwards you will receive a brief
             introduction to our prototype and will be asked to complete a
             practice task. You then have 20 minutes to complete the assigned
-            task using the prototype. We will record the feedback you will give
-            for each comment you check and some simple analytics, such as which
+            task using the prototype. We will record the feedback you give for
+            each comment you check and some simple analytics, such as which
             buttons you press, to investigate how you used the prototype. This
             study will not last longer than 30 minutes.
           </p>
           <h5>Do I have to take part?</h5>
           <p>
             Participation in the project is voluntary. You can stop and withdraw
-            your data during any stage of completing the study.
+            your data during any stage of completing the study, including after
+            completing study.
           </p>
           <h5>
             Are there any device requirements to participate in this study?
@@ -138,7 +147,7 @@ const StudyIntroduction = () => {
           </p>
           <h5>What are the possible disadvantages and risks of taking part?</h5>
           <p>
-            You will be exposed to "toxic" language while completing the study
+            You will be exposed to toxic language while completing the study
             which may make you feel uncomfortable.
           </p>
           <h5>What are the possible benefits of taking part?</h5>
@@ -214,7 +223,7 @@ const StudyIntroduction = () => {
             <Form.Group controlId="confirm2">
               <Form.Check
                 type="checkbox"
-                label='I understand that I will be exposed to "toxic" language while completing the study.'
+                label="I understand that I will be exposed to toxic language while completing the study."
                 onChange={handleChange}
                 name="confirm2"
                 style={{ marginTop: "5px" }}
@@ -268,7 +277,6 @@ const StudyIntroduction = () => {
               <Button
                 variant="primary"
                 size="lg"
-                type="submit"
                 disabled={continueButton}
                 onClick={() => {
                   setPage(2);

@@ -103,7 +103,7 @@ const PreviousExperienceQuestion = () => {
             <td>3</td>
             <td>Pursuing</td>
             <td>
-              I have read an article/watched a vidoe online about AI systems and
+              I have read an article/watched a video online about AI systems and
               understand the basics of what it is, but nothing in depth.
             </td>
           </tr>
