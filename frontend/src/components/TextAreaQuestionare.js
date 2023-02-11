@@ -22,6 +22,7 @@ const TextAreaQuestionare = ({ questionData, questionContext }) => {
         <TextareaCounter
           countLimit={1000}
           onChange={handleChange}
+          required={true}
           rows={4}
           class="form-control"
           id={questionData.id}
