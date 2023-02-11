@@ -58,5 +58,26 @@ const PracticeExplanationData = Array.from([
     ],
     checked: false,
   },
+  {
+    id: "7e9f81162b4dc973",
+    comment:
+      "You are rude, unprofessional, stupid and wasting my time. Scrap the article. Happy now?",
+    prediction_proba: 98.64,
+    prediction_label: "Toxic",
+    new_important_words: [],
+    important_words: [
+      { word: "stupid", weight: 0.39, label: "Toxic" },
+      { word: "You", weight: 0.15, label: "Toxic" },
+      { word: "rude", weight: 0.13, label: "Toxic" },
+      { word: "the", weight: 0.09, label: "Non-toxic" },
+      { word: "article", weight: 0.09, label: "Toxic" },
+      { word: "wasting", weight: 0.05, label: "Toxic" },
+      { word: "Scrap", weight: 0.05, label: "Toxic" },
+      { word: "Happy", weight: 0.04, label: "Non-toxic" },
+      { word: "now", weight: 0.03, label: "Non-toxic" },
+      { word: "my", weight: 0.02, label: "Non-toxic" },
+    ],
+    checked: false,
+  },
 ]);
 export default PracticeExplanationData;
