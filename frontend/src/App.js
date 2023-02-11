@@ -114,6 +114,13 @@ const App = () => {
     actualunderstanding3: null,
     actualunderstanding4: null,
     actualunderstanding5: null,
+    actualunderstanding6: null,
+    actualunderstanding7: null,
+    actualunderstanding8: null,
+    actualunderstanding9: null,
+    actualunderstanding10: null,
+    actualunderstanding11: null,
+    actualunderstanding12: null,
   });
 
   // Setup contexts values
