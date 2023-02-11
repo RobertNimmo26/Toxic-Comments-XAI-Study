@@ -92,7 +92,7 @@ const StudyIntroduction = () => {
           <h5>What is the purpose of the study?</h5>
           <p>
             This study will investigate the influence the Big 5 personality
-            traits can have on explainable Artifical Intelligence (AI) systems.
+            traits can have on explainable Artificial Intelligence (AI) systems.
             An explanation explaining why a decision was made will be generated
             for each comment. You will be able to give feedback about whether
             you think a decision is correct or incorrect and provide suggested
