@@ -615,7 +615,7 @@ const TaskIntroduction = () => {
                 />
                 <Form.Text className="text-muted">
                   <i>
-                    <strong>Remember</strong> if you need to reopen the
+                    <strong>Remember:</strong> If you need to reopen the
                     task-interface diagram or remind yourself how to complete
                     the task while completing the task, press key{" "}
                     <strong>I</strong> on your keyboard.

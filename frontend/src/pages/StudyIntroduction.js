@@ -91,17 +91,11 @@ const StudyIntroduction = () => {
         <Row>
           <h5>What is the purpose of the study?</h5>
           <p>
-            This study will investigate the influence the{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Big_Five_personality_traits"
-              target="_blank"
-            >
-              Big 5 personality traits
-            </a>{" "}
-            can have on explainable Artifical Intelligence (AI) systems. An
-            explanation explaining why a decision was made will be generated for
-            each comment. You will be able to give feedback about whether you
-            think a decision is correct or incorrect and provide suggested
+            This study will investigate the influence the Big 5 personality
+            traits can have on explainable Artifical Intelligence (AI) systems.
+            An explanation explaining why a decision was made will be generated
+            for each comment. You will be able to give feedback about whether
+            you think a decision is correct or incorrect and provide suggested
             feedback on how the AI system could make better decisions in the
             future.
           </p>
