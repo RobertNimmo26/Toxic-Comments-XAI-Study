@@ -27,6 +27,7 @@ const TabGroup = () => {
     <>
       <Tab.Container
         mountOnEnter="true"
+        unmountOnExit="true"
         activeKey={currentTab}
         onSelect={(key) => setCurrentTab(key)}
       >
