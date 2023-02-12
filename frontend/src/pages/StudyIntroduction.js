@@ -103,13 +103,15 @@ const StudyIntroduction = () => {
           <p>
             You will first be asked to complete a pre-task questionnaire which
             will be used to identify your personality traits and your previous
-            experience with AI systems. Afterwards you will receive a brief
+            experience with AI systems. Afterwards, you will receive a brief
             introduction to our prototype and will be asked to complete a
-            practice task. You then have 20 minutes to complete the assigned
-            task using the prototype. We will record the feedback you give for
-            each comment you check and some simple analytics, such as which
-            buttons you press, to investigate how you used the prototype. This
-            study will not last longer than 30 minutes.
+            practice task. Once you complete the practice task, you will start
+            the main task which you will have 20 minutes to complete. We will
+            record the feedback you give for each comment you check and some
+            simple analytics, such as which buttons you press, to investigate
+            how you used the prototype. Lastly, you will be asked to complete
+            one final questionnaire to measure your trust and understanding of
+            the AI system. This study will not last longer than 30 minutes.
           </p>
           <h5>Do I have to take part?</h5>
           <p>
