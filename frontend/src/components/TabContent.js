@@ -100,7 +100,9 @@ const TabContent = ({
   // New important words added by users required functions //
 
   // Set the state for newImportantWords to a empty list
-  const [newImportantWords, setNewImportantWords] = useState([]);
+  const [newImportantWords, setNewImportantWords] = useState(
+    explanationData.user[explanationDataIndex].new_important_words
+  );
 
   // Add a new IW
   const addNewIWWord = () => {
@@ -164,7 +166,6 @@ const TabContent = ({
 
   // When the label changes for the new IW object
   const onNewIWLabelChange = ({ value, id }) => {
-    console.log(id);
     setNewImportantWords((preNewImportantWords) => {
       const logResult = `${generateTimestamp()}: Changed new IW with the ID ${id} label to ${
         value.target.value
@@ -294,8 +295,6 @@ const TabContent = ({
         (item) => item.word !== undefined && item.label !== undefined
       );
 
-      console.log(newIWToAdd);
-
       prevExplanationData.user[explanationDataIndex].new_important_words =
         newIWToAdd;
 
@@ -307,8 +306,6 @@ const TabContent = ({
     if (+currentTab !== explanationData.user.length) {
       setCurrentTab(+currentTab + 1);
     }
-
-    console.log(explanationData);
   };
 
   // Reset the comment object
