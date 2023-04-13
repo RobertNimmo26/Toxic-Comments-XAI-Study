@@ -19,6 +19,8 @@ Our prototype was designed to utilise serverless functions, specifically Cloudfl
 - `notebooks/`
   - Contains the notebooks used for the study and sampled test dataset from the Jigsaw dataset
 
-## System design
+_Each folder has it's own README file specific to the folder_
+
+## Prototype system design
 
 ![System Diagram](system_diagram.png)
