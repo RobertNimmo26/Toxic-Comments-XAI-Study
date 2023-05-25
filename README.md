@@ -1,6 +1,16 @@
 # Toxic-Comments-XAI-Study
 
-## Overview
+**_MSci Dissertation Project_**
+
+## Overview of Project
+
+The focus of this project was to examine how a user's background impacts users' engagement, trust, and understanding of Explainable Artificial Intelligence (XAI) systems.
+
+Gaining insights into how a user's background can impact the explanation of XAI systems can aid in the development of greater personalised systems tailored to the end user. There is emerging evidence that a user's background can affect how users interpret and understand explanations in XAI systems; however, current literature has not identified which user background traits are key to explanations and how they affect explanations in XAI systems.
+
+In this project, we developed and implemented an interactive explanatory debugging prototype that provided explanations for a toxic comment classifier to allow users to understand why predictions were made and to provide feedback back to the XAI system. We conducted an online user study on Prolific to investigate how users' background, specifically age, gender, previous experience and the Big 5 personality traits, have on participants' engagement, trust and perceived and actual understanding of the XAI system.
+
+## Overview of Prototype
 
 An interactive machine learning prototype for explanatory debugging user studies.
 
@@ -17,10 +27,14 @@ Our prototype was designed to utilise serverless functions, specifically Cloudfl
 - `frontend/`
   - Contains the frontend code for the prototype
 - `notebooks/`
-  - Contains the notebooks used for the study and sampled test dataset from the Jigsaw dataset
+  - Contains the notebooks used for the study and sampled test dataset from the [Jigsaw dataset](https://kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge)
 
 _Each folder has it's own README file specific to the folder_
 
 ## Prototype system design
 
 ![System Diagram](system_diagram.png)
+
+## References
+
+cjadams et al. (2017) ‘Toxic Comment Classification Challenge’. Kaggle. Available at: https://kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge.
