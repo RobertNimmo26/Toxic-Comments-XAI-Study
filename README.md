@@ -1,7 +1,5 @@
 # Toxic-Comments-XAI-Study
 
-**_MSci Dissertation Project_**
-
 ## Overview of Project
 
 The focus of this project was to examine how a user's background impacts users' engagement, trust, and understanding of Explainable Artificial Intelligence (XAI) systems.
