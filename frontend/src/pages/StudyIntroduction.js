@@ -67,17 +67,11 @@ const StudyIntroduction = () => {
           <h5>Principal Investigator:</h5>
           <p>Robert Nimmo</p>
           <p>MSci Student Computing Science</p>
-          <a href="mailto:Robert.Nimmo@glasgow.ac.uk">
-            Robert.Nimmo@glasgow.ac.uk
-          </a>
           <br />
 
           <h5>Supervisor:</h5>
           <p>Dr Simone Stumpf</p>
           <p>Reader in Responsible and Interactive AI</p>
-          <a href="mailto:Simone.Stumpf@glasgow.ac.uk">
-            Simone.Stumpf@glasgow.ac.uk
-          </a>
           <br />
 
           <strong>
